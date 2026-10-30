@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maksims Aleksejevs · Marketing Director</title>
+<meta name="description" content="Marketing director: brand, content and the growth infrastructure behind them. Paris, working internationally.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../assets/b2c/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F4F1EB;
+    --paper: #FAF8F4;
+    --ink: #171614;
+    --muted: #6F6A62;
+    --line: #DCD5CA;
+    --accent: #8A6A4F;
+    --dark: #151412;
+    --dark-2: #1E1C19;
+    --dark-ink: #EEE9E1;
+    --dark-muted: #9C958A;
+    --dark-line: #34312C;
+    --serif: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+    --sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+    --wrap: 1240px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-weight: 300; font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  em { font-style: italic; }
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 40px; }
+
+  .kicker { font-family: var(--sans); font-size: 11px; font-weight: 500; letter-spacing: .26em; text-transform: uppercase; color: var(--accent); }
+  .serif { font-family: var(--serif); font-weight: 300; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 300; letter-spacing: -.005em; }
+  h1 em, h2 em, h3 em { color: var(--accent); }
+
+  /* header */
+  header { position: fixed; inset: 0 0 auto 0; z-index: 50; transition: background .4s, border-color .4s; border-bottom: 1px solid transparent; }
+  header.scrolled { background: rgba(244,241,235,.92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-color: var(--line); }
+  .bar { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+  .mark { font-family: var(--serif); font-size: 21px; font-weight: 400; letter-spacing: .04em; }
+  .mark span { color: var(--accent); }
+  nav { display: flex; align-items: center; gap: 34px; }
+  nav a.nl { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; font-weight: 400; color: var(--muted); transition: color .25s; }
+  nav a.nl:hover { color: var(--ink); }
+  .lang { display: flex; gap: 2px; border: 1px solid var(--line); border-radius: 40px; padding: 3px; }
+  .lang button { background: none; border: 0; cursor: pointer; font: 500 11px var(--sans); letter-spacing: .12em; color: var(--muted); padding: 5px 11px; border-radius: 40px; transition: all .25s; }
+  .lang button.on { background: var(--ink); color: var(--paper); }
+
+  /* hero */
+  .hero { padding: 150px 0 90px; }
+  .hero-grid { display: grid; grid-template-columns: 7fr 5fr; gap: 70px; align-items: end; }
+  .hero h1 { font-size: clamp(46px, 6.4vw, 96px); line-height: .98; margin: 26px 0 34px; }
+  .hero p.lead { font-size: 18px; color: #3d3a35; max-width: 560px; }
+  .ctas { display: flex; gap: 14px; margin-top: 40px; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; gap: 12px; font-size: 12px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; padding: 16px 28px; border: 1px solid var(--ink); transition: all .3s; }
+  .btn.solid { background: var(--ink); color: var(--paper); }
+  .btn.solid:hover { background: var(--accent); border-color: var(--accent); }
+  .btn.ghost:hover { background: var(--ink); color: var(--paper); }
+  .portrait { position: relative; }
+  .portrait .frame { aspect-ratio: 4/5; overflow: hidden; background: #e7e1d7; }
+  .portrait img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; filter: saturate(.86) contrast(1.02); }
+  .portrait .cap { display: flex; justify-content: space-between; margin-top: 14px; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+  .status { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+  .status i { width: 7px; height: 7px; border-radius: 50%; background: #6f8f62; box-shadow: 0 0 0 4px rgba(111,143,98,.15); }
+
+  /* numbers */
+  .numbers { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .numbers .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .num { padding: 38px 28px 34px; border-left: 1px solid var(--line); }
+  .num:first-child { border-left: 0; padding-left: 0; }
+  .num b { display: block; font-family: var(--serif); font-weight: 300; font-size: 58px; line-height: 1; margin-bottom: 12px; }
+  .num span { font-size: 13px; color: var(--muted); display: block; max-width: 220px; line-height: 1.5; }
+
+  section.block { padding: 130px 0; }
+  .head { display: grid; grid-template-columns: 4fr 8fr; gap: 60px; margin-bottom: 70px; }
+  .head h2 { font-size: clamp(36px, 4.4vw, 62px); line-height: 1.04; }
+  .head .intro { font-size: 17px; color: #3d3a35; max-width: 620px; margin-top: 26px; }
+
+  /* approach */
+  .pillars { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--ink); }
+  .pillar { padding: 34px 28px 10px 0; }
+  .pillar + .pillar { padding-left: 28px; border-left: 1px solid var(--line); }
+  .pillar .no { font-family: var(--serif); font-style: italic; font-size: 22px; color: var(--accent); }
+  .pillar h3 { font-size: 27px; line-height: 1.15; margin: 14px 0 14px; }
+  .pillar p { font-size: 14.5px; color: var(--muted); }
+
+  /* case */
+  .case { background: var(--paper); }
+  .case-title { font-size: clamp(38px, 4.8vw, 70px); line-height: 1.02; max-width: 1050px; margin: 24px 0 60px; }
+  .case-grid { display: grid; grid-template-columns: 4fr 8fr; gap: 60px; }
+  .meta { border-top: 1px solid var(--ink); }
+  .meta div { padding: 15px 0; border-bottom: 1px solid var(--line); }
+  .meta dt { font-size: 10.5px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+  .meta dd { font-size: 14.5px; }
+  .case-text { font-family: var(--serif); font-size: 26px; line-height: 1.38; font-weight: 300; color: #2a2825; }
+  .streams { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 56px; border-top: 1px solid var(--line); }
+  .stream { padding: 28px 26px 30px 0; border-bottom: 1px solid var(--line); }
+  .stream:not(:nth-child(3n+1)) { padding-left: 26px; border-left: 1px solid var(--line); }
+  .stream .no { font-size: 11px; letter-spacing: .2em; color: var(--accent); font-weight: 500; }
+  .stream h4 { font-family: var(--serif); font-weight: 400; font-size: 23px; margin: 8px 0 8px; line-height: 1.2; }
+  .stream p { font-size: 14px; color: var(--muted); }
+
+  /* systems (dark) */
+  .systems { background: var(--dark); color: var(--dark-ink); }
+  .systems .head .intro { color: #bdb6ab; }
+  .systems h2 em { color: #C9A27E; }
+  .systems .kicker { color: #C9A27E; }
+  .flow { position: relative; margin-bottom: 80px; }
+  .flow-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; position: relative; }
+  .flow-row::before { content: ""; position: absolute; left: 10%; right: 10%; top: 34px; height: 1px; background: linear-gradient(90deg, #4a453e, #C9A27E 50%, #4a453e); }
+  .node { position: relative; text-align: center; padding: 0 10px; }
+  .node .dot { width: 68px; height: 68px; border-radius: 50%; border: 1px solid #4a453e; background: var(--dark); margin: 0 auto 20px; display: grid; place-items: center; font-family: var(--serif); font-style: italic; font-size: 22px; color: #C9A27E; position: relative; z-index: 1; transition: border-color .4s, box-shadow .4s; }
+  .node:hover .dot { border-color: #C9A27E; box-shadow: 0 0 0 8px rgba(201,162,126,.08); }
+  .node h5 { font-family: var(--serif); font-weight: 400; font-size: 22px; margin-bottom: 6px; }
+  .node p { font-size: 12.5px; color: var(--dark-muted); line-height: 1.5; }
+  .agents-bar { margin-top: 38px; border: 1px dashed #4a453e; padding: 18px 26px; display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; text-align: center; font-size: 13px; color: #bdb6ab; }
+  .agents-bar b { font-weight: 500; color: var(--dark-ink); letter-spacing: .16em; text-transform: uppercase; font-size: 11px; }
+  .agents-bar .pulse { width: 7px; height: 7px; border-radius: 50%; background: #C9A27E; animation: pulse 2.4s infinite; }
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(201,162,126,.5); } 70% { box-shadow: 0 0 0 10px rgba(201,162,126,0); } 100% { box-shadow: 0 0 0 0 rgba(201,162,126,0); } }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--dark-line); }
+  .card { padding: 36px 30px 40px 0; border-bottom: 1px solid var(--dark-line); }
+  .card:not(:nth-child(3n+1)) { padding-left: 30px; border-left: 1px solid var(--dark-line); }
+  .card .tag { font-size: 10.5px; letter-spacing: .22em; text-transform: uppercase; color: #C9A27E; }
+  .card h3 { font-size: 30px; line-height: 1.12; margin: 12px 0 14px; }
+  .card p { font-size: 14px; color: #a9a196; }
+
+  /* premium list */
+  .rows { border-top: 1px solid var(--ink); }
+  .row { display: grid; grid-template-columns: 60px 4fr 2fr 4fr 3fr; gap: 24px; align-items: baseline; padding: 26px 0; border-bottom: 1px solid var(--line); transition: background .3s, padding .3s; }
+  .row:hover { background: var(--paper); padding-left: 14px; padding-right: 14px; }
+  .row .i { font-family: var(--serif); font-style: italic; color: var(--accent); font-size: 20px; }
+  .row .n { font-family: var(--serif); font-size: 26px; line-height: 1.15; }
+  .row .l, .row .w { font-size: 13.5px; color: var(--muted); }
+  .row .r { font-family: var(--serif); font-size: 21px; text-align: right; }
+
+  /* background */
+  .bg-grid { display: grid; grid-template-columns: 5fr 7fr; gap: 80px; align-items: start; }
+  .bg-photo .frame { aspect-ratio: 3/2; overflow: hidden; }
+  .bg-photo img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.85); }
+  .facts div { display: grid; grid-template-columns: 180px 1fr; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+  .facts div:first-child { border-top: 1px solid var(--ink); }
+  .facts dt { font-size: 10.5px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); padding-top: 4px; }
+  .facts dd { font-family: var(--serif); font-size: 21px; line-height: 1.35; }
+  .facts dd small { display: block; font-family: var(--sans); font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+  /* contact */
+  .contact { background: var(--paper); text-align: center; padding: 140px 0 120px; border-top: 1px solid var(--line); }
+  .contact h2 { font-size: clamp(48px, 7vw, 108px); line-height: 1; margin: 22px 0 26px; }
+  .contact p { color: var(--muted); font-size: 17px; max-width: 560px; margin: 0 auto 44px; }
+  .contact .lines { display: flex; justify-content: center; gap: 46px; flex-wrap: wrap; font-family: var(--serif); font-size: 26px; }
+  .contact .lines a { border-bottom: 1px solid var(--line); padding-bottom: 4px; transition: border-color .3s, color .3s; }
+  .contact .lines a:hover { border-color: var(--accent); color: var(--accent); }
+  footer { padding: 30px 0; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+
+  /* reveal */
+  .rv { opacity: 0; transform: translateY(24px); transition: opacity 1s cubic-bezier(.2,.7,.2,1), transform 1s cubic-bezier(.2,.7,.2,1); }
+  .rv.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .rv { opacity: 1; transform: none; transition: none; } .agents-bar .pulse { animation: none; } html { scroll-behavior: auto; } }
+
+  /* responsive */
+  @media (max-width: 1080px) {
+    .pillars { grid-template-columns: 1fr 1fr; }
+    .pillar:nth-child(3) { padding-left: 0; border-left: 0; }
+    .pillar { border-bottom: 1px solid var(--line); padding-bottom: 28px; }
+    .row { grid-template-columns: 40px 1fr 1fr; }
+    .row .w { grid-column: 2 / 4; }
+    .row .r { grid-column: 2 / 4; text-align: left; }
+  }
+  @media (max-width: 900px) {
+    .wrap { padding: 0 22px; }
+    nav a.nl { display: none; }
+    .hero { padding: 120px 0 60px; }
+    .hero-grid, .head, .case-grid, .bg-grid { grid-template-columns: 1fr; gap: 36px; }
+    .portrait { max-width: 420px; }
+    .numbers .wrap { grid-template-columns: 1fr 1fr; }
+    .num { padding: 28px 18px; border-left: 0; border-bottom: 1px solid var(--line); }
+    .num:nth-child(even) { border-left: 1px solid var(--line); }
+    .num:first-child { padding-left: 18px; }
+    .num b { font-size: 46px; }
+    section.block { padding: 90px 0; }
+    .head { margin-bottom: 44px; }
+    .streams, .cards { grid-template-columns: 1fr; }
+    .stream, .card, .stream:not(:nth-child(3n+1)), .card:not(:nth-child(3n+1)) { padding-left: 0; border-left: 0; }
+    .case-text { font-size: 22px; }
+    .flow-row { grid-template-columns: 1fr; gap: 26px; }
+    .flow-row::before { left: 34px; right: auto; top: 34px; bottom: 34px; width: 1px; height: auto; background: linear-gradient(180deg, #4a453e, #C9A27E 50%, #4a453e); }
+    .node { display: grid; grid-template-columns: 68px 1fr; gap: 0 20px; text-align: left; padding: 0; align-items: center; }
+    .node .dot { margin: 0; grid-row: span 2; }
+    .facts div { grid-template-columns: 1fr; gap: 4px; }
+    .pillars { grid-template-columns: 1fr; }
+    .pillar + .pillar, .pillar:nth-child(3) { padding-left: 0; border-left: 0; }
+    .contact .lines { flex-direction: column; gap: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap bar">
+    <a href="#top" class="mark">Maksims Aleksejevs<span>.</span></a>
+    <nav>
+      <a class="nl" href="#approach" data-i18n="nav.approach">Approach</a>
+      <a class="nl" href="#work" data-i18n="nav.work">Work</a>
+      <a class="nl" href="#systems" data-i18n="nav.systems">Systems</a>
+      <a class="nl" href="#background" data-i18n="nav.background">Background</a>
+      <a class="nl" href="#contact" data-i18n="nav.contact">Contact</a>
+      <div class="lang"><button data-lang="en" class="on">EN</button><button data-lang="fr">FR</button></div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="rv">
+        <div class="kicker" data-i18n="hero.kicker">Marketing Director · Brand, Content &amp; Growth Systems</div>
+        <h1 data-i18n="hero.title">A marketing function, <em>built end to end.</em></h1>
+        <p class="lead" data-i18n="hero.text">I set the strategy and build everything underneath it: positioning, website, content, campaigns, and the infrastructure that turns a brand&rsquo;s reputation into new business. Based in Paris, working internationally.</p>
+        <div class="ctas">
+          <a href="#work" class="btn solid" data-i18n="hero.cta1">Selected work</a>
+          <a href="#contact" class="btn ghost" data-i18n="hero.cta2">Contact</a>
+        </div>
+      </div>
+      <div class="portrait rv">
+        <div class="frame"><img src="../assets/max.jpg" alt="Maksims Aleksejevs"></div>
+        <div class="cap"><span data-i18n="hero.cap">Paris</span><span class="status"><i></i><span data-i18n="hero.status">Open to senior roles</span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="numbers">
+    <div class="wrap">
+      <div class="num rv"><b>30+</b><span data-i18n="n1">markets with live campaigns</span></div>
+      <div class="num rv"><b>7</b><span data-i18n="n2">languages, one brand standard</span></div>
+      <div class="num rv"><b>10+</b><span data-i18n="n3">modules in the marketing platform I built</span></div>
+      <div class="num rv"><b>8</b><span data-i18n="n4">AI agents, one per channel</span></div>
+    </div>
+  </div>
+
+  <section class="block" id="approach">
+    <div class="wrap">
+      <div class="head rv">
+        <div class="kicker" data-i18n="ap.kicker">01 · Approach</div>
+        <div>
+          <h2 data-i18n="ap.title">One standard, from first impression <em>to signed contract.</em></h2>
+          <p class="intro" data-i18n="ap.intro">In premium and expert businesses, every touchpoint is the brand: the website, a LinkedIn post, a proposal, a stand at a trade show. My work is to make them consistent, and to make them measurable.</p>
+        </div>
+      </div>
+      <div class="pillars">
+        <div class="pillar rv"><div class="no">i.</div><h3 data-i18n="p1.t">Positioning &amp; standards</h3><p data-i18n="p1.d">International positioning, tone of voice and visual rules, documented so that every market, contractor and colleague produces work that looks and sounds like one company.</p></div>
+        <div class="pillar rv"><div class="no">ii.</div><h3 data-i18n="p2.t">Website, content, PR &amp; events</h3><p data-i18n="p2.d">Multilingual website, editorial calendar, social channels, video, webinars and trade-show presence, run as one programme rather than separate channels.</p></div>
+        <div class="pillar rv"><div class="no">iii.</div><h3 data-i18n="p3.t">New-business infrastructure</h3><p data-i18n="p3.d">CRM integration, source attribution, outreach, proposal and meeting flows, leadership reporting: so that brand work shows up in the pipeline.</p></div>
+        <div class="pillar rv"><div class="no">iv.</div><h3 data-i18n="p4.t">Leadership &amp; delivery</h3><p data-i18n="p4.d">I set direction and ship myself. Developers, designers, agencies and sales teams work from clear briefs, review cycles and shared dashboards.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block case" id="work">
+    <div class="wrap">
+      <div class="kicker rv" data-i18n="w.kicker">02 · Selected work · 2026, ongoing</div>
+      <h2 class="case-title rv" data-i18n="w.title">Building the marketing function of an international certification group, <em>from zero.</em></h2>
+      <div class="case-grid">
+        <dl class="meta rv">
+          <div><dt data-i18n="w.m1">Client</dt><dd data-i18n="w.v1">International testing, inspection and certification group (name under NDA)</dd></div>
+          <div><dt data-i18n="w.m2">Footprint</dt><dd data-i18n="w.v2">Switzerland, EU, T&uuml;rkiye, Gulf, Asia</dd></div>
+          <div><dt data-i18n="w.m3">Role</dt><dd data-i18n="w.v3">Head of marketing (external), sole lead of the function</dd></div>
+          <div><dt data-i18n="w.m4">Scope</dt><dd data-i18n="w.v4">Brand, website, content, paid media, CRM, sales enablement</dd></div>
+          <div><dt data-i18n="w.m5">Since</dt><dd data-i18n="w.v5">August 2026</dd></div>
+        </dl>
+        <div>
+          <p class="case-text rv" data-i18n="w.text">A technical company with strong accreditations and no marketing history: clients came from cold calls and trade shows. In three months I built the whole function: market strategy by product and country, a multilingual website, content production, paid acquisition in 30+ markets, and the systems that hand every enquiry to the right salesperson, with its source.</p>
+        </div>
+      </div>
+      <div class="streams">
+        <div class="stream rv"><div class="no">01</div><h4 data-i18n="s1.t">Market strategy</h4><p data-i18n="s1.d">Demand maps by product and country, competitor mapping per market, a launch sequence approved by leadership.</p></div>
+        <div class="stream rv"><div class="no">02</div><h4 data-i18n="s2.t">Website in 7 languages</h4><p data-i18n="s2.d">220+ service pages localised into six languages, 40+ country landing pages, SEO foundation, mobile performance raised from 75 to 91.</p></div>
+        <div class="stream rv"><div class="no">03</div><h4 data-i18n="s3.t">Paid acquisition</h4><p data-i18n="s3.d">45 search campaigns across 30+ countries, LinkedIn and Meta programmes, and early adoption of ChatGPT Ads.</p></div>
+        <div class="stream rv"><div class="no">04</div><h4 data-i18n="s4.t">Content &amp; brand system</h4><p data-i18n="s4.d">Editorial calendar, brand-locked templates for carousels, covers and video, an approval workflow with leadership.</p></div>
+        <div class="stream rv"><div class="no">05</div><h4 data-i18n="s5.t">Events &amp; webinars</h4><p data-i18n="s5.d">Registration funnel for an industry webinar and a meeting-booking flow for an international trade-show stand.</p></div>
+        <div class="stream rv"><div class="no">06</div><h4 data-i18n="s6.t">Sales enablement</h4><p data-i18n="s6.d">Web enquiries reach the CRM with their source, leadership gets a daily lead digest, and an outreach engine feeds nine sales managers.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block systems" id="systems">
+    <div class="wrap">
+      <div class="head rv">
+        <div class="kicker" data-i18n="sy.kicker">03 · Marketing infrastructure</div>
+        <div>
+          <h2 data-i18n="sy.title">I don&rsquo;t only run marketing. <em>I build the machine it runs on.</em></h2>
+          <p class="intro" data-i18n="sy.intro">Most marketing teams rent their tools and stitch them together by hand. I design and build the infrastructure myself: AI where it saves time, a human decision where it matters.</p>
+        </div>
+      </div>
+
+      <div class="flow rv">
+        <div class="flow-row">
+          <div class="node"><div class="dot">i</div><h5 data-i18n="f1.t">Brand &amp; content</h5><p data-i18n="f1.d">standards, templates, editorial</p></div>
+          <div class="node"><div class="dot">ii</div><h5 data-i18n="f2.t">Channels</h5><p data-i18n="f2.d">website, search, LinkedIn, social, events</p></div>
+          <div class="node"><div class="dot">iii</div><h5 data-i18n="f3.t">Platform</h5><p data-i18n="f3.d">one view of spend, enquiries and content</p></div>
+          <div class="node"><div class="dot">iv</div><h5 data-i18n="f4.t">CRM</h5><p data-i18n="f4.d">every enquiry with its source</p></div>
+          <div class="node"><div class="dot">v</div><h5 data-i18n="f5.t">New business</h5><p data-i18n="f5.d">the right salesperson, within minutes</p></div>
+        </div>
+        <div class="agents-bar"><span class="pulse"></span><b data-i18n="f.ab">AI agents</b><span data-i18n="f.ad">read the data daily · flag anomalies · propose actions · wait for human approval</span></div>
+      </div>
+
+      <div class="cards">
+        <div class="card rv"><div class="tag" data-i18n="c1.k">Workspace</div><h3 data-i18n="c1.t">Marketing platform</h3><p data-i18n="c1.d">A private workspace for leadership and team: executive overview, a dashboard per channel, leads, content approvals, SEO and demand research. Role-based access: each person sees what they need.</p></div>
+        <div class="card rv"><div class="tag" data-i18n="c2.k">AI operations</div><h3 data-i18n="c2.t">Agentic operations</h3><p data-i18n="c2.d">Eight AI agents, one per channel, read the data and propose actions. A validator checks every figure against the source; a coordinator compiles one morning plan. Nothing changes until a person approves, and budgets have hard limits.</p></div>
+        <div class="card rv"><div class="tag" data-i18n="c3.k">New business</div><h3 data-i18n="c3.t">Outreach engine</h3><p data-i18n="c3.d">Target companies sourced from public registries and trade-show exhibitor lists, qualified by AI on a 0 to 100 scale, routed to sales managers by market. Replies are classified; hot leads reach the CRM with notes and phone numbers within minutes.</p></div>
+        <div class="card rv"><div class="tag" data-i18n="c4.k">Production</div><h3 data-i18n="c4.t">Content production line</h3><p data-i18n="c4.d">Brand-locked templates for carousels, covers and articles; video produced in code with synthetic voice and original music; every format from one source, published directly to LinkedIn, Instagram and YouTube.</p></div>
+        <div class="card rv"><div class="tag" data-i18n="c5.k">Intelligence</div><h3 data-i18n="c5.t">Demand &amp; competitors</h3><p data-i18n="c5.d">Search demand measured by product and country before a market is opened; competitors&rsquo; live advertising collected and analysed market by market.</p></div>
+        <div class="card rv"><div class="tag" data-i18n="c6.k">Measurement</div><h3 data-i18n="c6.t">Attribution you can trust</h3><p data-i18n="c6.d">Tag management, analytics and consent set up for European privacy rules; ad identifiers kept without cookies, so each enquiry carries its source all the way to the CRM.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="premium">
+    <div class="wrap">
+      <div class="head rv">
+        <div class="kicker" data-i18n="pr.kicker">04 · Lifestyle &amp; experience</div>
+        <div>
+          <h2 data-i18n="pr.title">Earlier work: brands that sell <em>an experience.</em></h2>
+          <p class="intro" data-i18n="pr.intro">Before industry, I ran performance marketing for experience brands in Paris, where image, taste and trust decide the sale as much as the offer itself.</p>
+        </div>
+      </div>
+      <div class="rows">
+        <div class="row rv"><span class="i">a.</span><span class="n" data-i18n="r3.n">Paint Invaders</span><span class="l" data-i18n="r3.l">Paris</span><span class="w" data-i18n="r3.w">Immersive art studio · campaigns and video content</span><span class="r" data-i18n="r3.r">700+ bookings, 3.7&times; ROAS</span></div>
+        <div class="row rv"><span class="i">b.</span><span class="n" data-i18n="r5.n">Jumpman</span><span class="l" data-i18n="r5.l">Paris</span><span class="w" data-i18n="r5.w">Fitness studio · local acquisition and video creative</span><span class="r" data-i18n="r5.r">Classes filled, A/B-tested</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="background" style="padding-top:0">
+    <div class="wrap bg-grid">
+      <div class="bg-photo rv">
+        <div class="kicker" data-i18n="bg.kicker" style="margin-bottom:26px">05 · Background</div>
+        <div class="frame"><img src="../assets/max-talk.jpg" alt="Maksims Aleksejevs speaking"></div>
+      </div>
+      <dl class="facts rv">
+        <div><dt data-i18n="b1.k">Education</dt><dd><span data-i18n="b1.v">Master in Marketing &amp; Strategy</span><small data-i18n="b1.s">Universit&eacute; Paris Dauphine-PSL, with honours</small></dd></div>
+        <div><dt data-i18n="b2.k">Experience</dt><dd><span data-i18n="b2.v">5 years in marketing and advertising</span><small data-i18n="b2.s">Independent practice since 2023: B2B and premium B2C</small></dd></div>
+        <div><dt data-i18n="b3.k">Certified</dt><dd><span data-i18n="b3.v">Google Ads · Meta</span></dd></div>
+        <div><dt data-i18n="b4.k">Languages</dt><dd><span data-i18n="b4.v">English · French · Russian</span></dd></div>
+        <div><dt data-i18n="b5.k">Based</dt><dd><span data-i18n="b5.v">Paris</span><small data-i18n="b5.s">Working internationally, open to travel</small></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap rv">
+      <div class="kicker" data-i18n="ct.kicker">06 · Contact</div>
+      <h2 data-i18n="ct.title">Let&rsquo;s <em>talk.</em></h2>
+      <p data-i18n="ct.text">Open to senior marketing leadership roles with international companies that care about their brand.</p>
+      <div class="lines">
+        <a href="mailto:info@maxlessi.com">info@maxlessi.com</a>
+        <a href="https://wa.me/33768766473">+33 7 68 76 64 73</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap"><span>&copy; 2026 Maksims Aleksejevs</span><span>Paris</span></div>
+</footer>
+
+<script>
+const FR = {
+  "nav.approach":"Approche","nav.work":"Projets","nav.systems":"Systèmes","nav.background":"Parcours","nav.contact":"Contact",
+  "hero.kicker":"Directeur marketing · Marque, contenu &amp; systèmes de croissance",
+  "hero.title":"Une fonction marketing, <em>construite de bout en bout.</em>",
+  "hero.text":"Je fixe la stratégie et je construis tout ce qui la porte : positionnement, site, contenus, campagnes, et l’infrastructure qui transforme la réputation d’une marque en nouveau business. Basé à Paris, je travaille à l’international.",
+  "hero.cta1":"Projets choisis","hero.cta2":"Contact","hero.cap":"Paris","hero.status":"Ouvert aux postes de direction",
+  "n1":"marchés avec des campagnes actives","n2":"langues, un seul standard de marque","n3":"modules dans la plateforme marketing que j’ai construite","n4":"agents IA, un par canal",
+  "ap.kicker":"01 · Approche",
+  "ap.title":"Un seul standard, de la première impression <em>au contrat signé.</em>",
+  "ap.intro":"Dans les métiers premium et d’expertise, chaque point de contact est la marque : le site, un post LinkedIn, une proposition commerciale, un stand sur un salon. Mon rôle est de les rendre cohérents, et mesurables.",
+  "p1.t":"Positionnement &amp; standards","p1.d":"Positionnement international, ton et règles visuelles, documentés pour que chaque marché, prestataire et collaborateur produise un travail qui ressemble à une seule maison.",
+  "p2.t":"Site, contenus, RP &amp; événements","p2.d":"Site multilingue, calendrier éditorial, réseaux sociaux, vidéo, webinaires et salons, pilotés comme un seul programme et non comme des canaux séparés.",
+  "p3.t":"Infrastructure New Business","p3.d":"Intégration CRM, attribution des sources, prospection, parcours de propositions et de rendez-vous, reporting à la direction : pour que le travail de marque se voie dans le pipeline.",
+  "p4.t":"Leadership &amp; exécution","p4.d":"Je donne la direction et je livre moi-même. Développeurs, designers, agences et équipes commerciales travaillent à partir de briefs clairs, de cycles de validation et de tableaux de bord partagés.",
+  "w.kicker":"02 · Projet choisi · 2026, en cours",
+  "w.title":"Construire la fonction marketing d’un groupe international de certification, <em>à partir de zéro.</em>",
+  "w.m1":"Client","w.v1":"Groupe international d’essais, d’inspection et de certification (nom sous NDA)",
+  "w.m2":"Présence","w.v2":"Suisse, UE, Turquie, Golfe, Asie",
+  "w.m3":"Rôle","w.v3":"Responsable marketing (externe), seul pilote de la fonction",
+  "w.m4":"Périmètre","w.v4":"Marque, site, contenus, publicité, CRM, soutien commercial",
+  "w.m5":"Depuis","w.v5":"août 2026",
+  "w.text":"Une entreprise technique aux accréditations solides, sans historique marketing : les clients venaient de la prospection téléphonique et des salons. En trois mois, j’ai construit toute la fonction : stratégie par produit et par pays, site multilingue, production de contenus, acquisition payante sur plus de 30 marchés, et les systèmes qui transmettent chaque demande au bon commercial, avec sa source.",
+  "s1.t":"Stratégie de marchés","s1.d":"Cartes de la demande par produit et par pays, cartographie des concurrents par marché, séquence de lancement validée par la direction.",
+  "s2.t":"Site en 7 langues","s2.d":"Plus de 220 pages de services traduites en six langues, plus de 40 pages d’atterrissage par pays, socle SEO, performance mobile portée de 75 à 91.",
+  "s3.t":"Acquisition payante","s3.d":"45 campagnes de recherche dans plus de 30 pays, programmes LinkedIn et Meta, et parmi les premiers à lancer des ChatGPT Ads.",
+  "s4.t":"Contenus &amp; système de marque","s4.d":"Calendrier éditorial, gabarits verrouillés à la marque pour carrousels, couvertures et vidéos, circuit de validation avec la direction.",
+  "s5.t":"Événements &amp; webinaires","s5.d":"Parcours d’inscription à un webinaire sectoriel et prise de rendez-vous pour un stand sur un salon international.",
+  "s6.t":"Soutien commercial","s6.d":"Les demandes du site arrivent dans le CRM avec leur source, la direction reçoit une synthèse quotidienne, et un moteur de prospection alimente neuf commerciaux.",
+  "sy.kicker":"03 · Infrastructure marketing",
+  "sy.title":"Je ne fais pas que piloter le marketing. <em>Je construis la machine qui le fait tourner.</em>",
+  "sy.intro":"La plupart des équipes marketing louent leurs outils et les assemblent à la main. Je conçois et je construis l’infrastructure moi-même : l’IA là où elle fait gagner du temps, une décision humaine là où elle compte.",
+  "f1.t":"Marque &amp; contenus","f1.d":"standards, gabarits, éditorial",
+  "f2.t":"Canaux","f2.d":"site, recherche, LinkedIn, réseaux, événements",
+  "f3.t":"Plateforme","f3.d":"dépenses, demandes et contenus réunis",
+  "f4.t":"CRM","f4.d":"chaque demande avec sa source",
+  "f5.t":"Nouveau business","f5.d":"le bon commercial, en quelques minutes",
+  "f.ab":"Agents IA","f.ad":"lisent les données chaque jour · signalent les écarts · proposent des actions · attendent la validation humaine",
+  "c1.k":"Espace de travail","c1.t":"Plateforme marketing","c1.d":"Un espace privé pour la direction et l’équipe : vue d’ensemble pour le dirigeant, un tableau de bord par canal, demandes entrantes, validation des contenus, SEO et étude de la demande. Accès par rôle : chacun voit ce dont il a besoin.",
+  "c2.k":"Opérations IA","c2.t":"Opérations agentiques","c2.d":"Huit agents IA, un par canal, lisent les données et proposent des actions. Un validateur vérifie chaque chiffre à la source ; un coordinateur compose un seul plan du matin. Rien ne change sans validation humaine, et les budgets ont des plafonds stricts.",
+  "c3.k":"Nouveau business","c3.t":"Moteur de prospection","c3.d":"Entreprises cibles issues de registres publics et de listes d’exposants, qualifiées par l’IA sur une échelle de 0 à 100, réparties entre les commerciaux par marché. Les réponses sont classées ; les leads chauds arrivent dans le CRM avec notes et téléphones en quelques minutes.",
+  "c4.k":"Production","c4.t":"Chaîne de production de contenus","c4.d":"Gabarits verrouillés à la marque pour carrousels, couvertures et articles ; vidéos produites en code avec voix de synthèse et musique originale ; tous les formats à partir d’une seule source, publiés directement sur LinkedIn, Instagram et YouTube.",
+  "c5.k":"Veille","c5.t":"Demande &amp; concurrents","c5.d":"La demande de recherche est mesurée par produit et par pays avant d’ouvrir un marché ; la publicité en cours des concurrents est collectée et analysée marché par marché.",
+  "c6.k":"Mesure","c6.t":"Une attribution fiable","c6.d":"Gestion des balises, analytics et consentement configurés selon les règles européennes de confidentialité ; identifiants publicitaires conservés sans cookies, pour que chaque demande garde sa source jusqu’au CRM.",
+  "pr.kicker":"04 · Lifestyle &amp; expérience",
+  "pr.title":"Auparavant : des marques qui vendent <em>une expérience.</em>",
+  "pr.intro":"Avant l’industrie, j’ai piloté le performance marketing de marques d’expérience à Paris, où l’image, le goût et la confiance décident de la vente autant que l’offre elle-même.",
+  "r3.n":"Paint Invaders","r3.l":"Paris","r3.w":"Studio d’art immersif · campagnes et contenus vidéo","r3.r":"700+ réservations, ROAS 3,7",
+  "r5.n":"Jumpman","r5.l":"Paris","r5.w":"Studio de fitness · acquisition locale et créations vidéo","r5.r":"Cours remplis, tests A/B",
+  "bg.kicker":"05 · Parcours",
+  "b1.k":"Formation","b1.v":"Master Marketing &amp; Stratégie","b1.s":"Université Paris Dauphine-PSL, avec mention",
+  "b2.k":"Expérience","b2.v":"5 ans en marketing et publicité","b2.s":"Activité indépendante depuis 2023 : B2B et B2C premium",
+  "b3.k":"Certifications","b3.v":"Google Ads · Meta",
+  "b4.k":"Langues","b4.v":"Anglais · Français · Russe",
+  "b5.k":"Basé à","b5.v":"Paris","b5.s":"Travail à l’international, mobile",
+  "ct.kicker":"06 · Contact","ct.title":"Parlons-<em>en.</em>",
+  "ct.text":"Ouvert aux postes de direction marketing au sein d’entreprises internationales attachées à leur marque."
+};
+const EN = {};
+document.querySelectorAll('[data-i18n]').forEach(el => { EN[el.dataset.i18n] = el.innerHTML; });
+function setLang(l) {
+  const d = l === 'fr' ? FR : EN;
+  document.querySelectorAll('[data-i18n]').forEach(el => { const v = d[el.dataset.i18n]; if (v != null) el.innerHTML = v; });
+  document.documentElement.lang = l;
+  document.querySelectorAll('.lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === l));
+  try { localStorage.setItem('ma-lang', l); } catch (e) {}
+}
+document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+let saved = null; try { saved = localStorage.getItem('ma-lang'); } catch (e) {}
+const q = new URLSearchParams(location.search).get('lang');
+const pick = v => (v === 'fr' || v === 'en') ? v : null;
+setLang(pick(q) || pick(saved) || ((navigator.language || '').startsWith('fr') ? 'fr' : 'en'));
+
+const hdr = document.getElementById('hdr');
+addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 20), { passive: true });
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll('.rv').forEach((el, i) => { el.style.transitionDelay = (i % 4) * 70 + 'ms'; io.observe(el); });
+</script>
+</body>
+</html>
