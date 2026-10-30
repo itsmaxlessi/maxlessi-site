@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Коммерческое предложение для Danem Test &amp; Certificate AG | Max Lessi</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230a1f36'/><text x='50' y='68' font-size='52' font-family='Georgia' font-weight='bold' fill='white' text-anchor='middle'>M</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <style>
+    /* ---- Proposal-specific ---- */
+    .prop-hero { padding: 80px 0 56px; }
+    .prop-meta { display: flex; flex-wrap: wrap; gap: 12px 36px; margin-top: 30px; font-size: .88rem; color: var(--muted); }
+    .prop-meta strong { display: block; color: var(--ink); font-size: .95rem; }
+    .confidential { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 4px 12px; border-radius: 100px; margin-bottom: 22px; }
+
+    .prop-section { padding: 56px 0; border-top: 1px solid var(--line); }
+    .prop-section h2 { margin-bottom: 10px; }
+    .prop-section .lead { color: var(--muted); max-width: 760px; margin-bottom: 34px; }
+
+    .understand-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .understand-card { border: 1px solid var(--line); border-radius: 12px; padding: 22px 24px; background: #fff; }
+    .understand-card h3 { font-size: .98rem; margin-bottom: 6px; font-family: var(--font-sans); font-weight: 700; }
+    .understand-card p { font-size: .92rem; color: var(--ink-soft); }
+    .understand-card a { color: var(--accent); text-decoration: underline; }
+
+    .audit-item { display: grid; grid-template-columns: 92px 1fr; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+    .audit-item:last-child { border-bottom: none; }
+    .sev { align-self: start; text-align: center; font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 5px 0; border-radius: 6px; }
+    .sev-crit { background: #fdecec; color: #b3261e; }
+    .sev-high { background: #fef3e2; color: #9a5b00; }
+    .sev-med  { background: #eef2ff; color: #3949ab; }
+    .audit-item h3 { font-size: 1.02rem; margin-bottom: 5px; }
+    .audit-item p { font-size: .93rem; color: var(--ink-soft); }
+    .audit-item p em { color: var(--muted); font-style: normal; font-size: .87rem; }
+
+    .bench-table { width: 100%; border-collapse: collapse; font-size: .92rem; margin: 10px 0 6px; }
+    .bench-table th, .bench-table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+    .bench-table th { font-size: .78rem; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); }
+    .bench-table td strong { font-family: var(--font-serif); font-size: 1.05rem; }
+    .table-note { font-size: .8rem; color: var(--muted); margin-top: 10px; }
+    .table-scroll { overflow-x: auto; }
+
+    .funnel { background: var(--navy-deep); color: #dbe4f0; border-radius: var(--radius); padding: 34px 36px; margin-top: 30px; }
+    .funnel h3 { color: #fff; margin-bottom: 18px; }
+    .funnel-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: stretch; }
+    .funnel-step { flex: 1 1 150px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); border-radius: 10px; padding: 16px; }
+    .funnel-step strong { display: block; font-family: var(--font-serif); font-size: 1.3rem; color: #fff; }
+    .funnel-step span { font-size: .8rem; color: #8fa6c4; }
+    .funnel-note { font-size: .82rem; color: #8fa6c4; margin-top: 18px; }
+
+    .plan90 { display: grid; gap: 16px; }
+    .plan-week { display: grid; grid-template-columns: 130px 1fr; gap: 20px; border: 1px solid var(--line); border-radius: 12px; padding: 20px 24px; }
+    .plan-week .pw { font-weight: 700; color: var(--accent); font-size: .82rem; text-transform: uppercase; letter-spacing: .08em; padding-top: 3px; }
+    .plan-week h3 { font-size: 1.02rem; margin-bottom: 6px; }
+    .plan-week p { font-size: .92rem; color: var(--ink-soft); }
+
+    .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch; }
+    .price-card { border: 1px solid var(--line); border-radius: var(--radius); padding: 30px 26px; background: #fff; display: flex; flex-direction: column; }
+    .price-card.featured { border: 2px solid var(--accent); position: relative; box-shadow: 0 18px 50px rgba(31,94,255,.1); }
+    .price-card .badge { position: absolute; top: -13px; left: 24px; background: var(--accent); color: #fff; font-size: .7rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; padding: 5px 12px; border-radius: 100px; }
+    .price-card h3 { font-size: 1.15rem; margin-bottom: 4px; }
+    .price-card .pc-for { font-size: .84rem; color: var(--muted); margin-bottom: 18px; }
+    .price-line { font-size: .85rem; color: var(--muted); }
+    .price-line strong { display: block; font-family: var(--font-serif); font-size: 1.55rem; color: var(--ink); }
+    .price-lines { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding: 14px 0 18px; border-bottom: 1px solid var(--line); margin-bottom: 18px; }
+    .price-card ul { list-style: none; display: grid; gap: 9px; font-size: .88rem; color: var(--ink-soft); margin-bottom: 20px; }
+    .price-card ul li { padding-left: 22px; position: relative; }
+    .price-card ul li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+    .price-card ul li.na { color: #b6bcc7; }
+    .price-card ul li.na::before { content: "-"; color: #b6bcc7; }
+    .price-vat { font-size: .82rem; color: var(--ink-soft); margin: -6px 0 16px; }
+    .pc-budget { margin-top: auto; font-size: .82rem; color: var(--muted); background: var(--bg-alt); border-radius: 8px; padding: 12px 14px; }
+    .pricing-foot { margin-top: 26px; font-size: .88rem; color: var(--ink-soft); max-width: 860px; }
+    .pricing-foot li { margin: 6px 0 6px 18px; }
+
+    .geo-grid { display: grid; grid-template-columns: 280px 1fr; gap: 24px; align-items: start; }
+    .geo-list { display: grid; gap: 10px; }
+    .geo-btn { display: flex; justify-content: space-between; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 15px 18px; border: 1px solid var(--line); border-radius: 10px; background: #fff; font-family: inherit; font-size: .95rem; font-weight: 600; color: var(--ink); cursor: pointer; transition: all .15s; }
+    .geo-btn span { font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+    .geo-btn:hover { border-color: var(--accent); }
+    .geo-btn.active { border-color: var(--accent); background: rgba(31,94,255,.06); }
+    .geo-btn.active span { color: var(--accent); }
+    .geo-panels { border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg-alt); padding: 28px 30px; min-height: 250px; }
+    .geo-panel { display: none; }
+    .geo-panel.active { display: block; }
+    .geo-panel h3 { font-size: 1.2rem; margin-bottom: 12px; }
+    .geo-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .geo-chips span { font-size: .76rem; font-weight: 600; padding: 5px 12px; border-radius: 100px; background: #fff; border: 1px solid var(--line); color: var(--ink-soft); }
+    .geo-panel p { font-size: .94rem; color: var(--ink-soft); }
+    .geo-timeline { margin-top: 30px; background: var(--navy-deep); border-radius: var(--radius); padding: 30px 32px; }
+    .geo-timeline h3 { color: #fff; margin-bottom: 20px; }
+    .tl-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+    .tl-step { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); border-radius: 10px; padding: 16px 14px; }
+    .tl-step .tl-when { display: block; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+    .tl-step p { font-size: .82rem; color: #b9c7da; }
+    @media (max-width: 1000px) { .geo-grid { grid-template-columns: 1fr; } .geo-list { grid-template-columns: repeat(2, 1fr); } .tl-row { grid-template-columns: 1fr; } }
+    @media print { .geo-panel { display: block !important; page-break-inside: avoid; margin-bottom: 14px; } .geo-list { display: none; } }
+
+    .payment-terms { margin-top: 34px; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 30px; background: var(--bg-alt); }
+    .payment-terms h3 { font-size: 1.15rem; margin-bottom: 18px; }
+    .pt-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .pt-item strong { display: block; font-size: .82rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+    .pt-item p { font-size: .9rem; color: var(--ink-soft); }
+    @media (max-width: 900px) { .pt-grid { grid-template-columns: 1fr; } }
+
+    .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .why-card { background: var(--bg-alt); border-radius: 12px; padding: 24px; }
+    .why-card h3 { font-size: 1rem; margin-bottom: 8px; font-family: var(--font-sans); font-weight: 700; }
+    .why-card p { font-size: .9rem; color: var(--ink-soft); }
+
+    .next-steps { background: var(--navy-deep); color: #fff; border-radius: var(--radius); padding: 42px 40px; }
+    .next-steps h2 { color: #fff; }
+    .next-steps ol { margin: 22px 0 26px 20px; display: grid; gap: 12px; color: #c6d2e2; font-size: .97rem; }
+    .next-steps .validity { font-size: .84rem; color: #8fa6c4; margin-top: 18px; }
+
+    .print-btn { position: fixed; bottom: 26px; right: 26px; z-index: 90; box-shadow: 0 10px 30px rgba(16,21,29,.25); }
+
+    .table-note a { color: var(--accent); text-decoration: underline; }
+
+    .sources-details { margin-top: 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg-alt); }
+    .sources-details summary { cursor: pointer; list-style: none; padding: 16px 22px; font-weight: 600; font-size: .95rem; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .sources-details summary::-webkit-details-marker { display: none; }
+    .sources-details summary::after { content: "+"; font-size: 1.4rem; font-weight: 400; color: var(--accent); flex-shrink: 0; transition: transform .2s; }
+    .sources-details[open] summary::after { transform: rotate(45deg); }
+    .sources-body { padding: 0 22px 20px; font-size: .92rem; color: var(--ink-soft); }
+    .sources-body h4 { font-family: var(--font-sans); font-size: .95rem; margin: 16px 0 8px; color: var(--ink); }
+    .sources-body p { margin-bottom: 10px; }
+    .sources-body ul { margin: 0 0 12px 20px; display: grid; gap: 6px; }
+    .sources-body a { color: var(--accent); text-decoration: underline; }
+
+    .calc { background: var(--navy); border-radius: var(--radius); padding: 34px 36px; margin-top: 26px; color: #dbe4f0; }
+    .calc h3 { color: #fff; margin-bottom: 6px; }
+    .calc-sub { font-size: .88rem; color: #8fa6c4; margin-bottom: 24px; }
+    .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start; }
+    .calc-field { margin-bottom: 16px; }
+    .calc-field label { display: block; font-size: .82rem; font-weight: 600; color: #b9c7da; margin-bottom: 6px; }
+    .calc-field input, .calc-field select { width: 100%; padding: 12px 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.06); color: #fff; font-family: inherit; font-size: 1rem; }
+    .calc-field select option { color: var(--ink); }
+    .calc-field input:focus, .calc-field select:focus { outline: none; border-color: var(--gold); background: rgba(255,255,255,.1); }
+    .calc-hint { display: block; font-size: .74rem; color: #8fa6c4; margin-top: 5px; }
+    .calc-results { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); border-radius: 12px; padding: 22px 24px; }
+    .calc-res { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.09); font-size: .88rem; color: #b9c7da; }
+    .calc-res strong { font-family: var(--font-serif); font-size: 1.25rem; color: #fff; white-space: nowrap; }
+    .calc-res-main { border-bottom: none; padding-top: 14px; }
+    .calc-res-main span { color: var(--gold); font-weight: 600; }
+    .calc-res-main strong { font-size: 1.9rem; color: var(--gold); }
+    .calc-note { font-size: .8rem; color: #8fa6c4; margin-top: 12px; }
+
+    @media (max-width: 900px) { .calc-grid { grid-template-columns: 1fr; } }
+    @media print { .calc { display: none; } .sources-details { display: none; } }
+
+    @media (max-width: 900px) {
+      .pricing-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .understand-list { grid-template-columns: 1fr; }
+      .plan-week { grid-template-columns: 1fr; gap: 6px; }
+      .audit-item { grid-template-columns: 1fr; gap: 8px; }
+      .sev { width: 110px; }
+    }
+
+    @media print {
+      .site-header, .print-btn, .site-footer .footer-links { display: none !important; }
+      section, .prop-section { padding: 24px 0 !important; }
+      .prop-hero { padding: 10px 0 20px !important; }
+      body { font-size: 12px; }
+      .price-card, .funnel, .next-steps, .audit-item, .plan-week { break-inside: avoid; }
+      .funnel, .next-steps, .geo-timeline, .calc { background: var(--navy-deep) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      a { text-decoration: none; color: inherit; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../b2b/" class="logo">Max<span>Lessi</span><span class="logo-sub">B2B Growth Consulting</span></a>
+    <div class="header-cta">
+      <a href="mailto:info@maxlessi.com" class="btn btn-ghost btn-nav">info@maxlessi.com</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="prop-hero">
+  <div class="container">
+    <span class="confidential">Конфиденциально · Подготовлено для Danem Test &amp; Certificate AG</span>
+    <h1>Система привлечения клиентов на сертификацию ATEX для рынков Азии и Европы</h1>
+    <p class="hero-lede" style="margin-top:20px">Коммерческое предложение: три варианта запуска digital-маркетинга, от компактного старта на двух приоритетных рынках до полной системы генерации спроса на всех рынках вашего присутствия, с прямым выходом на лиц, принимающих решения, в LinkedIn.</p>
+    <div class="prop-meta">
+      <div><strong>Подготовил</strong>Max Lessi · B2B Growth Consulting · Париж</div>
+      <div><strong>Версия</strong>2 · обновлена 20 июля 2026</div>
+      <div><strong>Предложение действительно до</strong>1 августа 2026</div>
+      <div><strong>Контакт</strong>info@maxlessi.com · WhatsApp +33 7 68 76 64 73</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXEC SUMMARY ============ -->
+<section class="prop-section" style="padding-top:40px">
+  <div class="container">
+    <span class="kicker">Резюме</span>
+    <h2>Суть предложения на одной странице</h2>
+    <div class="understand-list" style="margin-top:28px">
+      <div class="understand-card">
+        <h3>Что предлагаю</h3>
+        <p>Запуск управляемой системы лидогенерации по услуге ATEX-сертификации: Google Ads + LinkedIn Ads, посадочные страницы, полный трекинг и прозрачная отчётность. Флагманская часть каждого пакета: аутрич-воронка с прямым выходом на ЛПР (лиц, принимающих решения) в целевых компаниях-производителях, от имени представителя Danem. Три варианта пакета описаны в разделе «Варианты сотрудничества».</p>
+      </div>
+      <div class="understand-card">
+        <h3>Почему прошлый запуск не сработал</h3>
+        <p>Аудит показал: на danem-test.com отсутствует какая-либо аналитика (GA4, GTM, пиксели). Прошлые $1,500 были потрачены без возможности измерять и оптимизировать результат. Первый шаг: устранить это.</p>
+      </div>
+      <div class="understand-card">
+        <h3>Сроки</h3>
+        <p>Кампании в эфире через 4 недели после старта. Первые управляемые данные появляются со 2-й недели запуска, надёжная оценка эффективности: на 2-3-й месяц.</p>
+      </div>
+      <div class="understand-card">
+        <h3>Модель работы</h3>
+        <p>Стратегию, кампании и бюджет веду лично я, без передачи аккаунта junior-специалистам. Продакшн (дизайн, локализация) выполняется через проверенную сеть специалистов под моим контролем. Все аккаунты и активы принадлежат Danem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UNDERSTANDING ============ -->
+<section class="prop-section">
+  <div class="container">
+    <span class="kicker">Понимание задачи</span>
+    <h2>Что я зафиксировал по итогам нашего разговора</h2>
+    <p class="lead">Обновлено по итогам нашего обсуждения 20 июля. Если что-то всё ещё неточно, скажите: предложение будет скорректировано.</p>
+    <div class="understand-list">
+      <div class="understand-card">
+        <h3>Приоритетная услуга: ATEX</h3>
+        <p>Флагманское направление Danem Test: собственная испытательная лаборатория под Ригой, сильнейшая экспертиза команды. Именно на ATEX тестируем связку каналов.</p>
+      </div>
+      <div class="understand-card">
+        <h3>Целевой клиент</h3>
+        <p>Производители взрывозащищённого оборудования из Китая, Индии и других стран за пределами ЕС, которым нужен европейский сертификат, плюс производители в странах европейских филиалов Danem (Германия, Италия, Франция, Швейцария). Ключевой сегмент: средние и новые компании, для которых главный аргумент выбора не цена, а скорость выдачи сертификата.</p>
+      </div>
+      <div class="understand-card">
+        <h3>Каналы</h3>
+        <p>Google Ads и LinkedIn Ads в приоритете. Baidu (Китай) интересен, но реализуется отдельной фазой (анализ и план в разделе «Китай»).</p>
+      </div>
+      <div class="understand-card">
+        <h3>Следующие направления</h3>
+        <p>После подтверждения результата на ATEX переходим к масштабированию: верификация Carbon Footprint (ожидаемый пик спроса в 2027 из-за CBAM) и сертификация Medical Devices (высокомаржинальное направление).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AUDIT ============ -->
+<section class="prop-section">
+  <div class="container">
+    <span class="kicker">Аудит danem-test.com</span>
+    <h2>Что сейчас мешает рекламе окупаться</h2>
+    <p class="lead">Технический разбор сайта с точки зрения готовности к платному трафику. Сам сайт содержательно сильный, структура услуг, отраслевые страницы, новости по регуляторике. Но для рекламы критичны другие вещи:</p>
+
+    <div class="audit-item">
+      <span class="sev sev-crit">Критично</span>
+      <div>
+        <h3>Отсутствует веб-аналитика и трекинг конверсий</h3>
+        <p>На сайте нет Google Analytics 4, Google Tag Manager, конверсионных тегов Google Ads и LinkedIn Insight Tag. Это значит: невозможно узнать, какая реклама привела заявку, и невозможно оптимизировать кампании. <em>Именно поэтому предыдущие $1,500 не дали измеримого результата, система не могла учиться.</em></p>
+      </div>
+    </div>
+    <div class="audit-item">
+      <span class="sev sev-crit">Критично</span>
+      <div>
+        <h3>Нет посадочных страниц под рекламу</h3>
+        <p>Текущие страницы услуг информационные: много навигации, много выходов, нет одного ясного действия. Для платного трафика нужна отдельная посадочная с одним оффером, например, «Получите расчёт стоимости ATEX-сертификации за 48 часов», и формой в один экран.</p>
+      </div>
+    </div>
+    <div class="audit-item">
+      <span class="sev sev-high">Важно</span>
+      <div>
+        <h3>Форма не квалифицирует заявки</h3>
+        <p>Единая форма «Contact us» без полей о типе оборудования, целевых рынках и наличии национальных сертификатов. В результате целевые запросы смешиваются с мусорными, а отдел продаж тратит время на разбор. Квалифицирующая форма отсеет нецелевых ещё до отправки.</p>
+      </div>
+    </div>
+    <div class="audit-item">
+      <span class="sev sev-high">Важно</span>
+      <div>
+        <h3>Нет cookie-баннера и управления согласиями</h3>
+        <p>Для швейцарского органа по сертификации, работающего в ЕС, отсутствие GDPR-консента означает репутационный риск и препятствие для корректного трекинга (Google Consent Mode). Закрывается за один день установкой consent-платформы.</p>
+      </div>
+    </div>
+    <div class="audit-item">
+      <span class="sev sev-med">Среднее</span>
+      <div>
+        <h3>SEO-мета главной страницы не заполнена</h3>
+        <p>Title главной: «Home - Danem Test», meta description отсутствует. Ключевая страница компании никак не «продаёт» себя ни в поиске, ни при шеринге ссылки.</p>
+      </div>
+    </div>
+    <div class="audit-item">
+      <span class="sev sev-med">Среднее</span>
+      <div>
+        <h3>Технические URL на ключевых страницах</h3>
+        <p>Страница ATEX-сертификации, самой важной услуги, живёт на адресе вида <code>/global-explosion-proof-services/6398-2/</code>. «Мусорный» слаг снижает и доверие в выдаче, и Quality Score рекламы, который напрямую влияет на цену клика.</p>
+      </div>
+    </div>
+    <div class="audit-item">
+      <span class="sev sev-med">Среднее</span>
+      <div>
+        <h3>Нет лид-магнита для холодной аудитории</h3>
+        <p>В LinkedIn большинство ЛПР не готовы сразу запрашивать расчёт. Нужен промежуточный шаг, например чек-лист «ATEX certification roadmap for non-EU manufacturers», который собирает контакты и греет аудиторию. Сейчас такого материала нет.</p>
+      </div>
+    </div>
+
+    <p style="margin-top:26px; font-size:.95rem; color:var(--ink-soft)"><strong>Вывод:</strong> проблема не в каналах и не в нише: спрос на ATEX-сертификацию в поиске есть, и он высокоинтентный. Проблема в отсутствии инфраструктуры, которая превращает клики в измеримые заявки. Её построение занимает первые две недели работы в любом из вариантов ниже.</p>
+  </div>
+</section>
+
+<!-- ============ MARKET ============ -->
+<section class="prop-section">
+  <div class="container">
+    <span class="kicker">Оценка рынка</span>
+    <h2>Предварительная экономика каналов</h2>
+    <p class="lead">Ориентиры по открытым бенчмаркам 2026 года для B2B-услуг и промышленного сектора. Точные цифры по нише ATEX появятся после первых 4-6 недель открутки, это предварительная оценка.</p>
+
+    <div class="table-scroll">
+      <table class="bench-table">
+        <tr><th>Канал</th><th>Цена клика (CPC)</th><th>Конверсия посадочной</th><th>Цена заявки (CPL)</th><th>Комментарий</th></tr>
+        <tr>
+          <td><strong>Google Ads</strong> (Search)</td>
+          <td>€4-7</td>
+          <td>4-6%</td>
+          <td>€70-120</td>
+          <td>Высокий интент: «atex certification cost», «atex notified body», «iecex certification» ищут те, кому уже нужно</td>
+        </tr>
+        <tr>
+          <td><strong>LinkedIn Ads</strong></td>
+          <td>€4.5-7.5</td>
+          <td>2.5-6%</td>
+          <td>€60-160</td>
+          <td>Промышленный сектор, один из самых недооценённых на площадке: аудитория точная, конкуренция низкая</td>
+        </tr>
+      </table>
+    </div>
+    <p class="table-note">Источники: сводные бенчмарки <a href="https://www.wordstream.com/blog/2026-google-ads-benchmarks" target="_blank" rel="noopener">WordStream / LocaliQ</a>, <a href="https://www.metadataone.com/blog/linkedin-ads-benchmarks-2026" target="_blank" rel="noopener">MetadataONE</a>, <a href="https://www.theb2bhouse.com/linkedin-ad-benchmarks/" target="_blank" rel="noopener">The B2B House</a>, <a href="https://www.stackmatix.com/blog/linkedin-ads-cost-per-lead-benchmarks" target="_blank" rel="noopener">Stackmatix</a> за 2025-2026 гг. по категориям B2B Services и Manufacturing/Industrial.</p>
+
+    <details class="sources-details">
+      <summary>Как получена каждая цифра таблицы: подробное объяснение</summary>
+      <div class="sources-body">
+        <h4>Google Ads</h4>
+        <p>База: отчёт <a href="https://www.wordstream.com/blog/2026-google-ads-benchmarks" target="_blank" rel="noopener">WordStream / LocaliQ Google Ads Benchmarks 2026</a>, самый цитируемый бенчмарк в индустрии, построенный на данных тысяч реальных рекламных аккаунтов. Точные цифры категории Business Services: CPC $5.87 (среднее по всем отраслям $5.42), конверсия 4.85%, цена лида $93.69.</p>
+        <ul>
+          <li><strong>CPC €4-7:</strong> средние $5.42-5.87, пересчитанные в евро и растянутые в вилку, потому что среднее по категории не равно цифре конкретной ниши.</li>
+          <li><strong>Конверсия 4-6%:</strong> база 4.85%; верх диапазона отражает то, что выделенная посадочная с одним оффером конвертирует лучше обычного сайта.</li>
+          <li><strong>CPL €70-120:</strong> база $93.69 с вилкой в обе стороны.</li>
+        </ul>
+        <h4>LinkedIn Ads</h4>
+        <p>Три источника, потому что разброс данных по площадке больше:</p>
+        <ul>
+          <li><a href="https://www.metadataone.com/blog/linkedin-ads-benchmarks-2026" target="_blank" rel="noopener">MetadataONE</a>: медианный CPC для Manufacturing/Industrial $5.75 с вилкой $4.50-7.50 (отсюда CPC €4.5-7.5 напрямую), CPL $90-160.</li>
+          <li><a href="https://www.theb2bhouse.com/linkedin-ad-benchmarks/" target="_blank" rel="noopener">The B2B House</a>: средний CPC $5.58, Manufacturing CPL $100, конверсия 5-15% (данные из LinkedIn forecasting tool и кампаний для Fortune 500).</li>
+          <li><a href="https://www.stackmatix.com/blog/linkedin-ads-cost-per-lead-benchmarks" target="_blank" rel="noopener">Stackmatix</a>: Manufacturing около $50 за лид, отсюда нижняя граница CPL €60-160.</li>
+        </ul>
+        <p>Тезис «промышленный сектор недооценён» тоже из этих отчётов: за эту аудиторию мало кто конкурирует, поэтому CPC в 2-3 раза ниже, чем в SaaS и финансах.</p>
+        <h4>Оговорки</h4>
+        <ul>
+          <li>Публичных бенчмарков по нише «ATEX certification» не существует, ниша слишком узкая. Поэтому в таблице диапазоны ближайших категорий, а точные цифры даст только открутка.</li>
+          <li>Данные в основном по рынкам США и Европы в долларах; пересчёт в евро округлённый.</li>
+          <li>Таргетинг на Китай и Индию обычно дешевле этих цифр, так что диапазоны консервативны.</li>
+        </ul>
+      </div>
+    </details>
+
+    <div class="funnel">
+      <h3>Что это означает в заявках: сценарий для бюджета €2,500/мес (Google + LinkedIn)</h3>
+      <div class="funnel-row">
+        <div class="funnel-step"><strong>~450-550</strong><span>целевых кликов в месяц</span></div>
+        <div class="funnel-step"><strong>~18-30</strong><span>заявок с посадочных</span></div>
+        <div class="funnel-step"><strong>~10-18</strong><span>квалифицированных запросов (после фильтра формы)</span></div>
+        <div class="funnel-step"><strong>1-2</strong><span>контракта при конверсии продаж 5-10%*</span></div>
+      </div>
+      <p class="funnel-note">* Диапазон уточним вместе. Для точного расчёта потребуются три цифры с вашей стороны: целевое число контрактов в месяц, средний чек проекта ATEX-сертификации и доля запросов, которые сейчас доходят до контракта. Калькулятор в разделе «Окупаемость» превращает их в расчёт в реальном времени.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============ NANDO ============ -->
+<section class="prop-section">
+  <div class="container">
+    <span class="kicker">Инсайт с обсуждения</span>
+    <h2>Реестр NANDO: перехватываем тех, кто уже выбирает орган</h2>
+    <p class="lead">Вы показали, как клиенты находят вас сегодня: заходят в официальный реестр аккредитованных органов NANDO, фильтруют по стране и директиве, переходят на сайт и отправляют запрос. Это самый горячий поток из возможных, и его можно системно усиливать:</p>
+    <div class="understand-list">
+      <div class="understand-card">
+        <h3>Ретаргетинг: ни один визит не теряется</h3>
+        <p>Каждый посетитель danem-test.com, из какого бы источника он ни пришёл (реестр NANDO, поиск, реклама, аутрич), попадает в аудитории Google и LinkedIn и дальше «дожимается» объявлениями. Тег ретаргетинга ставится в первую неделю вместе с трекингом.</p>
+      </div>
+      <div class="understand-card">
+        <h3>Страницы, готовые к переходу из реестра</h3>
+        <p>Сейчас при переходе и шеринге виден заголовок «Home - Danem Test». Переписываем заголовки и мета-описания так, чтобы человек из NANDO сразу видел главное: аккредитованный орган, ATEX, сроки выдачи.</p>
+      </div>
+      <div class="understand-card">
+        <h3>Скорость как стержень объявлений</h3>
+        <p>Вы сформулировали это точно: крупные органы бюрократичны, у них очереди на испытания и выпуск документов, а средним и новым производителям нужен быстрый выход на рынок. «Сертификация без очереди» становится главным оффером объявлений и посадочной страницы.</p>
+      </div>
+      <div class="understand-card">
+        <h3>Аккредитация как доказательство</h3>
+        <p>В объявлениях и на посадочной: статус нотифицированного органа, ссылка на запись в NANDO, собственная испытательная лаборатория. Для рынка сертификации это доказательство доверия номер один, отсекающее конкурентов, которые «печатают сертификаты».</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OUTREACH ============ -->
+<section class="prop-section">
+  <div class="container">
+    <span class="kicker">Прямой выход на ЛПР</span>
+    <h2>LinkedIn-аутрич: главный рычаг для вашей ниши</h2>
+    <p class="lead">Реклама достаёт только тех, кто уже ищет орган по сертификации. Но ваша аудитория конечна и известна поимённо: производителей Ex-оборудования можно собрать в список из открытых источников и выходить на их ЛПР напрямую, от имени представителя Danem Test. Для сделок с высоким чеком это самый недооценённый канал, поэтому аутрич-воронка входит во все три варианта сотрудничества как флагманская часть системы: с ростом пакета растёт объём базы, число цепочек и каналы дожима.</p>
+
+    <div class="plan90">
+      <div class="plan-week">
+        <span class="pw">Шаг 1</span>
+        <div>
+          <h3>База целевых компаний из открытых источников</h3>
+          <p>Реестры национальных Ex-сертификатов (CCC Ex в Китае, PESO в Индии), списки экспонентов профильных выставок (ADIPEC, где вы сами выставляетесь в ноябре, Hannover Messe, Middle East Energy), каталоги производителей Ex-оборудования. Это компании, у которых уже есть национальный сертификат, но нет европейского: ровно ваш клиент.</p>
+        </div>
+      </div>
+      <div class="plan-week">
+        <span class="pw">Шаг 2</span>
+        <div>
+          <h3>Поиск ЛПР через Sales Navigator</h3>
+          <p>В каждой компании находим 1-2 нужных человека: export manager, QA/certification manager, генеральный директор. База обогащается должностями, рынками сбыта и типом продукции для персонализации.</p>
+        </div>
+      </div>
+      <div class="plan-week">
+        <span class="pw">Шаг 3</span>
+        <div>
+          <h3>Автоматизированная цепочка касаний</h3>
+          <p>Связка инструментов автоматизации ведёт последовательность от имени выделенного аккаунта представителя Danem: просмотр профиля → приглашение → приветственное сообщение с пользой для адресата, а не продажей → два follow-up с кейсом и предложением расчёта стоимости → перевод разговора в почту.</p>
+        </div>
+      </div>
+      <div class="plan-week">
+        <span class="pw">Шаг 4</span>
+        <div>
+          <h3>Лимиты безопасности аккаунта</h3>
+          <p>Работа с выделенного рабочего профиля BD-сотрудника Danem с прогревом 2 недели и консервативными лимитами (20-25 приглашений в день, человекоподобные паттерны активности).</p>
+        </div>
+      </div>
+      <div class="plan-week">
+        <span class="pw">Шаг 5</span>
+        <div>
+          <h3>Обработка ответов</h3>
+          <p>Ответы приходят живому человеку: вашему BD-сотруднику (я готовлю шаблоны и сценарии) или мне с передачей вам тёплых диалогов. Реалистичные ориентиры для ниши: 25-40% принятых приглашений, 10-20% ответов на цепочку.</p>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:24px; font-size:.95rem; color:var(--ink-soft)"><strong>Почему это работает вместе с рекламой, а не вместо неё:</strong> реклама собирает горячий спрос и прогревает ретаргетингом тех, кого коснулся аутрич. Аутрич добирает те 90% целевых компаний, которые ещё не начали искать. Данные из обоих каналов стекаются в один дашборд.</p>
+  </div>
+</section>
+
+<!-- ============ 90 DAYS ============ -->
+<section class="prop-section">
+  <div class="container">
+    <span class="kicker">План</span>
+    <h2>Первые 90 дней: от нуля до управляемого потока</h2>
+    <div class="plan90" style="margin-top:30px">
+      <div class="plan-week">
+        <span class="pw">Недели 1-2</span>
+        <div>
+          <h3>Фундамент (устранение проблем из аудита)</h3>
+          <p>GA4 + GTM + консент-баннер + конверсионный трекинг Google Ads и LinkedIn Insight Tag. Посадочная страница ATEX на английском с оффером «Расчёт стоимости за 48 часов» и квалифицирующей формой. Семантика и минус-слова, структура кампаний, согласование с вами.</p>
+        </div>
+      </div>
+      <div class="plan-week">
+        <span class="pw">Недели 3-4</span>
+        <div>
+          <h3>Запуск Google Ads + подготовка аутрича</h3>
+          <p>Search-кампании по ATEX/IECEx-запросам с раздельным гео-таргетингом по рынкам выбранного пакета: от 2 рынков в Варианте 1 (рекомендация: Индия и Германия) до 6 в Варианте 3. Детальный план по каждой стране в разделе «География». Ежедневный контроль в окно запуска, быстрая чистка нецелевых запросов. Параллельно: сбор базы целевых компаний из реестров и выставок, прогрев аккаунта представителя Danem.</p>
+        </div>
+      </div>
+      <div class="plan-week">
+        <span class="pw">Недели 5-8</span>
+        <div>
+          <h3>Запуск аутрич-цепочек + подключение LinkedIn Ads</h3>
+          <p>Аккаунт прогрет, база готова: стартуют первые цепочки на ЛПР (объём по выбранному пакету). В Вариантах 2-3 лид-магнит «ATEX certification roadmap for non-EU manufacturers» работает и в цепочках, и в рекламе, там же добавляются LinkedIn Ads: кампании на ЛПР + ретаргетинг посетителей посадочной, Lead Gen Forms с автодоставкой материала.</p>
+        </div>
+      </div>
+      <div class="plan-week">
+        <span class="pw">Недели 9-12</span>
+        <div>
+          <h3>Оптимизация и план масштабирования</h3>
+          <p>Перераспределение бюджета в пользу работающих связок, A/B посадочной, отчёт по фактической цене квалифицированной заявки. Презентация плана фазы 2: Carbon Footprint / CBAM (к пику 2027) и Medical Devices, подготовка запуска Baidu и WeChat после переоформления китайского юрлица.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHINA ============ -->
+<section class="prop-section">
+  <div class="container">
+    <span class="kicker">Китай</span>
+    <h2>Что показал анализ по Baidu</h2>
+    <p class="lead">Вы упомянули Baidu, поэтому после нашего разговора я разобрал этот вопрос отдельно: изучил требования площадки к иностранным рекламодателям и практику запуска для европейских компаний. Три вывода с источниками:</p>
+
+    <div class="understand-list">
+      <div class="understand-card">
+        <h3>1. Без китайского юрлица только через официального реселлера</h3>
+        <p>Компания без юрлица в Китае открывает рекламный кабинет исключительно через авторизованного агента Baidu. Для верификации требуется пакет из 5 юридических документов с печатью компании и проверка со стороны площадки. Источники: <a href="https://www.chinalegalexperts.com/news/how-to-advertise-on-baidu" target="_blank" rel="noopener">China Legal Experts</a>, <a href="https://appinchina.co/blog/the-complete-guide-to-baidu-search-ads-baidu-ppc/" target="_blank" rel="noopener">AppInChina</a>.</p>
+      </div>
+      <div class="understand-card">
+        <h3>2. Депозит до старта и модерация на китайском</h3>
+        <p>Для иностранных компаний Baidu требует предварительный депозит порядка RMB 6,600-7,000 (примерно €850-900) ещё до первого показа рекламы, плюс модерацию всех материалов на китайском языке. Источники: <a href="https://marketingtochina.com/guide-to-on-baidu-ppc-for-foreign-businesses/" target="_blank" rel="noopener">Marketing to China</a>, <a href="https://www.ddsmediaservices.com/-blog-baidu-ads-requirements-in-2025" target="_blank" rel="noopener">DDS Media Services</a>.</p>
+      </div>
+      <div class="understand-card">
+        <h3>3. Ваши клиенты-экспортёры доступны и без Baidu</h3>
+        <p>Цель в Китае не вся страна, а экспортёры, и их поведение другое: офисы в Гонконге, где Google открыт, работа через VPN, и главное, активность в LinkedIn, без которого невозможна работа с западными клиентами. У LinkedIn около 58 млн зарегистрированных пользователей из Китая, и после закрытия локальной версии платформой продолжают пользоваться именно международно-ориентированные специалисты. Источники: <a href="https://www.businessofapps.com/data/linkedin-statistics/" target="_blank" rel="noopener">Business of Apps</a>, <a href="https://www.statista.com/chart/16265/linkedin-country-members/" target="_blank" rel="noopener">Statista</a>.</p>
+      </div>
+      <div class="understand-card">
+        <h3>Вывод и план с учётом вашей структуры</h3>
+        <p>Вы подтвердили: шанхайский офис пока оформлен на Sercons, переоформление на Danem в процессе. Пока юрлицо не переоформлено, прямой путь в Baidu недоступен. Стандартные каналы для Китая (Google на Гонконг, LinkedIn-аутрич по реестру CCC Ex) готовы к запуску, но стартуем сознательно не с него: сначала система тестируется на Индии и Германии, затем подключается Китай. Вы также верно отметили: новые производители, только выходящие на Европу, этими каналами не пользуются, им нужны китайский сайт, местные почты и Baidu/WeChat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDIA ============ -->
+<section class="prop-section">
+  <div class="container">
+    <span class="kicker">Индия</span>
+    <h2>По Индии барьеров нет: рынок покрывается фазой 1 с первого дня</h2>
+    <p class="lead">В отличие от Китая, Индия не требует ни специальных площадок, ни отдельной фазы. Более того, по соотношению стоимости и потенциала это, вероятно, самый выгодный из ваших рынков:</p>
+
+    <div class="understand-list">
+      <div class="understand-card">
+        <h3>Google доминирует, барьеров нет</h3>
+        <p>В Индии на Google приходится порядка 95% поискового трафика: никаких файрволов, локальных юрлиц и депозитов. Стандартные Search-кампании работают с первого дня, а стоимость клика заметно ниже европейской, что снижает цену заявки. Источник: <a href="https://gs.statcounter.com/search-engine-market-share/all/india" target="_blank" rel="noopener">StatCounter</a>.</p>
+      </div>
+      <div class="understand-card">
+        <h3>LinkedIn: второй рынок платформы в мире</h3>
+        <p>В Индии около 161 млн пользователей LinkedIn, больше только в США. Деловой язык индийского экспорта английский, поэтому и реклама, и аутрич-цепочки работают без локализации. Источник: <a href="https://www.businessofapps.com/data/linkedin-statistics/" target="_blank" rel="noopener">Business of Apps</a>.</p>
+      </div>
+      <div class="understand-card">
+        <h3>Готовая база для аутрича</h3>
+        <p>Производители взрывозащищённого оборудования в Индии проходят национальную сертификацию PESO: это публичный след, по которому собирается точная база компаний с действующими сертификатами, но без европейского допуска. Ровно профиль вашего клиента.</p>
+      </div>
+      <div class="understand-card">
+        <h3>Ваш офис в Индии усиливает конверсию</h3>
+        <p>У Danem Test есть представительство в Индии: в объявлениях и цепочках это сильный аргумент доверия (локальная поддержка, часовой пояс, переговоры без посредников). Предлагаю сделать Индию одним из первых сегментов и в рекламе, и в аутриче.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GEO PLAN ============ -->
+<section class="prop-section">
+  <div class="container">
+    <span class="kicker">География</span>
+    <h2>Медиаплан по рынкам: с чего начинаем и почему</h2>
+    <p class="lead">Каждая страна получает отдельную кампанию со своим бюджетом: стоимость клика на рынках отличается в разы, и в общей кампании дешёвый трафик съедает показы дорогих, но ценных рынков. Выберите рынок, чтобы увидеть план по нему. Приоритеты обновлены по итогам нашего обсуждения: Индия и Германия в первой волне, Китай и остальная европейская группа следом, ОАЭ вторым приоритетом. Количество одновременно активных рынков зависит от пакета: 2 в Варианте 1, до 4 в Варианте 2, до 6 в Варианте 3; доли бюджета ниже указаны для полного сценария, в младших пакетах бюджет перераспределяется между активными рынками. Приоритеты финально согласуем с вами.</p>
+
+    <div class="geo-grid">
+      <div class="geo-list" id="geoList">
+        <button class="geo-btn active" data-geo="in">🇮🇳 Индия <span>Приоритет 1</span></button>
+        <button class="geo-btn" data-geo="de">🇩🇪 Германия <span>Приоритет 1</span></button>
+        <button class="geo-btn" data-geo="cn">🇨🇳 Китай <span>Очередь</span></button>
+        <button class="geo-btn" data-geo="eu">🇮🇹🇫🇷🇨🇭 Италия · Франция · Швейцария <span>Очередь</span></button>
+        <button class="geo-btn" data-geo="ae">🇦🇪 ОАЭ <span>Приоритет 2</span></button>
+      </div>
+      <div class="geo-panels">
+        <div class="geo-panel active" data-geo="in">
+          <h3>🇮🇳 Индия · Приоритет 1</h3>
+          <div class="geo-chips"><span>Старт: недели 3-4</span><span>~25% стартового бюджета</span><span>Google + LinkedIn + аутрич</span></div>
+          <p>Вы подтвердили: основные запросы уже идут из Индии. Лучший рынок по соотношению цены и потенциала: у Google порядка 95% поиска, клик в 2-3 раза дешевле европейского, в LinkedIn около 161 млн пользователей, весь экспортный бизнес на английском. Чек здесь выше среднего (от €5,000, обязательные испытания), что улучшает окупаемость. База для аутрича собирается по реестру PESO, офис Danem Test в Индии усиливает доверие. Первый сегмент аутрича начинается именно здесь.</p>
+        </div>
+        <div class="geo-panel" data-geo="de">
+          <h3>🇩🇪 Германия · Приоритет 1</h3>
+          <div class="geo-chips"><span>Старт: недели 3-4</span><span>~22% стартового бюджета</span><span>Google + LinkedIn + ретаргетинг</span></div>
+          <p>Самая производящая страна Европы (вы назвали её первой) и филиал Danem Test. Конкуренция здесь выше и CPC по верхней границе вилки, но работают два рычага, которых нет у «большой сертификации»: ретаргетинг (в том числе визитов из реестра NANDO) и главный оффер для средних и новых производителей: скорость против очередей крупных органов. Стартовая страна европейской группы.</p>
+        </div>
+        <div class="geo-panel" data-geo="cn">
+          <h3>🇨🇳 Китай · Очередь</h3>
+          <div class="geo-chips"><span>Старт: после теста Индии и Германии</span><span>Доля: определим при подключении</span><span>Google (Гонконг) + аутрич</span></div>
+          <p>В первой волне по Китаю сознательно не запускаем ничего: сначала система доказывает себя на Индии и Германии, где отработаются посадочная, семантика и цепочки. При подключении Китай пойдёт через Google (Гонконг, VPN-трафик экспортёров) и аутрич по базе из реестра CCC Ex, где активны export-менеджеры заводов. Новые производители, только выходящие на Европу, этими каналами не пользуются: их добираем в фазе 2 (Baidu, WeChat, китайская посадочная) после завершения переоформления вашего юрлица с Sercons на Danem.</p>
+        </div>
+        <div class="geo-panel" data-geo="eu">
+          <h3>🇮🇹🇫🇷🇨🇭 Италия · Франция · Швейцария · Очередь за Германией</h3>
+          <div class="geo-chips"><span>Старт: месяц 2-3 (Вариант 3: с месяца 1)</span><span>Доля: по данным Германии</span><span>Google + LinkedIn + ретаргетинг</span></div>
+          <p>Страны европейских филиалов Danem Test. Подключаются после того, как Германия даст первые данные по цене заявки: те же связки (поиск, ретаргетинг, оффер скорости), но с локальными акцентами посадочных. В Варианте 3 европейская группа может стартовать параллельно с Германией.</p>
+        </div>
+        <div class="geo-panel" data-geo="ae">
+          <h3>🇦🇪 ОАЭ · Приоритет 2</h3>
+          <div class="geo-chips"><span>Старт: месяц 2-3 (Вариант 3: с месяца 1)</span><span>~10% бюджета</span><span>Google + LinkedIn</span></div>
+          <p>Вы подтвердили: запросы из Дубая уже приходили, у Danem Test там представительство. Аудитория: трейдеры и подрядчики нефтегаза, закупающие оборудование под проекты с ATEX-требованиями. Всё на английском, хорошая стоимость клика. Остаток бюджета идёт на ретаргетинг всех рынков и тесты.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="geo-timeline">
+      <h3>Таймлайн активации рынков</h3>
+      <div class="tl-row">
+        <div class="tl-step"><span class="tl-when">Недели 1-2</span><p>Фундамент для всех рынков: трекинг, посадочная, сегментация баз</p></div>
+        <div class="tl-step"><span class="tl-when">Недели 3-4</span><p>Google: рынки выбранного пакета, приоритет Индия и Германия. Прогрев аутрич-аккаунта</p></div>
+        <div class="tl-step"><span class="tl-when">Недели 5-8</span><p>LinkedIn Ads + аутрич по рынкам пакета, первый сегмент: Индия. Ретаргетинг</p></div>
+        <div class="tl-step"><span class="tl-when">Месяц 2-3</span><p>Расширение: Китай, Италия, Франция, Швейцария, ОАЭ (в Варианте 3 с месяца 1)</p></div>
+        <div class="tl-step"><span class="tl-when">Фаза 2</span><p>Baidu и WeChat (после переоформления юрлица), Carbon Footprint, Medical Devices</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  var list = document.getElementById('geoList');
+  if (!list) return;
+  list.addEventListener('click', function (e) {
+    var btn = e.target.closest('.geo-btn');
+    if (!btn) return;
+    var geo = btn.getAttribute('data-geo');
+    document.querySelectorAll('.geo-btn').forEach(function (b) { b.classList.toggle('active', b === btn); });
+    document.querySelectorAll('.geo-panel').forEach(function (p) { p.classList.toggle('active', p.getAttribute('data-geo') === geo); });
+  });
+})();
+</script>
+
+
+<!-- ============ PRICING ============ -->
+<section class="prop-section">
+  <div class="container">
+    <span class="kicker">Варианты сотрудничества</span>
+    <h2>Три пакета, по глубине системы</h2>
+    <p class="lead">Флагманская часть каждого пакета: аутрич-воронка с прямым выходом на ЛПР целевых производителей (раздел «Прямой выход на ЛПР»). Её не предложит ни одно классическое агентство, и именно она добирает клиентов, которых реклама не видит. С ростом пакета растёт глубина: объём базы, число цепочек и каналы дожима. Во всех вариантах: работа в ваших рекламных аккаунтах, все активы принадлежат Danem, живой дашборд Looker Studio и ежемесячный письменный разбор. Рекламный бюджет платится напрямую площадкам и в стоимость услуг не входит. Как устроена оплата: месяц 1 это разовый setup (настройка и запуск всей системы), ведение начинается со 2-го месяца и оплачивается постоплатой. Это не две суммы одновременно.</p>
+
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Вариант 1 · Google + Аутрич</h3>
+        <p class="pc-for">Старт с минимальным входом: горячий спрос + первая цепочка на ЛПР</p>
+        <div class="price-lines">
+          <div class="price-line">Setup (разово)<strong>€1,490</strong></div>
+          <div class="price-line">Ведение<strong>€1,790<span style="font-size:.85rem">/мес</span></strong></div>
+        </div>
+        <p class="price-vat">Финальные цены, без доплат. TVA non applicable, art. 293 B du CGI.</p>
+        <ul>
+          <li>Трекинг: GA4, GTM, консент, конверсии</li>
+          <li>Посадочная страница ATEX (EN)</li>
+          <li><strong>2 рынка на выбор</strong> (рекомендация: Индия и Германия)</li>
+          <li>Google Ads: настройка и ведение</li>
+          <li>Аутрич-воронка Core: 1 сегмент базы, 1 цепочка, до 200 новых ЛПР в месяц</li>
+          <li>Дашборд + ежемесячный отчёт</li>
+          <li class="na">LinkedIn Ads и ретаргетинг</li>
+          <li class="na">Лид-магнит и креативы</li>
+          <li class="na">Email-дожим и контент</li>
+        </ul>
+        <div class="pc-budget">Рекомендуемый рекламный бюджет: <strong>€2,000-2,500/мес</strong> + Sales Navigator ~€100/мес</div>
+      </div>
+
+      <div class="price-card featured">
+        <span class="badge">Рекомендую</span>
+        <h3>Вариант 2 · Google + LinkedIn + Аутрич Pro</h3>
+        <p class="pc-for">Полная связка каналов, которую вы назвали приоритетной, плюс расширенный аутрич</p>
+        <div class="price-lines">
+          <div class="price-line">Setup (разово)<strong>€2,190</strong></div>
+          <div class="price-line">Ведение<strong>€2,690<span style="font-size:.85rem">/мес</span></strong></div>
+        </div>
+        <p class="price-vat">Финальные цены, без доплат. TVA non applicable, art. 293 B du CGI.</p>
+        <ul>
+          <li>Всё из Варианта 1</li>
+          <li><strong>До 4 рынков</strong> (например, + Италия и ОАЭ)</li>
+          <li>LinkedIn Ads: кампании на ЛПР + ретаргетинг</li>
+          <li>Аутрич-воронка Pro: 2 сегмента базы (по рынкам), A/B-тест цепочек, до 350 новых ЛПР в месяц</li>
+          <li>Лид-магнит (чек-лист ATEX roadmap) в рекламе и в цепочках</li>
+          <li>Lead Gen Forms с автодоставкой</li>
+          <li>2 пакета креативов в месяц</li>
+          <li class="na">Email-дожим и контент-план</li>
+        </ul>
+        <div class="pc-budget">Рекомендуемый рекламный бюджет: <strong>€2,500-5,000/мес</strong> + Sales Navigator ~€100/мес</div>
+      </div>
+
+      <div class="price-card">
+        <h3>Вариант 3 · Demand System</h3>
+        <p class="pc-for">Максимальный охват: реклама + аутрич на пределе безопасной мощности</p>
+        <div class="price-lines">
+          <div class="price-line">Setup (разово)<strong>€2,890</strong></div>
+          <div class="price-line">Ведение<strong>€3,490<span style="font-size:.85rem">/мес</span></strong></div>
+        </div>
+        <p class="price-vat">Финальные цены, без доплат. TVA non applicable, art. 293 B du CGI.</p>
+        <ul>
+          <li>Всё из Варианта 2</li>
+          <li><strong>До 6 рынков параллельно</strong>, включая всю европейскую группу (Германия, Италия, Франция, Швейцария) с первого месяца</li>
+          <li>Аутрич-воронка Max: второй аккаунт представителя, до 500 новых ЛПР в месяц, приоритетные рынки параллельно</li>
+          <li>Email-цепочка дожима заявок и «молчунов» из LinkedIn</li>
+          <li>Контент-план для LinkedIn-страницы Danem (4 поста/мес): цепочки конвертируют лучше, когда профиль и страница живые</li>
+          <li>Приоритетная связь 7 дней в неделю</li>
+        </ul>
+        <div class="pc-budget">Рекомендуемый рекламный бюджет: <strong>€3,000-6,000/мес</strong> + Sales Navigator ~€200/мес (2 аккаунта)</div>
+      </div>
+    </div>
+
+    <ul class="pricing-foot">
+      <li><strong>Без длинных контрактов:</strong> рекомендуемый горизонт оценки: 3 месяца (столько нужно данным), но юридически обязательство помесячное. Не устроит работа: уходите, все активы и аккаунты остаются у вас.</li>
+      <li><strong>Фаза 2 (Carbon Footprint, Medical Devices, Baidu):</strong> оценивается отдельно после подтверждения результатов на ATEX: вы не платите сейчас за то, что ещё не решили масштабировать. Ориентир для планирования бюджета: подключение дополнительного направления заметно дешевле первичного запуска, потому что трекинг, дашборд и вся инфраструктура уже построены. Разовый setup от €840 за направление (посадочная страница, кампании, сегмент аутрич-базы) и от €590/мес к ведению; цены финальные. Точная смета по каждому направлению фиксируется письменно до его старта. По Baidu стоимость зависит от условий партнёра-реселлера, включая депозит площадки, и будет представлена отдельным расчётом.</li>
+    </ul>
+
+    <div class="payment-terms">
+      <h3>Условия оплаты</h3>
+      <div class="pt-grid">
+        <div class="pt-item">
+          <strong>Юридическая форма</strong>
+          <p>Работа ведётся через официально зарегистрированное индивидуальное предпринимательство во Франции: договор, счета (invoice), европейская юрисдикция.</p>
+        </div>
+        <div class="pt-item">
+          <strong>График платежей</strong>
+          <p>Месяц 1: разовый setup, оплачивается перед стартом и покрывает весь этап настройки и запуска. Со 2-го месяца начинается ведение: постоплата по счёту, дата на ваш выбор, середина или конец месяца.</p>
+        </div>
+        <div class="pt-item">
+          <strong>Налоги и прозрачность цен</strong>
+          <p>Все цены в предложении финальные: никаких иных доплат и никакого НДС сверху (TVA non applicable, art. 293 B du CGI). Рекламный бюджет вы оплачиваете напрямую площадкам со своих аккаунтов.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CALC ============ -->
+<section class="prop-section">
+  <div class="container">
+    <span class="kicker">Окупаемость</span>
+    <h2>Посчитайте под вашу цель</h2>
+    <p class="lead">Выберите вариант сотрудничества и подставьте свои цифры: калькулятор покажет необходимый рекламный бюджет, полные инвестиции и возврат.</p>
+
+    <div class="calc" id="calc">
+      <h3>Калькулятор бюджета и окупаемости под вашу цель</h3>
+      <p class="calc-sub">Введите ваши цифры, всё пересчитается мгновенно. Бюджет считается от цели, а не наоборот.</p>
+      <div class="calc-grid">
+        <div class="calc-inputs">
+          <div class="calc-field">
+            <label for="c-goal">Целевых контрактов в месяц</label>
+            <input type="number" id="c-goal" value="2" min="1" step="1">
+          </div>
+          <div class="calc-field">
+            <label for="c-close">Конверсия запросов в контракт, %</label>
+            <input type="number" id="c-close" value="10" min="1" max="100" step="1">
+            <span class="calc-hint">реклама целевая, ориентир 10%; уточнится после запуска</span>
+          </div>
+          <div class="calc-field">
+            <label for="c-check">Средний чек проекта, €</label>
+            <input type="number" id="c-check" value="3000" min="0" step="500">
+            <span class="calc-hint">Китай ~€3k по признанным протоколам, Индия от €5k, Европа выше (испытания)</span>
+          </div>
+          <div class="calc-field">
+            <label for="c-repeat">Заказов от одного клиента за 2 года</label>
+            <input type="number" id="c-repeat" value="2" min="1" step="1">
+            <span class="calc-hint">ресертификация, новые изделия, дополнительные документы</span>
+          </div>
+          <div class="calc-field">
+            <label for="c-cpl">Цена квалифицированной заявки, €</label>
+            <input type="number" id="c-cpl" value="95" min="1" step="5">
+            <span class="calc-hint">по бенчмаркам €70-120, уточнится после запуска</span>
+          </div>
+          <div class="calc-field">
+            <label for="c-fee">Вариант сотрудничества</label>
+            <select id="c-fee">
+              <option value="1790">Вариант 1 · Google + Аутрич (€1,790/мес)</option>
+              <option value="2690" selected>Вариант 2 · Google + LinkedIn + Аутрич Pro (€2,690/мес)</option>
+              <option value="3490">Вариант 3 · Demand System (€3,490/мес)</option>
+            </select>
+            <span class="calc-hint">финальная цена ведения, без доплат</span>
+          </div>
+        </div>
+        <div class="calc-results">
+          <div class="calc-res"><span>Нужно квалифицированных заявок в месяц</span><strong id="r-leads">20</strong></div>
+          <div class="calc-res"><span>Из них через аутрич, без рекламного бюджета</span><strong id="r-out">9</strong></div>
+          <div class="calc-res"><span>Рекламный бюджет (на остальные заявки)</span><strong id="r-budget">€1,045/мес</strong></div>
+          <div class="calc-res"><span>Инвестиции всего (бюджет + ведение)</span><strong id="r-total">€3,729/мес</strong></div>
+          <div class="calc-res"><span>Выручка с новых контрактов</span><strong id="r-revenue">€6,000/мес</strong></div>
+          <div class="calc-res"><span>Выручка с этих же клиентов за 2 года (с повторными заказами)</span><strong id="r-ltv">€12,000</strong></div>
+          <div class="calc-res calc-res-main"><span>Возврат с учётом повторных заказов</span><strong id="r-roi">3.2x</strong></div>
+          <p class="calc-note" id="r-note">Система окупается первым же клиентом с учётом повторных заказов.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  var f = function (id) { return document.getElementById(id); };
+  var fmt = function (n) { return '€' + Math.round(n).toLocaleString('en-US'); };
+  // Параметры вариантов: cap = безопасная мощность (квал. заявок/мес),
+  // out = ожидаемые заявки из аутрича, не тратящие рекламный бюджет
+  var PLANS = {
+    '1790': { cap: 25, out: 5,  name: 'Варианта 1' },
+    '2690': { cap: 45, out: 9,  name: 'Варианта 2' },
+    '3490': { cap: 65, out: 13, name: 'Варианта 3' }
+  };
+  function recalc() {
+    var goal  = parseFloat(f('c-goal').value)  || 0;
+    var close = (parseFloat(f('c-close').value) || 0) / 100;
+    var check = parseFloat(f('c-check').value) || 0;
+    var cpl   = parseFloat(f('c-cpl').value)   || 0;
+    var fee   = parseFloat(f('c-fee').value)   || 0;
+    var repeat = parseFloat(f('c-repeat').value) || 1;
+    var plan  = PLANS[String(f('c-fee').value)] || { cap: 999, out: 0, name: 'пакета' };
+    var leads    = close > 0 ? Math.ceil(goal / close) : 0;
+    var outreach = Math.min(plan.out, leads);
+    var paid     = Math.max(0, leads - outreach);
+    var budget   = paid * cpl;
+    var total    = budget + fee;
+    var revenue  = goal * check;
+    var ltv      = revenue * repeat;
+    var roi      = total > 0 ? ltv / total : 0;
+    f('r-leads').textContent   = leads;
+    f('r-out').textContent     = outreach;
+    f('r-budget').textContent  = fmt(budget) + '/мес';
+    f('r-total').textContent   = fmt(total) + '/мес';
+    f('r-revenue').textContent = fmt(revenue) + '/мес';
+    f('r-ltv').textContent     = fmt(ltv);
+    f('r-roi').textContent     = (Math.round(roi * 10) / 10) + 'x';
+    var note = f('r-note');
+    if (revenue <= 0 || total <= 0) {
+      note.textContent = 'Заполните все поля для расчёта.';
+    } else if (leads > plan.cap) {
+      note.textContent = 'Внимание: цель требует ' + leads + ' заявок в месяц, а безопасная мощность ' + plan.name + ': до ' + plan.cap + '. Выберите вариант старше или скорректируйте цель.';
+    } else if (check * repeat >= total) {
+      note.textContent = 'Система окупается первым же клиентом с учётом повторных заказов. Запас мощности ' + plan.name + ': до ' + plan.cap + ' заявок/мес.';
+    } else if (ltv >= total) {
+      note.textContent = 'Выручка с повторными заказами покрывает все затраты.';
+    } else {
+      note.textContent = 'При этих параметрах затраты выше месячной выручки: обсудим цель и канал.';
+    }
+  }
+  ['c-goal', 'c-close', 'c-check', 'c-repeat', 'c-cpl', 'c-fee'].forEach(function (id) {
+    f(id).addEventListener('input', recalc);
+    f(id).addEventListener('change', recalc);
+  });
+  recalc();
+})();
+</script>
+
+<!-- ============ NEXT STEPS ============ -->
+<section class="prop-section">
+  <div class="container">
+    <div class="next-steps">
+      <span class="kicker">Следующие шаги</span>
+      <h2>Как запускаемся</h2>
+      <ol>
+        <li><strong style="color:#fff">Презентация предложения (30 минут)</strong>: разбираем варианты и считаем окупаемость на калькуляторе под ваши цифры: цель по контрактам, средний чек ATEX-проекта и конверсию запросов в контракты.</li>
+        <li><strong style="color:#fff">Выбор пакета и счёт</strong>: фиксируем вариант письменно; предоплата setup-этапа.</li>
+        <li><strong style="color:#fff">Доступы</strong>: сайт (или создаём посадочную на поддомене, тогда доступ к WordPress не обязателен), Google Ads, LinkedIn Company Page.</li>
+        <li><strong style="color:#fff">Через 4 недели</strong>: запуск кампаний.</li>
+      </ol>
+      <p class="validity">Предложение действительно до 1 августа 2026. Цены зафиксированы на весь срок сотрудничества при старте до этой даты. Я беру ограниченное число клиентов одновременно, слот под Danem Test зарезервирован до этого срока.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="logo">Max<span style="color:var(--accent)">Lessi</span></span>
+    <span>© 2026 Max Lessi | B2B Growth Consulting · Париж · info@maxlessi.com</span>
+  </div>
+  <div class="container footer-legal">Aleksejevs Maksims · Entrepreneur individuel · SIREN 981 014 665 · 51 rue Claude Terrasse, 75016 Paris · Hébergeur: Netlify, Inc.</div>
+</footer>
+
+<button class="btn btn-primary print-btn" onclick="window.print()">⬇ Сохранить в PDF</button>
+
+</body>
+</html>
