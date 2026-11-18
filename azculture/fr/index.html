@@ -326,7 +326,7 @@ h3{font-family:var(--serif);font-weight:600;font-size:30px;line-height:1.1}
 .total small{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2)}
 .total b{font-family:var(--serif);font-size:clamp(60px,6vw,92px);line-height:1;font-weight:500;margin:10px 0 16px}
 .total p{font-size:15px;color:#b9c0c9}
-.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:start}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
 .ttc{font-size:14px;color:var(--muted);margin:-8px 0 16px}
 .plan.best .ttc,.total .ttc{color:#aeb5bf}
 .total .ttc{margin:0 0 14px;font-size:16px}
@@ -350,7 +350,7 @@ h3{font-family:var(--serif);font-weight:600;font-size:30px;line-height:1.1}
 .plan li{position:relative;padding:7px 0 7px 26px;font-size:15px}
 .plan li:before{content:"";position:absolute;left:2px;top:14px;width:12px;height:6px;border-left:2px solid var(--garnet);border-bottom:2px solid var(--garnet);transform:rotate(-45deg)}
 .plan.best li:before{border-color:var(--gold)}
-.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+.notes{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:36px}
 .notes div{border-left:2px solid var(--garnet);padding:4px 0 4px 18px;font-size:14px;color:var(--muted)}
 .notes b{display:block;color:var(--ink);font-size:16px;margin-bottom:2px}
 
@@ -446,7 +446,7 @@ footer a{color:#9aa2ad}
   <div class="wrap">
     <div class="eyebrow">Proposition pour le Centre culturel d'Azerbaïdjan à Paris</div>
     <h1>Comment faire venir les Parisiens <i>au Centre culturel d'Azerbaïdjan</i></h1>
-    <p>Un hôtel particulier et un musée à deux pas de la tour Eiffel. Voici un plan en cinq axes, avec maquettes et tarifs : ce que nous ferons, à quoi cela ressemblera et combien cela coûte.</p>
+    <p>Un bâtiment historique et un musée à deux pas de la tour Eiffel. Voici un plan en cinq axes, avec maquettes et tarifs : ce que nous ferons, à quoi cela ressemblera et combien cela coûte.</p>
     <div class="meta">
       <div><b>1, avenue Charles Floquet</b>Paris, 7e arrondissement</div>
       <div><b>5 axes de travail</b>avec maquettes et tarifs</div>
@@ -460,8 +460,8 @@ footer a{color:#9aa2ad}
   <div class="wrap">
     <div class="rv">
       <span class="tag">Point de départ</span>
-      <h2>Aujourd'hui : 160 abonnés sur quatre réseaux, et un site qui ne s'ouvre pas</h2>
-      <p class="lead">Les pages du Centre ont été ouvertes en octobre 2026. Chiffres au 18 novembre.</p>
+      <h2>Aujourd'hui : 160 abonnés sur quatre réseaux, et un site inaccessible</h2>
+      <p class="lead">Les nouvelles pages du Centre sont apparues à l'automne 2026. Chiffres au 18 novembre 2026.</p>
     </div>
     <div class="today rv" style="margin-top:44px">
       <div class="stat"><b>124</b><span>abonnés sur Instagram</span></div>
@@ -472,8 +472,8 @@ footer a{color:#9aa2ad}
     </div>
     <div class="obs rv">
       <div><b>La vidéo fonctionne déjà</b>Les vidéos font bien plus de vues qu'il n'y a d'abonnés. Ce succès peut être amplifié.</div>
-      <div><b>Le Centre est difficile à trouver</b>Le site paris.culture.az ne s'ouvrait pas le 18 novembre, et nous n'avons pas trouvé de fiche Google Maps.</div>
-      <div><b>Pas d'invitation à venir</b>Ni agenda, ni horaires, ni inscription dans les publications. Le français arrive en second.</div>
+      <div><b>Le Centre est difficile à trouver</b>Le 18 novembre, le site paris.culture.az renvoyait une erreur d'accès. Le Centre n'a pas de fiche Google Maps : la recherche n'affiche que l'Ambassade.</div>
+      <div><b>Pas d'invitation à venir</b>Les dernières publications n'annoncent pas d'événements à venir et ne proposent pas d'inscription. Le français arrive en second.</div>
     </div>
   </div>
 </section>
@@ -581,7 +581,7 @@ footer a{color:#9aa2ad}
     </div>
     <div class="points rv">
       <div class="pt"><span class="k">1</span><b>Les quatre réseaux</b><p>Instagram, Facebook, LinkedIn et X. Chaque publication paraît partout, au format de chaque réseau.</p></div>
-      <div class="pt"><span class="k">2</span><b>4 publications et 2 vidéos par semaine</b><p>Un rythme régulier au lieu de publications rares. La vidéo est ce qui amène le plus vite un nouveau public.</p></div>
+      <div class="pt"><span class="k">2</span><b>De 3 à 5 publications par semaine</b><p>Et de 1 à 3 vidéos. Le volume dépend de la formule choisie, le planning du mois est validé à l'avance.</p></div>
       <div class="pt"><span class="k">3</span><b>Le français en premier</b><p>D'abord le texte pour les Parisiens, puis l'azerbaïdjanais. Les dates officielles sont conservées.</p></div>
       <div class="pt"><span class="k">4</span><b>Plus d'abonnés partout</b><p>Chaque réseau a son public et son objectif de croissance. Les chiffres figurent dans le rapport.</p></div>
     </div>
@@ -612,7 +612,7 @@ footer a{color:#9aa2ad}
         <p class="cap">Modèles de publications</p>
         <div class="posts">
           <div><div class="post" style="background-image:url(../img/carpet.jpg)"><div class="pl"><span>Objet du mois</span><span>01</span></div><div><h6>Tapis du Karabakh</h6><p>XIXe siècle, laine nouée à la main</p></div></div><div class="pname"><b>Objet du musée</b>chaque semaine</div></div>
-          <div><div class="post poster"><div class="frame"></div><div class="pl"><span>Agenda</span><span>Concert</span></div><div><div class="big">12</div><h6>Soirée Mugham</h6><p>Décembre, 19h30</p></div></div><div class="pname"><b>Affiche</b>pour chaque événement</div></div>
+          <div><div class="post poster"><div class="frame"></div><div class="pl"><span>Agenda</span><span>Concert</span></div><div><div class="big">11</div><h6>Soirée Mugham</h6><p>Décembre, 19h30</p></div></div><div class="pname"><b>Affiche</b>pour chaque événement</div></div>
           <div><div class="post" style="background-image:url(../img/kamancha.jpg);background-position:center top"><div class="pl"><span>Portrait</span><span>03</span></div><div><h6>La voix du mugham</h6><p>Maître du kamancha</p></div></div><div class="pname"><b>Portrait</b>artistes et artisans</div></div>
           <div><div class="post fact"><div class="pl"><span>Le saviez-vous</span><span>04</span></div><div class="round"></div><div><h6>Le tapis d'Azerbaïdjan, inscrit à l'UNESCO en 2010</h6></div></div><div class="pname"><b>Le saviez-vous</b>court et visuel</div></div>
         </div>
@@ -648,7 +648,7 @@ footer a{color:#9aa2ad}
         <p class="role">Événements et diaspora. Pages d'événements, invitations.</p>
         <div class="mk fb">
           <div class="mi" style="background-image:url(../img/kamancha.jpg);background-position:center 20%"></div>
-          <div class="mt"><small>VEN. 12 DÉC. À 19:30</small><strong>Soirée Mugham</strong><span>Centre culturel d'Azerbaïdjan, Paris</span><div class="bt"><u>Ça m'intéresse</u><u>J'y vais</u></div></div>
+          <div class="mt"><small>VEN. 11 DÉC. À 19:30</small><strong>Soirée Mugham</strong><span>Centre culturel d'Azerbaïdjan, Paris</span><div class="bt"><u>Ça m'intéresse</u><u>J'y vais</u></div></div>
         </div>
       </div>
       <div class="net">
@@ -684,7 +684,7 @@ footer a{color:#9aa2ad}
     <div class="points rv">
       <div class="pt"><span class="k">1</span><b>Publicité ciblée</b><p>Instagram et Facebook : nous montrons l'événement aux habitants de Paris et d'Île-de-France que cela intéresse.</p></div>
       <div class="pt"><span class="k">2</span><b>Une affiche par événement</b><p>Un visuel dédié, une vidéo d'annonce et une page d'inscription deux semaines avant la date.</p></div>
-      <div class="pt"><span class="k">3</span><b>Agendas de la ville</b><p>Sortir à Paris, Que faire à Paris, programmes du FICEP. Des plateformes gratuites où l'on cherche où sortir.</p></div>
+      <div class="pt"><span class="k">3</span><b>Agendas de la ville</b><p>Sortir à Paris, Que faire à Paris, programmes du FICEP. Là où les Parisiens cherchent où sortir.</p></div>
       <div class="pt"><span class="k">4</span><b>Lettre aux invités</b><p>Chaque invité reste dans la base et reçoit le programme du mois suivant.</p></div>
     </div>
 
@@ -693,14 +693,14 @@ footer a{color:#9aa2ad}
         <p class="cap" style="text-align:center">Publicité en stories</p>
         <div class="phone"><div class="pscreen"><div class="story">
           <div class="who"><i></i><div>azculture_paris<em>Sponsorisé</em></div></div>
-          <div><small>Vendredi 12 décembre, 19h30</small><h6>Soirée Mugham au pied de la tour Eiffel</h6><p>Entrée libre sur inscription.</p><div class="cta">S'inscrire</div></div>
+          <div><small>Vendredi 11 décembre, 19h30</small><h6>Soirée Mugham au pied de la tour Eiffel</h6><p>Entrée libre sur inscription.</p><div class="cta">S'inscrire</div></div>
         </div></div></div>
       </div>
       <div>
         <p class="cap">Publicité dans le fil</p>
         <div class="feed">
           <div class="fh"><i></i><div><b>azculture_paris</b><span>Sponsorisé | Paris</span></div></div>
-          <div class="fi"><div><small>Concert, 12 décembre</small><h6>Le mugham, patrimoine vivant</h6></div></div>
+          <div class="fi"><div><small>Concert, 11 décembre</small><h6>Le mugham, patrimoine vivant</h6></div></div>
           <div class="fc">Entrée libre sur inscription<span>S'inscrire</span></div>
           <div class="ft"><b>azculture_paris</b> Une soirée rare à Paris : les maîtres du mugham jouent dans les salons du Centre culturel d'Azerbaïdjan.</div>
         </div>
@@ -734,13 +734,13 @@ footer a{color:#9aa2ad}
       <div><span class="tag">Partenariats</span><h2>Sept partenariats pour commencer</h2><p class="lead">Nous préparons la proposition, menons les échanges et amenons le partenaire jusqu'à l'événement. Voici par où nous proposons de commencer.</p></div>
     </div>
     <div class="partners rv">
-      <div class="pc wide" style="background-image:url(../img/shebeke.jpg)"><small>Événements de la ville</small><h3>Nuit des musées et Journées européennes du patrimoine</h3><p>Deux rendez-vous par an où tout Paris visite musées et hôtels particuliers. Nous inscrivons le Centre au programme officiel.</p><div class="give"><b>Ce que le Centre gagne :</b> des centaines de nouveaux visiteurs en une soirée et une place dans l'agenda de la ville.</div></div>
+      <div class="pc wide" style="background-image:url(../img/shebeke.jpg)"><small>Événements de la ville</small><h3>Nuit des musées et Journées européennes du patrimoine</h3><p>Deux rendez-vous par an où tout Paris visite musées et monuments. Nous déposons la candidature du Centre au programme officiel.</p><div class="give"><b>Ce que le Centre gagne :</b> de nouveaux visiteurs en une soirée et une place dans l'agenda de la ville.</div></div>
       <div class="pc" style="background-image:url(../img/panorama.jpg)"><small>FICEP</small><h3>Semaine des cultures étrangères</h3><p>Le programme commun des centres culturels de Paris. Nous préparons l'événement du Centre et déposons la candidature.</p><div class="give"><b>Ce que le Centre gagne :</b> le public des autres instituts et la presse.</div></div>
       <div class="pc" style="background-image:url(../img/miniature.jpg);background-position:center 20%"><small>Éducation</small><h3>Universités et écoles</h3><p>Conférences, visites et soirées étudiantes pour l'INALCO, la Sorbonne, les écoles d'art et les lycées du quartier.</p><div class="give"><b>Ce que nous proposons :</b> une visite gratuite avec un médiateur et une salle pour un séminaire.</div></div>
       <div class="pc" style="background-image:url(../img/tea.jpg)"><small>Créateurs et presse</small><h3>Soirée privée pour 15 créateurs</h3><p>Nous invitons des blogueurs et journalistes parisiens spécialisés dans les expositions à un thé et une visite avant l'ouverture.</p><div class="give"><b>Ce que le Centre gagne :</b> des publications le jour même auprès du bon public.</div></div>
       <div class="pc" style="background-image:url(../img/lahic.jpg)"><small>Gastronomie</small><h3>Dîner avec un chef</h3><p>Une soirée de cuisine azerbaïdjanaise avec un restaurant ou un chef parisien : plov, thé, pakhlava, histoire des plats.</p><div class="give"><b>Ce que nous proposons :</b> le lieu, le public et une promotion commune.</div></div>
       <div class="pc" style="background-image:url(../img/building2.jpg)"><small>Voisins</small><h3>Musées et guides du 7e</h3><p>Échange d'affiches avec les musées voisins, intégration du Centre aux parcours des guides et des hôtels du Champ-de-Mars.</p><div class="give"><b>Ce que le Centre gagne :</b> un flux régulier de touristes au pied de la tour.</div></div>
-      <div class="pc wide" style="background-image:url(../img/jewel.jpg)"><small>Entreprises et mécènes</small><h3>Soirées privées dans l'hôtel particulier</h3><p>Réceptions pour les entreprises liées à l'Azerbaïdjan et pour les amis du Centre : visite, concert, dîner.</p><div class="give"><b>Ce que le Centre gagne :</b> des partenaires prêts à soutenir la programmation du Centre.</div></div>
+      <div class="pc wide" style="background-image:url(../img/jewel.jpg)"><small>Entreprises et mécènes</small><h3>Soirées privées dans les salons du Centre</h3><p>Réceptions pour les entreprises liées à l'Azerbaïdjan et pour les amis du Centre : visite, concert, dîner.</p><div class="give"><b>Ce que le Centre gagne :</b> des partenaires prêts à soutenir la programmation du Centre.</div></div>
     </div>
   </div>
 </section>
@@ -831,7 +831,7 @@ footer a{color:#9aa2ad}
         <ul><li>Rapport mensuel sur une page</li><li>Un point par mois</li></ul>
       </div>
       <div class="plan best">
-        <h3>Événements</h3><p class="for">Des contenus et une salle pleine à chaque événement</p>
+        <h3>Événements</h3><p class="for">Contenus et promotion de chaque événement, clés en main</p>
         <div class="pr">3 200 €<span>par mois</span></div>
         <div class="cnt">26 prestations</div>
         <h4>Réseaux sociaux</h4>
@@ -839,7 +839,7 @@ footer a{color:#9aa2ad}
         <h4>Vidéo et photo</h4>
         <ul><li>8 vidéos courtes par mois</li><li>2 tournages sur place par mois</li><li>Reportage photo de chaque événement</li><li>Vidéos également sur TikTok et YouTube Shorts</li></ul>
         <h4>Événements</h4>
-        <ul><li>Jusqu'à 2 événements par mois, clés en main</li><li>Affiche et vidéo d'annonce pour chacun</li><li>Page d'inscription et liste des invités</li><li>E-mails de rappel la veille et le jour même</li><li>Publication sur Sortir à Paris, Que faire à Paris, FICEP</li><li>Lettre aux invités avec le programme du mois</li></ul>
+        <ul><li>Promotion de 2 événements par mois maximum, clés en main</li><li>Affiche et vidéo d'annonce pour chacun</li><li>Page d'inscription et liste des invités</li><li>E-mails de rappel la veille et le jour même</li><li>Publication sur Sortir à Paris, Que faire à Paris, FICEP</li><li>Lettre aux invités avec le programme du mois</li></ul>
         <h4>Publicité ciblée</h4>
         <ul><li>Gestion de la publicité Instagram et Facebook</li><li>Une campagne dédiée par événement</li><li>Audiences : centres d'intérêt, reciblage, profils similaires</li><li>Optimisation hebdomadaire selon les résultats</li></ul>
         <h4>Site et Google</h4>
@@ -856,7 +856,7 @@ footer a{color:#9aa2ad}
         <h4>Vidéo et photo</h4>
         <ul><li>12 vidéos courtes par mois</li><li>4 tournages sur place par mois</li><li>Reportage photo de chaque événement</li><li>Interviews vidéo d'artistes et d'artisans</li><li>Vidéos également sur TikTok et YouTube Shorts</li></ul>
         <h4>Événements</h4>
-        <ul><li>Jusqu'à 4 événements par mois, clés en main</li><li>Affiche et vidéo d'annonce pour chacun</li><li>Page d'inscription et liste des invités</li><li>E-mails de rappel la veille et le jour même</li><li>Publication sur Sortir à Paris, Que faire à Paris, FICEP</li><li>Lettre aux invités deux fois par mois</li><li>Invitations pour les invités d'honneur dans le style du Centre</li></ul>
+        <ul><li>Promotion de 4 événements par mois maximum, clés en main</li><li>Affiche et vidéo d'annonce pour chacun</li><li>Page d'inscription et liste des invités</li><li>E-mails de rappel la veille et le jour même</li><li>Publication sur Sortir à Paris, Que faire à Paris, FICEP</li><li>Lettre aux invités deux fois par mois</li><li>Invitations pour les invités d'honneur dans le style du Centre</li></ul>
         <h4>Publicité ciblée</h4>
         <ul><li>Gestion de la publicité Instagram et Facebook</li><li>Une campagne dédiée par événement</li><li>Une campagne permanente pour gagner des abonnés</li><li>Audiences : centres d'intérêt, reciblage, profils similaires</li><li>Optimisation hebdomadaire selon les résultats</li></ul>
         <h4>Partenariats et presse</h4>
@@ -872,6 +872,7 @@ footer a{color:#9aa2ad}
     <div class="notes rv">
       <div><b>Budget publicitaire en sus</b>Réglé directement à Meta. Nous conseillons 500 à 1 500 € par mois.</div>
       <div><b>Engagement de 3 mois</b>Ensuite reconduction au mois, la formule peut évoluer.</div>
+      <div><b>Domaine, hébergement, lettre d'information</b>Souscrits au nom du Centre et réglés par lui séparément.</div>
       <div><b>Un premier événement</b>Inclus dans le premier mois des formules Événements et Rayonnement.</div>
     </div>
   </div>
