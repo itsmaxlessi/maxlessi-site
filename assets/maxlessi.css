@@ -826,6 +826,19 @@ h2.mx.smh{margin:64px 0 0;font-size:clamp(28px,3.2vw,44px)}
 .nav .lng,.mpanel .lng{font:700 12px/1 var(--f);letter-spacing:.08em;padding:6px 8px;border:1px solid rgba(10,11,16,.2);color:var(--ink,#0A0B10);text-decoration:none}
 .nav .lng:hover{border-color:currentColor}
 .mpanel .lng{align-self:flex-start}
+/* main promise: benefit line under the hero headline, and the "you know AI matters" band */
+.hben{margin:18px 0 0;font:800 clamp(20px,2vw,27px)/1.25 var(--f);letter-spacing:-.02em;color:var(--acc,var(--blue));text-wrap:balance}
+.pband{background:var(--ink);color:#fff}
+.pband .eyebrow{color:#9DA0AE}
+.pband h2.mx{font-size:clamp(32px,4.4vw,64px);max-width:22ch}
+.pband h2.mx span{color:#C9CBD6}
+.pb3{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pb3 li{border:1.5px solid rgba(255,255,255,.18);padding:22px 22px 24px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.pb3 em{font-style:normal;width:40px;height:40px;border-radius:50%;background:var(--acc,var(--blue));color:#fff;font:800 18px/40px var(--f);text-align:center}
+.pb3 b{font:800 21px/1.2 var(--f);letter-spacing:-.02em;margin-top:6px}
+.pb3 p{margin:0;color:#C9CBD6;font-size:16px}
+@media(max-width:860px){.pb3{grid-template-columns:1fr}}
+.pband h2.mx span{display:block}
 
 /* ===== Studios de Pilates page: photo-led, the studio's own planning as the hero object ===== */
 .stp-hg{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(36px,5vw,84px);align-items:center}
