@@ -123,9 +123,6 @@ h3{font-family:var(--serif);font-weight:600;font-size:30px;line-height:1.1}
 .site.ivoire .btns span:first-child{background:var(--garnet);border-color:var(--garnet);color:#fff}
 .site .lbl{font-size:1.35cqw;letter-spacing:.18em;text-transform:uppercase;padding:1.6cqw 4.5cqw;background:#ece8df;color:#6c7079}
 .site.nuit .lbl{background:#080b0f;color:#8f97a3}
-.site .sh{aspect-ratio:16/7.2!important}
-.site .ev .ph{aspect-ratio:1!important}
-.site .stxt h4{margin-bottom:0!important}
 /* mobile site mock */
 .site.m{height:100%;display:flex;flex-direction:column}
 .site.m .sh{aspect-ratio:auto;flex:1.55}
@@ -375,6 +372,65 @@ h3{font-family:var(--serif);font-weight:600;font-size:30px;line-height:1.1}
 .notes div{border-left:2px solid var(--garnet);padding:4px 0 4px 18px;font-size:14px;color:var(--muted)}
 .notes b{display:block;color:var(--ink);font-size:16px;margin-bottom:2px}
 
+
+/* rebuild 18.11 */
+.serp{background:#fff;border-radius:16px;box-shadow:0 30px 70px rgba(0,0,0,.2);padding:20px 22px;font-size:13px;color:#202124}
+.serp .q{border:1px solid #dfe1e5;border-radius:22px;padding:9px 16px;margin-bottom:14px;font-size:14px}
+.serp .imgs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:0 0 6px}
+.serp .imgs i{aspect-ratio:4/3;border-radius:8px;background-size:cover;background-position:center}
+.serp .res{padding:10px 0;border-top:1px solid #eee}
+.serp .res small{display:block;color:#4d5156;font-size:11.5px}
+.serp .res b{display:block;color:#1a0dab;font-weight:500;font-size:16px;line-height:1.3}
+.serp .res span{color:#4d5156;font-size:12.5px}
+.honest{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:56px}
+.honest>div{background:#fff;border-radius:14px;padding:24px 26px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.honest b{display:block;font-family:var(--serif);font-size:27px;margin-bottom:8px}
+.honest ul{list-style:none;padding:0}
+.honest li{position:relative;padding:7px 0 7px 28px;font-size:15px}
+.honest .yes li:before{content:"";position:absolute;left:3px;top:14px;width:12px;height:6px;border-left:2px solid #1e7a4c;border-bottom:2px solid #1e7a4c;transform:rotate(-45deg)}
+.honest .no li:before{content:"×";position:absolute;left:3px;top:3px;font-size:20px;color:var(--garnet);font-weight:600}
+.pricetag{margin-top:44px;font-size:16px;color:var(--muted);display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.pricetag b{font-family:var(--serif);font-size:30px;color:var(--garnet);font-weight:600;white-space:nowrap}
+.room{container-type:inline-size;position:relative;aspect-ratio:16/9;background:linear-gradient(180deg,#2b2621 0,#3b342c 68%,#120f0c 68%,#241f19 100%);overflow:hidden;color:#fff}
+.room .rt{position:absolute;top:4cqw;left:4.5cqw;font-size:1.4cqw;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2)}
+.room .rt b{display:block;font-family:var(--serif);font-size:3.4cqw;letter-spacing:0;text-transform:none;color:#fff;font-weight:500;line-height:1.05;max-width:20cqw}
+.room figure{position:absolute;top:13%;width:17%;margin:0;text-align:center}
+.room figure i{display:block;aspect-ratio:4/5;border:.8cqw solid #b08a4f;outline:.25cqw solid #6d5530;box-shadow:0 2.5cqw 4cqw rgba(0,0,0,.6);background-size:cover;background-position:center}
+.room figcaption{font-size:1.3cqw;margin-top:1.4cqw;color:#e8e2d6;line-height:1.3}
+.room figcaption em{font-style:normal;color:#a89f90}
+.room .arr{position:absolute;top:34%;width:5cqw;height:5cqw;border-radius:50%;background:rgba(255,255,255,.14);display:grid;place-items:center;font-size:3.2cqw;line-height:1}
+.room .arr.l{left:4.5cqw}.room .arr.r{right:3cqw}
+.room .rooms{position:absolute;bottom:3.2cqw;left:0;right:0;display:flex;justify-content:center;gap:1.3cqw;font-size:1.3cqw}
+.room .rooms span{padding:.8cqw 1.8cqw;border:1px solid rgba(255,255,255,.3);border-radius:3cqw;color:#cfc8ba}
+.room .rooms .on{background:var(--gold);border-color:var(--gold);color:#16130d;font-weight:600}
+.player{display:flex;align-items:center;gap:14px;background:var(--night);color:#fff;border-radius:14px;padding:14px 16px;margin-top:24px}
+.player>i{width:54px;height:54px;border-radius:8px;background:url(img/tar.jpg) center/cover;flex:none}
+.player b{display:block;font-size:15px;font-weight:600}
+.player span{font-size:12px;color:#aeb5bf}
+.player .bar2{height:3px;background:#3a4350;border-radius:2px;margin-top:8px;position:relative}
+.player .bar2:after{content:"";position:absolute;left:0;top:0;bottom:0;width:38%;background:var(--gold);border-radius:2px}
+.player>em{width:40px;height:40px;border-radius:50%;background:var(--gold);flex:none;position:relative}
+.player>em:after{content:"";position:absolute;left:16px;top:12px;border-left:12px solid #16130d;border-top:8px solid transparent;border-bottom:8px solid transparent}
+.mk .mi.play:after{content:"";position:absolute;left:50%;top:50%;width:46px;height:46px;margin:-23px;border-radius:50%;background:rgba(0,0,0,.55) linear-gradient(90deg,transparent 19px,#fff 19px,#fff 21px,transparent 21px)}
+.docm{background:#fff;border-radius:14px;box-shadow:0 30px 70px rgba(0,0,0,.18);padding:24px 26px;font-size:13.5px;color:#111}
+.docm small{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--garnet)}
+.docm h6{font-family:var(--serif);font-size:25px;font-weight:600;line-height:1.1;margin:6px 0 16px}
+.docm dl{display:grid;grid-template-columns:auto 1fr;gap:9px 16px;margin:0}
+.docm dt{color:var(--muted)}
+.docm dd{margin:0;font-weight:500}
+.docm .ok{margin-top:18px;border-top:1px solid #eee7da;padding-top:12px;display:flex;justify-content:space-between;color:var(--muted);font-size:12px}
+.docm .ok b{color:#1e7a4c}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;margin-top:48px}
+.pgrid h3{margin-bottom:14px}
+.ptab small{font-family:Inter,sans-serif;font-size:13px;color:var(--muted);font-weight:400;margin-left:6px}
+.ptab .all td{border-bottom:1px solid #eee7da;font-weight:600;font-size:17px}
+.ptab .sum td{border-bottom:0!important;padding-bottom:4px}
+.ptab .all td:first-child{padding-top:4px}
+.ptab .all td:last-child{font-family:var(--serif);font-size:30px;color:var(--garnet)}
+.trio.t2{grid-template-columns:1fr 1fr}.trio.t32{grid-template-columns:1.5fr 1fr}
+@media(max-width:1000px){.trio.t2,.trio.t32{grid-template-columns:1fr}.honest,.pgrid{grid-template-columns:1fr}.obs{grid-template-columns:1fr 1fr!important}}
+@media(max-width:640px){.obs{grid-template-columns:1fr!important}}
+
 /* start */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
 .st{border:1px solid var(--line);border-radius:14px;padding:30px}
@@ -453,10 +509,10 @@ footer a{color:#9aa2ad}
   <a class="brand" href="#top">MAXLESSI</a>
   <button class="burger" id="burger" aria-label="Menu"><i></i><i></i><i></i></button>
   <nav>
-    <a href="#s1">01 Фундамент</a>
-    <a href="#s2">02 Контент</a>
-    <a href="#s3">03 События</a>
-    <a href="#s5">04 Отчётность</a>
+    <a href="#p1">01 Google</a>
+    <a href="#p2">02 Визитка и галерея</a>
+    <a href="#p3">03 Соцсети</a>
+    <a href="#ideas">Идеи</a>
     <a href="#price">Цены</a>
     <a class="lng" href="fr/">FR</a>
   </nav>
@@ -464,136 +520,182 @@ footer a{color:#9aa2ad}
 
 <header class="hero" id="top">
   <div class="wrap">
-    <div class="eyebrow">Предложение для Культурного центра Азербайджана в Париже</div>
-    <h1>Соцсети Культурного центра Азербайджана <i>для парижской публики</i></h1>
-    <p>Ведём Instagram, Facebook, LinkedIn и X и создаём карточку центра в Google. Ниже макеты, состав работ и цены.</p>
+    <div class="eyebrow">Предложение по итогам встречи 18 ноября 2026</div>
+    <h1>Три проекта для Культурного центра Азербайджана <i>в Париже</i></h1>
+    <p>Google, визитка с виртуальной галереей и соцсети. Каждый проект можно заказать отдельно. Ниже: что делаем, как это выглядит и сколько стоит.</p>
     <div class="meta">
       <div><b>1, avenue Charles Floquet</b>Париж, 7-й округ</div>
-      <div><b>4 соцсети и Google</b>с макетами и ценами</div>
+      <div><b>3 проекта</b>цены по каждому отдельно</div>
       <div><b>Maxlessi</b>маркетинг, Париж</div>
     </div>
   </div>
 </header>
 <div class="orn"></div>
 
-<section class="dark" id="today">
+<section class="dark" id="heard">
   <div class="wrap">
-    <div class="rv">
-      <span class="tag">Точка старта</span>
-      <h2>Сегодня: 160 подписчиков на четырёх площадках, карточки в Google нет</h2>
-      <p class="lead">Новые страницы центра появились осенью 2026. Цифры на 18 ноября 2026.</p>
+    <div class="rv"><span class="tag">Что мы услышали</span><h2>Три задачи центра и наш ответ на каждую</h2></div>
+    <div class="steps rv" style="margin-top:44px">
+      <div class="st"><div class="n">01</div><h3>В Google видна культура</h3><p>Когда француз ищет центр или Азербайджан, ему должны встречаться ваши страницы и ваши фотографии.</p></div>
+      <div class="st"><div class="n">02</div><h3>Выставка остаётся навсегда</h3><p>Картины не должны забываться на следующий день после вернисажа. Им нужен дом в интернете.</p></div>
+      <div class="st"><div class="n">03</div><h3>Большой охват в соцсетях</h3><p>Интересные видео для французской публики и первое место среди культурных центров Азербайджана.</p></div>
     </div>
-    <div class="today rv" style="margin-top:44px">
+    <p class="cap rv" style="margin-top:64px">Как мы работаем с учётом ваших правил</p>
+    <div class="obs rv" style="grid-template-columns:repeat(4,1fr);margin-top:0">
+      <div><b>Без паролей</b>Работаем через роли в Google и Meta. Вы выдаёте доступ и отзываете его в один клик.</div>
+      <div><b>Всё оформлено на центр</b>Домен, хостинг, рекламный кабинет и карточка Google принадлежат центру.</div>
+      <div><b>Без открытых анонсов</b>События в центре показываем только после, репортажем. Приглашения остаются вашими.</div>
+      <div><b>Только культура</b>Никакой политики. Каждый материал вы утверждаете до публикации.</div>
+    </div>
+    <p class="cap rv" style="margin-top:64px">Точка старта: соцсети центра на 18 ноября 2026</p>
+    <div class="today rv">
       <div class="stat"><b>124</b><span>подписчика в Instagram</span></div>
       <div class="stat"><b>27</b><span>в Facebook</span></div>
       <div class="stat"><b>4</b><span>в LinkedIn</span></div>
       <div class="stat"><b>5</b><span>в X</span></div>
       <div class="stat hl"><b>4 166</b><span>просмотров у лучшего видео</span></div>
     </div>
-    <div class="obs rv">
-      <div><b>Видео уже работает</b>Ролики собирают в разы больше просмотров, чем есть подписчиков. Это можно масштабировать.</div>
-      <div><b>Центр трудно найти</b>Карточки центра в Google Maps нет: поиск показывает только посольство.</div>
-      <div><b>Нет приглашения прийти</b>В последних публикациях нет анонсов будущих событий. Французский текст идёт вторым.</div>
-    </div>
   </div>
 </section>
 
-<!-- 01 -->
-<section class="light" id="s1">
+<section class="light" id="p1">
   <div class="wrap">
     <div class="head rv">
       <div class="num">01</div>
-      <div><span class="tag">Фундамент</span><h2>Единый стиль, оформление соцсетей и карточка в Google</h2></div>
+      <div><span class="tag">Google</span><h2>Карточка центра и первая страница Google</h2></div>
     </div>
+
     <div class="points rv">
-      <div class="pt"><span class="k">1</span><b>Создаём карточку в Google</b><p>Центр появляется на карте с фото, часами работы, отзывами и кнопкой маршрута.</p></div>
-      <div class="pt"><span class="k">2</span><b>Единый стиль</b><p>Одно оформление для всех соцсетей и афиш. Центр узнают с первого взгляда.</p></div>
-      <div class="pt"><span class="k">3</span><b>Оформляем четыре соцсети</b><p>Аватары, обложки, описания и закреплённые публикации в одном стиле на всех площадках.</p></div>
-      <div class="pt"><span class="k">4</span><b>Шаблоны публикаций</b><p>Готовые макеты для афиш, фактов, портретов и предметов музея. Лента выглядит цельно.</p></div>
+      <div class="pt"><span class="k">1</span><b>Карточка в Google Maps</b><p>Центр появляется на карте Парижа с фотографиями, описанием и ссылками на соцсети. Сейчас поиск показывает только посольство.</p></div>
+      <div class="pt"><span class="k">2</span><b>Обзор французского инфополя</b><p>Отчёт: какие издания и авторы пишут об Азербайджане, на какие темы, и что видно на первой странице и в картинках Google.</p></div>
+      <div class="pt"><span class="k">3</span><b>Своё на первой странице</b><p>По запросам о центре и о культуре первыми идут ваши страницы: карточка, визитка, соцсети, публикации о выставках.</p></div>
+      <div class="pt"><span class="k">4</span><b>Фотографии в поиске</b><p>Добавляем в карточку, визитку и соцсети подписанные фото культуры и природы, чтобы Google показывал их по запросам о центре.</p></div>
     </div>
 
-    <p class="cap rv">Два направления стиля на выбор: обложка профиля и публикации</p>
-    <div class="duo rv">
-      <div>
-        <div class="vlabel"><b>Вариант «Nuit»</b><div class="sw"><i style="background:#0d1218"></i><i style="background:#c9a567"></i><i style="background:#8d2b37"></i><i style="background:#f6f1e7"></i></div></div>
-        <div class="browser">
-          <div class="site nuit">
-            <div class="lbl">Обложка профиля в Facebook, LinkedIn и X</div>
-            <div class="sh" style="background-image:url(img/carpets.jpg)">
-              <div class="snav"><b>Centre culturel d'Azerbaïdjan</b></div>
-              <div class="stxt"><small>Paris 7e, au pied de la tour Eiffel</small><h4>L'Azerbaïdjan<br>au cœur de Paris</h4></div>
-            </div>
-            <div class="lbl">Публикации в ленте</div>
-            <div class="agenda">
-              <div class="ev"><div class="ph" style="background-image:url(img/kamancha.jpg);background-position:center 15%"></div><small>Concert</small><b>Soirée Mugham</b></div>
-              <div class="ev"><div class="ph" style="background-image:url(img/carpet.jpg)"></div><small>Exposition</small><b>Tapis du Karabakh</b></div>
-              <div class="ev"><div class="ph" style="background-image:url(img/silk.jpg)"></div><small>Atelier</small><b>La soie kelaghayi</b></div>
-            </div>
-          </div>
-        </div>
-        <p class="sample">Тёмный, вечерний, золото и гранат. Подчёркивает музей и концерты.</p>
-      </div>
-      <div>
-        <div class="vlabel"><b>Вариант «Ivoire»</b><div class="sw"><i style="background:#f6f1e7"></i><i style="background:#8d2b37"></i><i style="background:#1a1f27"></i><i style="background:#1e5c55"></i></div></div>
-        <div class="browser">
-          <div class="site ivoire">
-            <div class="lbl">Обложка профиля в Facebook, LinkedIn и X</div>
-            <div class="sh">
-              <div class="left">
-                <div class="snav"><b>Centre culturel d'Azerbaïdjan</b></div>
-                <div class="stxt"><small>Musée, concerts, rencontres</small><h4>L'âme de l'Azerbaïdjan,<br>à Paris</h4></div>
-              </div>
-              <div class="pic" style="background-image:url(img/shebeke.jpg)"></div>
-            </div>
-            <div class="lbl">Публикации в ленте</div>
-            <div class="agenda">
-              <div class="ev"><div class="ph" style="background-image:url(img/lahic.jpg)"></div><small>Exposition</small><b>Cuivres de Lahij</b></div>
-              <div class="ev"><div class="ph" style="background-image:url(img/miniature.jpg);background-position:center 20%"></div><small>Conférence</small><b>La miniature</b></div>
-              <div class="ev"><div class="ph" style="background-image:url(img/maiden.jpg)"></div><small>Projection</small><b>Bakou ancienne</b></div>
-            </div>
-          </div>
-        </div>
-        <p class="sample">Светлый, музейный, слоновая кость и гранат. Ближе к стилю парижских галерей.</p>
-      </div>
-    </div>
-
-    <div class="trio rv" style="grid-template-columns:1fr 1fr;gap:60px">
+    <div class="trio t2 rv" style="gap:48px;margin-top:0;align-items:start">
       <div>
         <p class="cap">Карточка в Google Maps</p>
         <div class="gcard">
           <div class="gp"><div style="background-image:url(img/building.jpg)"></div><div style="background-image:url(img/carpets.jpg)"></div></div>
           <div class="gb">
             <h5>Centre culturel d'Azerbaïdjan</h5>
-            <div><span class="stars">★★★★★</span> Centre culturel et musée</div>
+            <div><span class="stars">★★★★★</span> Centre culturel</div>
             <div class="row"><span>Itinéraire</span><span>Enregistrer</span><span>Partager</span><span>Appeler</span></div>
             <p>1 Av. Charles Floquet, 75007 Paris</p>
-            <p><b>Ouvert</b> | Ferme à 18:00</p>
             <p>Musée, expositions, concerts.</p>
           </div>
         </div>
       </div>
       <div>
-        <h3>Центр появляется на карте Парижа</h3>
-        <p class="lead" style="font-size:17px">Человек ищет в Google «что посмотреть у Эйфелевой башни» и видит карточку центра с фото, часами работы и ссылками на соцсети. Сейчас поиск показывает только посольство.</p>
-        <p class="lead" style="font-size:17px">Карточку ведём каждый месяц: новые фото, новости о событиях, ответы на отзывы.</p>
-        <p class="sample">Все экраны здесь показывают пример оформления. Названия событий условные.</p>
+        <p class="cap">Первая страница по запросу о центре</p>
+        <div class="serp">
+          <div class="q">centre culturel d'azerbaïdjan paris</div>
+          <div class="imgs"><i style="background-image:url(img/carpet.jpg)"></i><i style="background-image:url(img/shebeke.jpg)"></i><i style="background-image:url(img/silk.jpg)"></i><i style="background-image:url(img/maiden.jpg)"></i></div>
+          <div class="res"><small>azculture.fr</small><b>Centre culturel d'Azerbaïdjan à Paris</b><span>Galerie virtuelle, musique, histoire du Centre.</span></div>
+          <div class="res"><small>instagram.com › azculture_paris</small><b>Centre culturel d'Azerbaïdjan (@azculture_paris)</b><span>Vidéos, objets du musée, expositions.</span></div>
+          <div class="res"><small>facebook.com › azcultureparis</small><b>Centre culturel d'Azerbaïdjan | Paris</b><span>Reportages et vidéos du Centre.</span></div>
+          <div class="res"><small>linkedin.com › company › azcultureparis</small><b>Centre culturel d'Azerbaïdjan | LinkedIn</b><span>Actualités culturelles et coopérations.</span></div>
+        </div>
       </div>
     </div>
+    <div class="honest rv">
+      <div class="yes"><b>Что возможно</b><ul>
+        <li>Занять своими страницами первую страницу по запросам о центре</li>
+        <li>Вывести страницы центра по запросам о культуре: ковры, мугам, выставки в Париже</li>
+        <li>Знать, кто и что пишет: сводка раз в месяц</li>
+      </ul></div>
+      <div class="no"><b>Чего мы не обещаем</b><ul>
+        <li>Удалить или понизить статьи крупных СМИ: в Google такой возможности нет ни у кого</li>
+        <li>Изменить картинки по общему запросу «Azerbaïdjan»: их выбирает алгоритм</li>
+      </ul></div>
+    </div>
+    <p class="pricetag rv"><b>от 400 €</b>Карточку можно сделать сразу, не дожидаясь остального.</p>
   </div>
 </section>
 
-<!-- 02 -->
-<section class="dark2" id="s2">
+<section class="ivory" id="p2">
   <div class="wrap">
     <div class="head rv">
       <div class="num">02</div>
-      <div><span class="tag">Контент</span><h2>Публикации, рост подписчиков и работа с аудиторией во всех соцсетях центра</h2></div>
+      <div><span class="tag">Визитка и галерея</span><h2>Сайт-визитка с виртуальной галереей выставок</h2></div>
     </div>
+
     <div class="points rv">
-      <div class="pt"><span class="k">1</span><b>Все четыре соцсети</b><p>Instagram, Facebook, LinkedIn и X. Каждая публикация выходит везде, в формате своей площадки.</p></div>
-      <div class="pt"><span class="k">2</span><b>От 3 до 6 публикаций в неделю</b><p>И от 1 до 3 видео. Объём зависит от выбранного тарифа, план на месяц согласуем заранее.</p></div>
-      <div class="pt"><span class="k">3</span><b>Французский первым</b><p>Сначала текст для парижан, затем азербайджанский. Официальные даты остаются.</p></div>
-      <div class="pt"><span class="k">4</span><b>Рост подписчиков везде</b><p>На каждой площадке своя аудитория и своя цель по росту. Цифры показываем в отчёте.</p></div>
+      <div class="pt"><span class="k">1</span><b>Визитка центра</b><p>Несколько страниц на французском, азербайджанском и английском: о центре, галерея, музыка, контакты и соцсети.</p></div>
+      <div class="pt"><span class="k">2</span><b>Виртуальная галерея</b><p>Залы, по которым можно пройти с телефона или компьютера. После вернисажа картины остаются здесь, с именем автора и описанием.</p></div>
+      <div class="pt"><span class="k">3</span><b>Музыка Азербайджана</b><p>Страница, которая играет, пока человек работает за компьютером. Музыку и права на неё предоставляет центр.</p></div>
+      <div class="pt"><span class="k">4</span><b>Связка с общим сайтом</b><p>Визитка живёт на вашем домене. Когда выйдет общий сайт культурных центров, раздел «Галерея» будет вести сюда.</p></div>
+    </div>
+
+    <p class="cap rv">Два направления дизайна на выбор</p>
+    <div class="duo rv">
+      <div>
+        <div class="vlabel"><b>Вариант «Nuit»</b><div class="sw"><i style="background:#0d1218"></i><i style="background:#c9a567"></i><i style="background:#8d2b37"></i><i style="background:#f6f1e7"></i></div></div>
+        <div class="browser"><div class="chrome"><i></i><i></i><i></i><span>azculture.fr</span></div>
+          <div class="site nuit">
+            <div class="sh" style="background-image:url(img/carpets.jpg)">
+              <div class="snav"><b>Centre culturel d'Azerbaïdjan</b><span><em>Le Centre</em><em>Galerie</em><em>Musique</em><em>Contact</em></span></div>
+              <div class="stxt"><small>Paris 7e, au pied de la tour Eiffel</small><h4>L'Azerbaïdjan<br>au cœur de Paris</h4><div class="btns"><span>Entrer dans la galerie</span><span>Écouter</span></div></div>
+            </div>
+            <div class="agenda"><div class="ev"><div class="ph" style="background-image:url(img/carpet.jpg)"></div><small>Salle 1</small><b>Tapis du Karabakh</b></div><div class="ev"><div class="ph" style="background-image:url(img/silk.jpg)"></div><small>Salle 2</small><b>Soie et costumes</b></div><div class="ev"><div class="ph" style="background-image:url(img/miniature.jpg)"></div><small>Salle 3</small><b>Miniatures</b></div></div>
+          </div>
+        </div>
+        <p class="sample">Тёмный, вечерний, золото и гранат. Картины на тёмном фоне выглядят как в музее.</p>
+      </div>
+      <div>
+        <div class="vlabel"><b>Вариант «Ivoire»</b><div class="sw"><i style="background:#f6f1e7"></i><i style="background:#8d2b37"></i><i style="background:#1a1f27"></i><i style="background:#1e5c55"></i></div></div>
+        <div class="browser"><div class="chrome"><i></i><i></i><i></i><span>azculture.fr</span></div>
+          <div class="site ivoire">
+            <div class="sh">
+              <div class="left">
+                <div class="snav"><b>Centre culturel d'Azerbaïdjan</b></div>
+                <div class="stxt"><small>Galerie, musique, histoire</small><h4>L'âme de l'Azerbaïdjan,<br>à Paris</h4><div class="btns"><span>Entrer dans la galerie</span><span>Écouter</span></div></div>
+              </div>
+              <div class="pic" style="background-image:url(img/shebeke.jpg)"></div>
+            </div>
+            <div class="agenda"><div class="ev"><div class="ph" style="background-image:url(img/lahic.jpg)"></div><small>Salle 4</small><b>Cuivres de Lahij</b></div><div class="ev"><div class="ph" style="background-image:url(img/jewel.jpg)"></div><small>Salle 5</small><b>Bijoux anciens</b></div><div class="ev"><div class="ph" style="background-image:url(img/maiden.jpg)"></div><small>Salle 6</small><b>Bakou ancienne</b></div></div>
+          </div>
+        </div>
+        <p class="sample">Светлый, слоновая кость и гранат. Ближе к стилю парижских галерей.</p>
+      </div>
+    </div>
+    <div class="trio t32 rv" style="gap:48px">
+      <div>
+        <p class="cap">Зал виртуальной галереи</p>
+        <div class="browser"><div class="chrome"><i></i><i></i><i></i><span>azculture.fr/galerie</span></div>
+          <div class="room">
+            <div class="rt">Salle 1<b>Tapis et textiles</b></div>
+            <figure style="left:27%"><i style="background-image:url(img/carpet.jpg)"></i><figcaption>Tapis du Karabakh<br><em>XIXe siècle</em></figcaption></figure>
+            <figure style="left:49%"><i style="background-image:url(img/silk.jpg)"></i><figcaption>Soie kelaghayi<br><em>Sheki</em></figcaption></figure>
+            <figure style="left:71%"><i style="background-image:url(img/miniature.jpg)"></i><figcaption>Miniature<br><em>Art du livre</em></figcaption></figure>
+            <div class="arr l">‹</div><div class="arr r">›</div>
+            <div class="rooms"><span class="on">Salle 1</span><span>Salle 2</span><span>Salle 3</span><span>Salle 4</span><span>Salle 5</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3>Выставка длится один вечер, галерея остаётся</h3>
+        <p class="lead" style="font-size:17px">Фотографируем залы центра и работы, собираем лёгкую и быструю галерею без тяжёлого 3D. Каждая новая выставка добавляется как новый зал.</p>
+        <div class="player"><i></i><div style="flex:1"><b>Mugham, tar et kamancha</b><span>Radio du Centre culturel d'Azerbaïdjan</span><div class="bar2"></div></div><em></em></div>
+        <p class="sample">Все экраны показывают пример оформления. Адрес azculture.fr условный, названия залов тоже.</p>
+      </div>
+    </div>
+    <p class="pricetag rv"><b>3 700 € за всё</b>Визитка, галерея с первой выставкой и музыкальная страница. Можно заказать по частям.</p>
+  </div>
+</section>
+
+<section class="dark2" id="p3">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="num">03</div>
+      <div><span class="tag">Соцсети</span><h2>Видео, реклама и ритм: путь к 10 000 подписчиков</h2></div>
+    </div>
+
+    <div class="points rv">
+      <div class="pt"><span class="k">1</span><b>Короткие видео</b><p>Ролики по 30-40 секунд о музее, музыке, природе и мастерах. Монтируем из материалов центра и подбираем музыку, доступную аккаунтам организаций.</p></div>
+      <div class="pt"><span class="k">2</span><b>Реклама на лучшие видео</b><p>Показываем интересные ролики французской аудитории и растим подписчиков. События в центре не рекламируем.</p></div>
+      <div class="pt"><span class="k">3</span><b>Ритм и время публикаций</b><p>План на месяц: что, где и в какой час выходит. Первый месяц тестируем форматы и оставляем то, что работает.</p></div>
+      <div class="pt"><span class="k">4</span><b>Четыре соцсети</b><p>Instagram, Facebook, LinkedIn и X. Одна тема выходит везде, в формате своей площадки.</p></div>
     </div>
 
     <div class="split rv">
@@ -601,262 +703,245 @@ footer a{color:#9aa2ad}
         <p class="cap" style="text-align:center">Так будет выглядеть профиль</p>
         <div class="phone"><div class="pscreen"><div class="ig">
           <div class="top">azculture_paris</div>
-          <div class="prof"><div class="ava"></div><div class="nums"><div><b>148</b>posts</div><div><b>5 400</b>followers</div><div><b>210</b>following</div></div></div>
-          <div class="bio"><b>Centre culturel d'Azerbaïdjan</b><br>Musée, concerts, expositions<br>1, avenue Charles Floquet, Paris 7e</div>
-          <div class="hl"><span><i style="background-image:url(img/carpets.jpg)"></i>Musée</span><span><i style="background-image:url(img/kamancha.jpg)"></i>Agenda</span><span><i style="background-image:url(img/building.jpg)"></i>Visiter</span><span><i style="background-image:url(img/tea.jpg)"></i>Saveurs</span></div>
-          <div class="grid9">
-            <div class="t ph" style="background-image:url(img/carpet.jpg)"><small>Objet du mois</small><b>Tapis du Karabakh</b></div>
-            <div class="t txt g"><small>Agenda</small><b>Soirée Mugham</b></div>
-            <div class="t ph" style="background-image:url(img/kamancha.jpg);background-position:center 15%"><small>Portrait</small><b>Le kamancha</b></div>
-            <div class="t txt i"><small>Le saviez-vous ?</small><b>UNESCO 2010</b></div>
-            <div class="t ph" style="background-image:url(img/shebeke.jpg)"><small>Savoir-faire</small><b>Le shebeke</b></div>
-            <div class="t ph" style="background-image:url(img/silk.jpg)"><small>Atelier</small><b>La soie</b></div>
-            <div class="t ph" style="background-image:url(img/maiden.jpg)"><small>Voyage</small><b>Bakou</b></div>
-            <div class="t txt"><small>Exposition</small><b>Cuivres de Lahij</b></div>
-            <div class="t ph" style="background-image:url(img/jewel.jpg)"><small>Collection</small><b>Bijoux anciens</b></div>
-          </div>
+          <div class="prof"><div class="ava"></div><div class="nums"><div><b>148</b>posts</div><div><b>10 k</b>followers</div><div><b>210</b>following</div></div></div>
+          <div class="bio"><b>Centre culturel d'Azerbaïdjan</b><br>Musée, musique, expositions<br>Paris 7e</div>
+          <div class="hl"><span><i style="background-image:url(img/carpets.jpg)"></i>Musée</span><span><i style="background-image:url(img/tar.jpg)"></i>Musique</span><span><i style="background-image:url(img/building.jpg)"></i>Le Centre</span><span><i style="background-image:url(img/tea.jpg)"></i>Saveurs</span></div>
+          <div class="grid9"><div class="t ph" style="background-image:url(img/carpet.jpg);"><small>Objet du mois</small><b>Tapis du Karabakh</b></div><div class="t txt g"><small>Retour en images</small><b>Soirée Mugham</b></div><div class="t ph" style="background-image:url(img/kamancha.jpg);background-position:center 15%"><small>Portrait</small><b>Le kamancha</b></div><div class="t txt i"><small>Le saviez-vous ?</small><b>UNESCO 2010</b></div><div class="t ph" style="background-image:url(img/shebeke.jpg);"><small>Savoir-faire</small><b>Le shebeke</b></div><div class="t ph" style="background-image:url(img/silk.jpg);"><small>Vidéo</small><b>La soie</b></div><div class="t ph" style="background-image:url(img/maiden.jpg);"><small>Voyage</small><b>Bakou</b></div><div class="t txt"><small>Musique</small><b>Le mugham</b></div><div class="t ph" style="background-image:url(img/jewel.jpg);"><small>Collection</small><b>Bijoux anciens</b></div></div>
         </div></div></div>
-        <p class="sample" style="text-align:center">Макет. Цифры в профиле показывают цель, а не текущее состояние.</p>
+        <p class="sample" style="text-align:center">Макет. 10 тысяч подписчиков это цель, а не текущее число.</p>
       </div>
       <div>
         <p class="cap">Шаблоны публикаций</p>
         <div class="posts">
           <div><div class="post" style="background-image:url(img/carpet.jpg)"><div class="pl"><span>Objet du mois</span><span>01</span></div><div><h6>Tapis du Karabakh</h6><p>XIXe siècle, laine nouée à la main</p></div></div><div class="pname"><b>Предмет музея</b>каждую неделю</div></div>
-          <div><div class="post poster"><div class="frame"></div><div class="pl"><span>Agenda</span><span>Concert</span></div><div><div class="big">11</div><h6>Soirée Mugham</h6><p>Décembre, 19h30</p></div></div><div class="pname"><b>Афиша</b>под каждое событие</div></div>
+          <div><div class="post poster"><div class="frame"></div><div class="pl"><span>Retour en images</span><span>02</span></div><div><h6>Soirée Mugham</h6><p>Les plus beaux moments</p></div></div><div class="pname"><b>Репортаж</b>после каждого события</div></div>
           <div><div class="post" style="background-image:url(img/kamancha.jpg);background-position:center top"><div class="pl"><span>Portrait</span><span>03</span></div><div><h6>La voix du mugham</h6><p>Maître du kamancha</p></div></div><div class="pname"><b>Портрет</b>артисты и мастера</div></div>
           <div><div class="post fact"><div class="pl"><span>Le saviez-vous</span><span>04</span></div><div class="round"></div><div><h6>Le tapis d'Azerbaïdjan, inscrit à l'UNESCO en 2010</h6></div></div><div class="pname"><b>Факт</b>коротко и наглядно</div></div>
         </div>
-        <p class="cap" style="margin-top:44px">Пример недели</p>
-        <div class="cal">
-          <div><b>Пн</b><span class="chip p">Предмет музея</span></div>
-          <div><b>Вт</b><span class="chip v">Видео из зала</span></div>
-          <div><b>Ср</b><span class="chip">Афиша события</span></div>
-          <div><b>Чт</b><span class="chip s">Сторис: подготовка</span></div>
-          <div><b>Пт</b><span class="chip v">Видео с вечера</span><span class="chip s">Сторис в прямом эфире</span></div>
-          <div><b>Сб</b><span class="chip p">Портрет артиста</span></div>
-          <div><b>Вс</b><span class="chip">Факт или история</span></div>
-        </div>
+        <p class="cap" style="margin-top:44px">Пример недели: одно событие на шесть публикаций о культуре</p>
+        <div class="cal"><div><b>Пн</b><span class="chip v">Видео: музей</span></div><div><b>Вт</b><span class="chip p">Предмет музея</span></div><div><b>Ср</b><span class="chip v">Видео: музыка</span></div><div><b>Чт</b><span class="chip ">Факт или история</span></div><div><b>Пт</b><span class="chip p">Портрет мастера</span></div><div><b>Сб</b><span class="chip v">Видео: природа</span></div><div><b>Вс</b><span class="chip s">Репортаж с события</span></div></div>
       </div>
     </div>
 
     <div class="rv" style="margin-top:90px">
-      <p class="cap">Одна публикация, четыре площадки</p>
-      <h3 style="font-size:clamp(28px,3vw,44px);max-width:900px">Ведём все соцсети центра и набираем подписчиков на каждой</h3>
+      <p class="cap">Одна тема, четыре площадки</p>
+      <h3 style="font-size:clamp(28px,3vw,44px);max-width:900px">На каждой площадке своя публика и своя подача</h3>
     </div>
     <div class="nets rv">
       <div class="net">
         <div class="nh"><i style="background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7)"></i><div><b>Instagram</b><span>сейчас 124 подписчика</span></div></div>
-        <p class="role">Парижская публика. Видео, предметы музея, афиши.</p>
-        <div class="mk ig2">
-          <div class="mh"><em></em><b>azculture_paris</b></div>
+        <p class="role">Парижская публика. Видео, предметы музея, репортажи.</p>
+        <div class="mk ig2"><div class="mh"><em></em><b>azculture_paris</b></div>
           <div class="mi" style="background-image:url(img/carpet.jpg)"><div><small>Objet du mois</small><strong>Tapis du Karabakh</strong></div></div>
-          <div class="mt"><b>azculture_paris</b> Un tapis du Karabakh du XIXe siècle, à voir au musée du Centre.</div>
-        </div>
+          <div class="mt"><b>azculture_paris</b> Un tapis du Karabakh du XIXe siècle, conservé au musée du Centre.</div></div>
       </div>
       <div class="net">
         <div class="nh"><i style="background:#1877f2"></i><div><b>Facebook</b><span>сейчас 27 подписчиков</span></div></div>
-        <p class="role">События и диаспора. Страницы мероприятий, приглашения.</p>
-        <div class="mk fb">
-          <div class="mi" style="background-image:url(img/kamancha.jpg);background-position:center 20%"></div>
-          <div class="mt"><small>VEN. 11 DÉC. À 19:30</small><strong>Soirée Mugham</strong><span>Centre culturel d'Azerbaïdjan, Paris</span><div class="bt"><u>Ça m'intéresse</u><u>J'y vais</u></div></div>
-        </div>
+        <p class="role">Диаспора и друзья центра. Видео и репортажи с событий.</p>
+        <div class="mk li"><div class="mh"><em></em><div><b>Centre culturel d'Azerbaïdjan</b><span>Vidéo, 35 s</span></div></div>
+          <div class="mt">Bakou, la vieille ville à la tombée de la nuit.</div>
+          <div class="mi play" style="background-image:url(img/maiden.jpg)"></div></div>
       </div>
       <div class="net">
         <div class="nh"><i style="background:#0a66c2"></i><div><b>LinkedIn</b><span>сейчас 4 подписчика</span></div></div>
-        <p class="role">Партнёры, пресса, институции. Новости центра и сотрудничество.</p>
-        <div class="mk li">
-          <div class="mh"><em></em><div><b>Centre culturel d'Azerbaïdjan</b><span>2 300 abonnés</span></div></div>
-          <div class="mt">Le Centre accueille les étudiants de l'INALCO pour une visite du musée et une conférence sur l'art du tapis.</div>
-          <div class="mi" style="background-image:url(img/carpets.jpg)"></div>
-        </div>
+        <p class="role">Институции, пресса, культурные организации.</p>
+        <div class="mk li"><div class="mh"><em></em><div><b>Centre culturel d'Azerbaïdjan</b><span>2 300 abonnés</span></div></div>
+          <div class="mt">L'art du tapis azerbaïdjanais, inscrit au patrimoine immatériel de l'UNESCO : une tradition à découvrir en vidéo.</div>
+          <div class="mi" style="background-image:url(img/carpets.jpg)"></div></div>
       </div>
       <div class="net">
         <div class="nh"><i style="background:#000;border:1px solid #555"></i><div><b>X</b><span>сейчас 5 подписчиков</span></div></div>
         <p class="role">Официальные новости. Журналисты, дипломаты, культурные институты.</p>
-        <div class="mk xx">
-          <div class="mh"><em></em><div><b>Azculture Paris</b><span>@azcultureparis</span></div></div>
-          <div class="mt">Ce vendredi à 19h30, soirée Mugham au Centre culturel d'Azerbaïdjan, avenue Charles Floquet.</div>
-          <div class="mi" style="background-image:url(img/shebeke.jpg)"></div>
-        </div>
+        <div class="mk xx"><div class="mh"><em></em><div><b>Azculture Paris</b><span>@azcultureparis</span></div></div>
+          <div class="mt">Le mugham, musique savante d'Azerbaïdjan, en 40 secondes.</div>
+          <div class="mi" style="background-image:url(img/tar.jpg)"></div></div>
       </div>
     </div>
-    <div class="calm rv"><b>Только культура.</b> <span>Политических тем в публикациях нет. Комментарии модерируем, провокационные скрываем.</span></div>
-    <p class="sample rv">Макеты. Число подписчиков в макете LinkedIn показывает цель. Короткие видео дополнительно выкладываем в TikTok и YouTube Shorts.</p>
+    <div class="calm rv"><b>Правило ленты.</b> <span>На одну публикацию о событии три-четыре видео о культуре. События в центре показываем только после, репортажем.</span></div>
+    <p class="sample rv">Макеты. Число подписчиков в макете LinkedIn показывает цель.</p>
   </div>
 </section>
 
-<!-- 03 -->
-<section class="ivory" id="s3">
+<section class="light" id="p3b">
   <div class="wrap">
-    <div class="head rv">
-      <div class="num">03</div>
-      <div><span class="tag">События</span><h2>Каждое событие центра в соцсетях: анонс, сторис, репортаж</h2></div>
-    </div>
-    <div class="points rv">
-      <div class="pt"><span class="k">1</span><b>Анонс за две недели</b><p>Афиша в стиле центра и короткое видео во всех четырёх соцсетях.</p></div>
-      <div class="pt"><span class="k">2</span><b>Страница события в Facebook</b><p>Дата, адрес и описание. Гости отмечают, что придут, и получают напоминание от самой соцсети.</p></div>
-      <div class="pt"><span class="k">3</span><b>Сторис в день события</b><p>Подготовка, первые гости, фрагменты выступлений. Прямые включения с главных вечеров.</p></div>
-      <div class="pt"><span class="k">4</span><b>Репортаж после</b><p>Фото и видео на следующий день, отметки артистов и гостей.</p></div>
-    </div>
-
-    <div class="ads rv">
+    <div class="rv"><span class="tag">Реклама и отчёт</span><h2>Каждая рекламная кампания с обоснованием для согласования</h2><p class="lead">Бюджет на рекламу нужно обосновать. К каждой кампании мы готовим одну страницу: какое видео, для кого, сколько и что ожидаем.</p></div>
+    <div class="ads rv" style="margin-top:48px">
       <div>
-        <p class="cap" style="text-align:center">Анонс в сторис</p>
-        <div class="phone"><div class="pscreen"><div class="story">
-          <div class="who"><i></i><div>azculture_paris<em>il y a 2 h</em></div></div>
-          <div><small>Vendredi 11 décembre, 19h30</small><h6>Soirée Mugham au pied de la tour Eiffel</h6><p>Entrée libre.</p><div class="cta">En savoir plus</div></div>
+        <p class="cap" style="text-align:center">Реклама: видео о культуре</p>
+        <div class="phone"><div class="pscreen"><div class="story" style="background-image:url(img/shebeke.jpg)">
+          <div class="who"><i></i><div>azculture_paris<em>Sponsorisé</em></div></div>
+          <div><small>Azerbaïdjan</small><h6>Sheki, le palais aux mille vitraux</h6><p>30 secondes de voyage.</p><div class="cta">Suivre @azculture_paris</div></div>
         </div></div></div>
       </div>
       <div>
-        <p class="cap">Анонс в ленте</p>
-        <div class="feed">
-          <div class="fh"><i></i><div><b>azculture_paris</b><span>Paris</span></div></div>
-          <div class="fi"><div><small>Concert, 11 décembre</small><h6>Le mugham, patrimoine vivant</h6></div></div>
-          <div class="fc">Vendredi 11 décembre, 19h30</div>
-          <div class="ft"><b>azculture_paris</b> Une soirée rare à Paris : les maîtres du mugham jouent dans les salons du Centre culturel d'Azerbaïdjan.</div>
+        <p class="cap">Обоснование на одну страницу</p>
+        <div class="docm">
+          <small>Campagne n° 3</small>
+          <h6>Sheki, le palais aux mille vitraux</h6>
+          <dl>
+            <dt>Objectif</dt><dd>Nouveaux abonnés en France</dd>
+            <dt>Public</dt><dd>Paris et Île-de-France : musées, voyages, arts décoratifs</dd>
+            <dt>Durée</dt><dd>14 jours</dd>
+            <dt>Budget</dt><dd>180 €</dd>
+            <dt>Résultat attendu</dt><dd>25 000 personnes touchées</dd>
+          </dl>
+          <div class="ok"><span>Validation du Centre</span><b>Approuvé</b></div>
         </div>
+        <p class="sample">Пример документа. Цифры условные.</p>
       </div>
       <div>
-        <p class="cap">Как это идёт по дням</p>
+        <p class="cap">Как идёт согласование</p>
         <div class="aud">
-          <div><b>За две недели</b><p>Афиша и видео-анонс, страница события в Facebook.</p></div>
-          <div><b>За три дня</b><p>Напоминание в ленте и в сторис, знакомство с артистом.</p></div>
-          <div><b>В день события</b><p>Сторис из залов и прямое включение.</p></div>
-          <div><b>На следующий день</b><p>Фото и видео с вечера, благодарность гостям.</p></div>
+          <div><b>1. Выбираем видео</b><p>Только сильный ролик о культуре, природе или музее. Не событие.</p></div>
+          <div><b>2. Готовим обоснование</b><p>Одна страница: цель, аудитория, срок, бюджет, ожидаемый результат.</p></div>
+          <div><b>3. Вы утверждаете</b><p>Без вашего согласия ни одна кампания не запускается.</p></div>
+          <div><b>4. Запускаем и отчитываемся</b><p>После кампании: сколько людей увидели и сколько подписались.</p></div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- 05 -->
-<section class="light" id="s5">
-  <div class="wrap">
-    <div class="head rv">
-      <div class="num">04</div>
-      <div><span class="tag">Отчётность</span><h2>Отчёт раз в месяц: подписчики, охват, лучшие публикации</h2></div>
-    </div>
-    <div class="points rv">
-      <div class="pt"><span class="k">1</span><b>Отчёт на одной странице</b><p>Подписчики, охват и просмотры видео по каждой соцсети. Без сложных терминов.</p></div>
-      <div class="pt"><span class="k">2</span><b>Лучшие публикации</b><p>Что понравилось аудитории и почему. Это задаёт темы на следующий месяц.</p></div>
-      <div class="pt"><span class="k">3</span><b>Готово для Баку</b><p>Формат, который удобно передать в посольство и министерство.</p></div>
-      <div class="pt"><span class="k">4</span><b>План на следующий месяц</b><p>Контент-план, рубрики и события, которые будем освещать.</p></div>
-    </div>
-
+    <p class="cap rv" style="margin-top:72px">Отчёт раз в месяц</p>
     <div class="dash rv">
-      <div class="dh"><b>Centre culturel d'Azerbaïdjan, отчёт за месяц</b><span>Примерные данные для иллюстрации</span></div>
+      <div class="dh"><b>Centre culturel d’Azerbaïdjan, отчёт за месяц</b><span>Примерные данные для иллюстрации</span></div>
       <div class="dk">
         <div><b>+1 240</b><span>новых подписчиков</span><br><em>+31%</em></div>
         <div><b>185 тыс.</b><span>охват за месяц</span><br><em>+70%</em></div>
         <div><b>62 тыс.</b><span>просмотров видео</span><br><em>+45%</em></div>
-        <div><b>4,8%</b><span>вовлечённость</span><br><em>+0,9</em></div>
-        <div><b>16 + 8</b><span>публикаций и видео</span><br><em>по плану</em></div>
+        <div><b>0,38 €</b><span>цена одного подписчика</span><br><em>ниже на 12%</em></div>
+        <div><b>8 + 8</b><span>видео и публикаций</span><br><em>по плану</em></div>
       </div>
       <div class="dg">
         <div class="chart"><div class="ct">Новые подписчики по неделям</div><div class="bars" style="margin-bottom:22px"><i style="height:38%"><span>1</span></i><i style="height:52%"><span>2</span></i><i style="height:47%"><span>3</span></i><i style="height:74%"><span>4</span></i><i style="height:66%"><span>5</span></i><i style="height:100%"><span>6</span></i></div></div>
         <div class="chart"><div class="ct">Лучшие публикации месяца</div>
           <table class="tbl"><tr><th>Публикация</th><th>Сеть</th><th>Охват</th></tr>
-          <tr><td>Soirée Mugham, vidéo</td><td>Instagram</td><td>41 200</td></tr>
+          <tr><td>Sheki, le palais aux vitraux</td><td>Instagram</td><td>41 200</td></tr>
           <tr><td>Tapis du Karabakh</td><td>Facebook</td><td>18 600</td></tr>
           <tr><td>Portrait, kamancha</td><td>Instagram</td><td>15 300</td></tr>
-          <tr><td>Visite de l'INALCO</td><td>LinkedIn</td><td>6 900</td></tr></table>
+          <tr><td>L'art du tapis, UNESCO</td><td>LinkedIn</td><td>6 900</td></tr></table>
         </div>
       </div>
     </div>
+    <p class="pricetag rv"><b>от 600 € в месяц</b>Три формата: только реклама, контент и реклама, полное ведение.</p>
   </div>
 </section>
 
-<!-- start -->
-<section class="dark2" id="start">
+<section class="dark" id="ideas">
   <div class="wrap">
-    <div class="rv"><span class="tag">Порядок работы</span><h2>Сначала стиль и карточка, затем план на месяц, затем ведение</h2></div>
-    <div class="steps rv" style="margin-top:48px">
-      <div class="st"><div class="n">1</div><h3>Фундамент</h3><p>Единый стиль, оформление четырёх соцсетей, карточка в Google и стартовая съёмка. Разовая работа.</p></div>
-      <div class="st"><div class="n">2</div><h3>План на месяц</h3><p>Согласуем рубрики, темы и календарь публикаций на первый месяц.</p></div>
-      <div class="st"><div class="n">3</div><h3>Ежемесячное ведение</h3><p>Публикации, видео, сторис, работа с аудиторией и отчёт. Три тарифа на выбор, цены ниже.</p></div>
+    <div class="rv"><span class="tag">Идеи на будущее</span><h2>Что можно сделать дальше</h2><p class="lead">Обсудим отдельно, когда запустим основное.</p></div>
+    <div class="partners rv" style="margin-top:48px">
+      <div class="pc" style="background-image:url(img/tar.jpg)"><small>Музыкальный цикл</small><h3>Caspian в Париже</h3><p>Музыкант исполняет азербайджанскую мелодию на фоне парижского памятника. Короткие тизеры для соцсетей, полная версия на визитке.</p></div>
+      <div class="pc" style="background-image:url(img/carpets.jpg)"><small>В залах центра</small><h3>Видео для экранов</h3><p>Видео-цикл для мониторов в залах: коллекция, история, мастера. Гости видят его во время приёмов.</p></div>
+      <div class="pc" style="background-image:url(img/miniature.jpg);background-position:center 20%"><small>Музыка</small><h3>Музыка без ограничений</h3><p>Подборка азербайджанской музыки с оформленными правами, чтобы её можно было ставить в публикации организаций.</p></div>
     </div>
   </div>
 </section>
 
 <section class="ivory" id="price">
   <div class="wrap">
-    <div class="rv"><span class="tag">Стоимость</span><h2>Фундамент 2 500 € разово, ведение от 1 900 € в месяц</h2><p class="lead">Цены окончательные, НДС не начисляется (TVA non applicable, art. 293 B du CGI).</p></div>
+    <div class="rv"><span class="tag">Стоимость</span><h2>Цены по каждому проекту отдельно</h2><p class="lead">Цены окончательные, НДС не начисляется (TVA non applicable, art. 293 B du CGI).</p></div>
 
-    <div class="once rv">
+    <div class="pgrid rv">
       <div>
-        <p class="cap">Разово: фундамент</p>
+        <h3>01 Google</h3>
         <table class="ptab">
-          <tr><td><b>Единый стиль</b><span>Палитра, шрифты, шаблоны постов, афиш и сторис</span></td><td>1 600 €</td></tr>
-          <tr><td><b>Оформление соцсетей и карточка в Google</b><span>Аватары, обложки, описания, хайлайты на четырёх площадках, карточка Google Maps</span></td><td>600 €</td></tr>
-          <tr><td><b>Стартовая съёмка</b><span>Фото и видео здания и музея для первых публикаций</span></td><td>700 €</td></tr>
-          <tr class="sum"><td>По отдельности</td><td>2 900 €</td></tr>
+          <tr><td><b>Карточка центра в Google Maps</b><span>Создание, подтверждение, фото, описание на французском и английском</span></td><td>400 €</td></tr>
+
+          <tr><td><b>Обзор французского инфополя</b><span>Отчёт об изданиях, авторах и темах, первая страница и картинки Google, план позитивного присутствия</span></td><td>900 €</td></tr>
+
+          <tr><td><b>Сводка упоминаний</b><span>Что нового вышло и что изменилось на первой странице</span></td><td>200 €<small>в месяц</small></td></tr>
+
         </table>
       </div>
-      <div class="total">
-        <small>Всё вместе</small>
-        <b>2 500 €</b>
-        <p>Один платёж за весь фундамент. Стиль, шаблоны и снятые материалы остаются в собственности центра.</p>
+      <div>
+        <h3>02 Визитка и галерея</h3>
+        <table class="ptab">
+          <tr><td><b>Сайт-визитка</b><span>Дизайн, четыре страницы, три языка</span></td><td>1 800 €</td></tr>
+
+          <tr><td><b>Виртуальная галерея</b><span>Залы центра и первая выставка до 20 работ</span></td><td>1 900 €</td></tr>
+
+          <tr><td><b>Музыкальная страница</b><span>Плеер и подборка, музыку предоставляет центр</span></td><td>400 €</td></tr>
+
+          <tr class="sum"><td>По отдельности</td><td>4 100 €</td></tr>
+          <tr class="all"><td>Всё вместе</td><td>3 700 €</td></tr>
+          <tr><td><b>Следующая выставка в галерее</b><span>Новый зал: съёмка работ, подписи, публикация</span></td><td>250 €</td></tr>
+
+          <tr><td><b>Поддержка и обновления</b><span>Правки, новые тексты, техническая поддержка</span></td><td>100 €<small>в месяц</small></td></tr>
+
+        </table>
       </div>
     </div>
 
-    <p class="cap rv" style="margin-top:64px">Ежемесячно: ведение</p>
+    <h3 class="rv" style="margin-top:64px">03 Соцсети</h3>
+    <table class="ptab rv" style="margin-top:14px">
+      <tr><td><b>Старт</b><span>Стратегия, рубрики, шаблоны обложек и титров, рекламный кабинет через роли без паролей</span></td><td>900 €</td></tr>
+
+    </table>
+    <p class="cap rv" style="margin-top:36px">Ежемесячно: три формата на выбор</p>
     <div class="plans rv">
       <div class="plan">
-        <h3>Essentiel</h3><p class="for">Регулярные публикации во всех соцсетях</p>
-        <div class="pr">1 900 €<span>в месяц</span></div>
-        <div class="cnt">14 услуг</div>
-        <h4>Соцсети</h4>
-        <ul><li>12 публикаций в месяц</li><li>Instagram, Facebook, LinkedIn и X: все четыре площадки</li><li>Тексты на французском и азербайджанском</li><li>Дизайн каждой публикации в стиле центра</li><li>План публикаций на месяц на согласование</li><li>8 сторис в месяц</li></ul>
-        <h4>Видео и фото</h4>
-        <ul><li>4 коротких видео в месяц</li><li>Монтаж, титры, музыка</li></ul>
-        <h4>Работа с аудиторией</h4>
-        <ul><li>Ответы на комментарии и сообщения</li><li>Модерация комментариев, провокации скрываем</li></ul>
-        <h4>Карточка в Google</h4>
-        <ul><li>Ведение карточки: фото, часы работы, новости</li><li>Ответы на отзывы</li></ul>
+        <h3>Реклама</h3><p class="for">Центр публикует сам, мы ведём рекламу и рост</p>
+        <div class="pr">600 €<span>в месяц</span></div>
+        <div class="cnt">8 услуг</div>
+        <h4>Реклама</h4>
+        <ul><li>До 4 кампаний в месяц на лучшие видео</li><li>Аудитории во Франции: культура, музеи, путешествия, музыка</li><li>Обоснование к каждой кампании для согласования</li><li>Еженедельная настройка по результатам</li></ul>
+        <h4>Советы</h4>
+        <ul><li>Рекомендации по времени и частоте публикаций</li><li>Разбор: какие видео стоит продвигать</li></ul>
         <h4>Отчётность и связь</h4>
-        <ul><li>Ежемесячный отчёт на одной странице</li><li>Встреча раз в месяц</li></ul>
+        <ul><li>Ежемесячный отчёт: подписчики, охват, цена подписчика</li><li>Встреча раз в месяц</li></ul>
       </div>
       <div class="plan best">
-        <h3>Présence</h3><p class="for">Больше видео и каждое событие центра в соцсетях</p>
-        <div class="pr">2 800 €<span>в месяц</span></div>
-        <div class="cnt">25 услуг</div>
-        <h4>Соцсети</h4>
-        <ul><li>16 публикаций в месяц</li><li>Instagram, Facebook, LinkedIn и X: все четыре площадки</li><li>Тексты на французском и азербайджанском</li><li>Дизайн каждой публикации в стиле центра</li><li>План публикаций на месяц на согласование</li><li>16 сторис в месяц</li><li>Актуальные хайлайты и закреплённые публикации</li></ul>
-        <h4>Видео и фото</h4>
-        <ul><li>8 коротких видео в месяц</li><li>Выезд на съёмку 2 раза в месяц</li><li>Монтаж, титры, музыка</li><li>Обработка фотографий центра</li><li>Видео также в TikTok и YouTube Shorts</li></ul>
-        <h4>События центра в соцсетях</h4>
-        <ul><li>Анонс каждого события: афиша и видео</li><li>Страница события в Facebook</li><li>Сторис и прямые включения с событий</li><li>Фото- и видеорепортаж на следующий день</li></ul>
-        <h4>Работа с аудиторией</h4>
-        <ul><li>Ответы на комментарии и сообщения в течение дня</li><li>Модерация комментариев, провокации скрываем</li><li>Совместные публикации с артистами и гостями центра</li></ul>
-        <h4>Карточка в Google</h4>
-        <ul><li>Ведение карточки: фото, часы работы, новости</li><li>Ответы на отзывы</li><li>Публикации о событиях прямо в карточке</li></ul>
+        <h3>Контент и реклама</h3><p class="for">Готовим всё к публикации, центр публикует сам</p>
+        <div class="pr">1 900 €<span>в месяц</span></div>
+        <div class="cnt">18 услуг</div>
+        <h4>Контент</h4>
+        <ul><li>План публикаций на месяц на согласование</li><li>8 видео по 30-40 секунд из материалов центра</li><li>Монтаж, титры на французском, музыка</li><li>8 публикаций с дизайном: предметы музея, факты, портреты</li><li>Тексты на французском к каждой публикации</li><li>Азербайджанский текст сверяет центр</li><li>Репортаж после каждого события: фото и видео</li><li>График: день и час для каждой публикации</li><li>Готовый пакет на неделю для четырёх соцсетей</li></ul>
+        <h4>Реклама</h4>
+        <ul><li>До 4 кампаний в месяц на лучшие видео</li><li>Аудитории во Франции: культура, музеи, путешествия, музыка</li><li>Обоснование к каждой кампании для согласования</li><li>Еженедельная настройка по результатам</li></ul>
+        <h4>Google</h4>
+        <ul><li>Ведение карточки Google: новые фото и публикации</li><li>Ответы на отзывы</li></ul>
         <h4>Отчётность и связь</h4>
         <ul><li>Ежемесячный отчёт и план на следующий месяц</li><li>Разбор лучших публикаций</li><li>Встреча 2 раза в месяц</li></ul>
       </div>
       <div class="plan top">
-        <h3>Rayonnement</h3><p class="for">Ежедневное присутствие и видео-истории о центре</p>
-        <div class="pr">3 900 €<span>в месяц</span></div>
-        <div class="cnt">34 услуги</div>
-        <h4>Соцсети</h4>
-        <ul><li>24 публикации в месяц</li><li>Instagram, Facebook, LinkedIn и X: все четыре площадки</li><li>Тексты на французском и азербайджанском</li><li>Дизайн каждой публикации в стиле центра</li><li>План публикаций на месяц на согласование</li><li>Сторис каждый день работы центра</li><li>Актуальные хайлайты и закреплённые публикации</li><li>Тематические серии: музей, мастера, кухня</li><li>Ведение страницы руководителя центра в LinkedIn</li></ul>
-        <h4>Видео и фото</h4>
-        <ul><li>12 коротких видео в месяц</li><li>Выезд на съёмку 4 раза в месяц</li><li>Монтаж, титры, музыка</li><li>Видео-интервью с артистами и мастерами</li><li>Фотосессия залов и коллекции раз в квартал</li><li>Видео также в TikTok и YouTube Shorts</li></ul>
-        <h4>События центра в соцсетях</h4>
-        <ul><li>Анонс каждого события: афиша и видео</li><li>Страница события в Facebook</li><li>Сторис и прямые включения с событий</li><li>Фото- и видеорепортаж на следующий день</li><li>Прямой эфир с главных событий</li></ul>
-        <h4>Работа с аудиторией</h4>
-        <ul><li>Ответы на комментарии и сообщения в течение дня</li><li>Модерация комментариев, провокации скрываем</li><li>Совместные публикации с артистами и гостями центра</li><li>Взаимные упоминания с музеями и культурными центрами Парижа</li></ul>
-        <h4>Карточка в Google</h4>
-        <ul><li>Ведение карточки: фото, часы работы, новости</li><li>Ответы на отзывы</li><li>Публикации о событиях прямо в карточке</li><li>Новые фотографии в карточке каждый месяц</li></ul>
+        <h3>Полное ведение</h3><p class="for">Публикуем сами через роль редактора, без паролей</p>
+        <div class="pr">2 900 €<span>в месяц</span></div>
+        <div class="cnt">28 услуг</div>
+        <h4>Контент</h4>
+        <ul><li>План публикаций на месяц на согласование</li><li>12 видео по 30-40 секунд</li><li>Монтаж, титры на французском, музыка</li><li>12 публикаций с дизайном</li><li>Тексты на французском к каждой публикации</li><li>Азербайджанский текст сверяет центр</li><li>Репортаж после каждого события: фото и видео</li><li>Видео-интервью с артистами и мастерами</li><li>Выезд на съёмку в центр 2 раза в месяц</li><li>Фотосессия залов и коллекции раз в квартал</li></ul>
+        <h4>Публикация и аудитория</h4>
+        <ul><li>Публикуем в четырёх соцсетях в лучшее время</li><li>Сторис в дни событий, после согласования</li><li>Актуальные хайлайты и закреплённые публикации</li><li>Ответы на комментарии и сообщения в течение дня</li><li>Модерация комментариев, провокации скрываем</li></ul>
+        <h4>Реклама</h4>
+        <ul><li>До 4 кампаний в месяц на лучшие видео</li><li>Аудитории во Франции: культура, музеи, путешествия, музыка</li><li>Обоснование к каждой кампании для согласования</li><li>Еженедельная настройка по результатам</li><li>Постоянная кампания на рост подписчиков</li></ul>
+        <h4>Google</h4>
+        <ul><li>Ведение карточки Google: новые фото и публикации</li><li>Ответы на отзывы</li></ul>
         <h4>Стратегия</h4>
-        <ul><li>План публикаций на квартал</li><li>Календарь рубрик и событий на 3 месяца вперёд</li></ul>
+        <ul><li>План публикаций на квартал</li><li>Календарь рубрик на 3 месяца вперёд</li></ul>
         <h4>Отчётность и связь</h4>
-        <ul><li>Ежемесячный отчёт и план на следующий месяц</li><li>Разбор лучших публикаций</li><li>Квартальный отчёт для посольства и министерства</li><li>Встреча каждую неделю, ответ в тот же день</li></ul>
+        <ul><li>Ежемесячный отчёт и план на следующий месяц</li><li>Разбор лучших публикаций</li><li>Квартальный отчёт для министерства</li><li>Встреча каждую неделю, ответ в тот же день</li></ul>
       </div>
     </div>
     <div class="notes rv">
-      <div><b>Договор от 3 месяцев</b>Дальше продлевается помесячно, пакет можно менять.</div>
-      <div><b>Только культура</b>Политических тем не касаемся, платной рекламы нет, провокационные комментарии скрываем.</div>
-      <div><b>Что нужно от центра</b>Доступы к соцсетям и афиша событий до начала каждого месяца.</div>
+      <div><b>Рекламный бюджет отдельно</b>До 500 € в месяц. Центр оплачивает его напрямую в Meta.</div>
+      <div><b>Договор от 3 месяцев</b>Дальше продлевается помесячно, формат можно менять.</div>
+      <div><b>Материалы</b>Фото и видео предоставляет центр. Досъёмка входит в полное ведение.</div>
+    </div>
+
+    <div class="once rv" style="margin-top:72px">
+      <div>
+        <p class="cap">С чего предлагаем начать</p>
+        <table class="ptab">
+          <tr><td><b>Карточка центра в Google Maps</b><span>Сразу, как договоримся</span></td><td>400 €</td></tr>
+
+          <tr><td><b>Обзор французского инфополя</b><span>Основа для всех дальнейших решений</span></td><td>900 €</td></tr>
+
+          <tr><td><b>Старт соцсетей</b><span>Стратегия, шаблоны, рекламный кабинет</span></td><td>900 €</td></tr>
+
+        </table>
+      </div>
+      <div class="total">
+        <small>Первый шаг</small>
+        <b>2 200 €</b>
+        <p>Разово. Дальше ведение соцсетей от 600 € в месяц. Визитку с галереей можно начать в любой момент.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -864,7 +949,7 @@ footer a{color:#9aa2ad}
 <section class="dark2">
   <div class="wrap">
     <div class="about rv" style="margin-top:0;padding-top:0;border-top:0">
-      <p><b style="color:#fff">Maxlessi</b> это маркетинг под руководством Максима, эксперта из Парижа. Стратегия, дизайн, контент и аналитика в одних руках. Работаем на французском, английском и русском.</p>
+      <p><b style="color:#fff">Maxlessi</b> это маркетинг под руководством Максима, эксперта из Парижа. Стратегия, сайты, контент, реклама и аналитика в одних руках. Работаем на французском, английском и русском.</p>
       <div class="facts">
         <div><b>65k€+</b><span>рекламных бюджетов</span></div>
         <div><b>50+</b><span>стран в кампаниях</span></div>
@@ -877,12 +962,12 @@ footer a{color:#9aa2ad}
 <section class="final">
   <div class="wrap">
     <div class="eyebrow" style="margin-bottom:18px">Следующий шаг</div>
-    <h2>Выбрать вариант стиля и тариф</h2>
+    <h2>Начать с карточки в Google и обзора инфополя</h2>
     <p>Maxlessi, Париж | <a href="https://maxlessi.com">maxlessi.com</a></p>
   </div>
 </section>
 
-<footer><div class="wrap">Макеты и названия событий на этой странице показывают пример оформления. Фотографии: Wikimedia Commons, авторы Celette, Lowendal, Interfase, Bernard Gagnon, Azerifactory, AlixSaz, Shahriyar Musayev, Urek Meniashvili, Dario Tortora, Urmen19, Sedef94, Nick Taylor, Valentina Dyptan, лицензии CC BY и CC BY-SA.</div></footer>
+<footer><div class="wrap">Макеты, адреса и названия на этой странице показывают пример оформления. Фотографии: Wikimedia Commons, авторы Celette, Interfase, Azerifactory, Shahriyar Musayev, Urek Meniashvili, Dario Tortora, Urmen19, Nick Taylor, лицензии CC BY и CC BY-SA.</div></footer>
 
 <script>
 (function(){
@@ -894,7 +979,7 @@ footer a{color:#9aa2ad}
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.08});
   document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
   var links=[].slice.call(document.querySelectorAll('.bar nav a'));
-  var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+  var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id.replace('p3b','p3'))})}})},{rootMargin:'-45% 0px -50% 0px'});
   document.querySelectorAll('section[id]').forEach(function(s){io2.observe(s)});
   var secs=[].slice.call(document.querySelectorAll('header,section'));
   addEventListener('keydown',function(e){

@@ -123,9 +123,6 @@ h3{font-family:var(--serif);font-weight:600;font-size:30px;line-height:1.1}
 .site.ivoire .btns span:first-child{background:var(--garnet);border-color:var(--garnet);color:#fff}
 .site .lbl{font-size:1.35cqw;letter-spacing:.18em;text-transform:uppercase;padding:1.6cqw 4.5cqw;background:#ece8df;color:#6c7079}
 .site.nuit .lbl{background:#080b0f;color:#8f97a3}
-.site .sh{aspect-ratio:16/7.2!important}
-.site .ev .ph{aspect-ratio:1!important}
-.site .stxt h4{margin-bottom:0!important}
 /* mobile site mock */
 .site.m{height:100%;display:flex;flex-direction:column}
 .site.m .sh{aspect-ratio:auto;flex:1.55}
@@ -375,6 +372,65 @@ h3{font-family:var(--serif);font-weight:600;font-size:30px;line-height:1.1}
 .notes div{border-left:2px solid var(--garnet);padding:4px 0 4px 18px;font-size:14px;color:var(--muted)}
 .notes b{display:block;color:var(--ink);font-size:16px;margin-bottom:2px}
 
+
+/* rebuild 18.11 */
+.serp{background:#fff;border-radius:16px;box-shadow:0 30px 70px rgba(0,0,0,.2);padding:20px 22px;font-size:13px;color:#202124}
+.serp .q{border:1px solid #dfe1e5;border-radius:22px;padding:9px 16px;margin-bottom:14px;font-size:14px}
+.serp .imgs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:0 0 6px}
+.serp .imgs i{aspect-ratio:4/3;border-radius:8px;background-size:cover;background-position:center}
+.serp .res{padding:10px 0;border-top:1px solid #eee}
+.serp .res small{display:block;color:#4d5156;font-size:11.5px}
+.serp .res b{display:block;color:#1a0dab;font-weight:500;font-size:16px;line-height:1.3}
+.serp .res span{color:#4d5156;font-size:12.5px}
+.honest{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:56px}
+.honest>div{background:#fff;border-radius:14px;padding:24px 26px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.honest b{display:block;font-family:var(--serif);font-size:27px;margin-bottom:8px}
+.honest ul{list-style:none;padding:0}
+.honest li{position:relative;padding:7px 0 7px 28px;font-size:15px}
+.honest .yes li:before{content:"";position:absolute;left:3px;top:14px;width:12px;height:6px;border-left:2px solid #1e7a4c;border-bottom:2px solid #1e7a4c;transform:rotate(-45deg)}
+.honest .no li:before{content:"×";position:absolute;left:3px;top:3px;font-size:20px;color:var(--garnet);font-weight:600}
+.pricetag{margin-top:44px;font-size:16px;color:var(--muted);display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.pricetag b{font-family:var(--serif);font-size:30px;color:var(--garnet);font-weight:600;white-space:nowrap}
+.room{container-type:inline-size;position:relative;aspect-ratio:16/9;background:linear-gradient(180deg,#2b2621 0,#3b342c 68%,#120f0c 68%,#241f19 100%);overflow:hidden;color:#fff}
+.room .rt{position:absolute;top:4cqw;left:4.5cqw;font-size:1.4cqw;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2)}
+.room .rt b{display:block;font-family:var(--serif);font-size:3.4cqw;letter-spacing:0;text-transform:none;color:#fff;font-weight:500;line-height:1.05;max-width:20cqw}
+.room figure{position:absolute;top:13%;width:17%;margin:0;text-align:center}
+.room figure i{display:block;aspect-ratio:4/5;border:.8cqw solid #b08a4f;outline:.25cqw solid #6d5530;box-shadow:0 2.5cqw 4cqw rgba(0,0,0,.6);background-size:cover;background-position:center}
+.room figcaption{font-size:1.3cqw;margin-top:1.4cqw;color:#e8e2d6;line-height:1.3}
+.room figcaption em{font-style:normal;color:#a89f90}
+.room .arr{position:absolute;top:34%;width:5cqw;height:5cqw;border-radius:50%;background:rgba(255,255,255,.14);display:grid;place-items:center;font-size:3.2cqw;line-height:1}
+.room .arr.l{left:4.5cqw}.room .arr.r{right:3cqw}
+.room .rooms{position:absolute;bottom:3.2cqw;left:0;right:0;display:flex;justify-content:center;gap:1.3cqw;font-size:1.3cqw}
+.room .rooms span{padding:.8cqw 1.8cqw;border:1px solid rgba(255,255,255,.3);border-radius:3cqw;color:#cfc8ba}
+.room .rooms .on{background:var(--gold);border-color:var(--gold);color:#16130d;font-weight:600}
+.player{display:flex;align-items:center;gap:14px;background:var(--night);color:#fff;border-radius:14px;padding:14px 16px;margin-top:24px}
+.player>i{width:54px;height:54px;border-radius:8px;background:url(../img/tar.jpg) center/cover;flex:none}
+.player b{display:block;font-size:15px;font-weight:600}
+.player span{font-size:12px;color:#aeb5bf}
+.player .bar2{height:3px;background:#3a4350;border-radius:2px;margin-top:8px;position:relative}
+.player .bar2:after{content:"";position:absolute;left:0;top:0;bottom:0;width:38%;background:var(--gold);border-radius:2px}
+.player>em{width:40px;height:40px;border-radius:50%;background:var(--gold);flex:none;position:relative}
+.player>em:after{content:"";position:absolute;left:16px;top:12px;border-left:12px solid #16130d;border-top:8px solid transparent;border-bottom:8px solid transparent}
+.mk .mi.play:after{content:"";position:absolute;left:50%;top:50%;width:46px;height:46px;margin:-23px;border-radius:50%;background:rgba(0,0,0,.55) linear-gradient(90deg,transparent 19px,#fff 19px,#fff 21px,transparent 21px)}
+.docm{background:#fff;border-radius:14px;box-shadow:0 30px 70px rgba(0,0,0,.18);padding:24px 26px;font-size:13.5px;color:#111}
+.docm small{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--garnet)}
+.docm h6{font-family:var(--serif);font-size:25px;font-weight:600;line-height:1.1;margin:6px 0 16px}
+.docm dl{display:grid;grid-template-columns:auto 1fr;gap:9px 16px;margin:0}
+.docm dt{color:var(--muted)}
+.docm dd{margin:0;font-weight:500}
+.docm .ok{margin-top:18px;border-top:1px solid #eee7da;padding-top:12px;display:flex;justify-content:space-between;color:var(--muted);font-size:12px}
+.docm .ok b{color:#1e7a4c}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;margin-top:48px}
+.pgrid h3{margin-bottom:14px}
+.ptab small{font-family:Inter,sans-serif;font-size:13px;color:var(--muted);font-weight:400;margin-left:6px}
+.ptab .all td{border-bottom:1px solid #eee7da;font-weight:600;font-size:17px}
+.ptab .sum td{border-bottom:0!important;padding-bottom:4px}
+.ptab .all td:first-child{padding-top:4px}
+.ptab .all td:last-child{font-family:var(--serif);font-size:30px;color:var(--garnet)}
+.trio.t2{grid-template-columns:1fr 1fr}.trio.t32{grid-template-columns:1.5fr 1fr}
+@media(max-width:1000px){.trio.t2,.trio.t32{grid-template-columns:1fr}.honest,.pgrid{grid-template-columns:1fr}.obs{grid-template-columns:1fr 1fr!important}}
+@media(max-width:640px){.obs{grid-template-columns:1fr!important}}
+
 /* start */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
 .st{border:1px solid var(--line);border-radius:14px;padding:30px}
@@ -453,10 +509,10 @@ footer a{color:#9aa2ad}
   <a class="brand" href="#top">MAXLESSI</a>
   <button class="burger" id="burger" aria-label="Menu"><i></i><i></i><i></i></button>
   <nav>
-    <a href="#s1">01 Fondations</a>
-    <a href="#s2">02 Contenus</a>
-    <a href="#s3">03 Événements</a>
-    <a href="#s5">04 Rapports</a>
+    <a href="#p1">01 Google</a>
+    <a href="#p2">02 Site et galerie</a>
+    <a href="#p3">03 Réseaux sociaux</a>
+    <a href="#ideas">Idées</a>
     <a href="#price">Tarifs</a>
     <a class="lng" href="../">RU</a>
   </nav>
@@ -464,136 +520,182 @@ footer a{color:#9aa2ad}
 
 <header class="hero" id="top">
   <div class="wrap">
-    <div class="eyebrow">Proposition pour le Centre culturel d'Azerbaïdjan à Paris</div>
-    <h1>Les réseaux sociaux du Centre culturel d'Azerbaïdjan <i>pour le public parisien</i></h1>
-    <p>Nous animons Instagram, Facebook, LinkedIn et X et créons la fiche Google du Centre. Ci-dessous : maquettes, contenu des prestations et tarifs.</p>
+    <div class="eyebrow">Proposition à la suite de notre rencontre du 18 novembre 2026</div>
+    <h1>Trois projets pour le Centre culturel d’Azerbaïdjan <i>à Paris</i></h1>
+    <p>Google, un site vitrine avec galerie virtuelle et les réseaux sociaux. Chaque projet peut être commandé séparément. Ci-dessous : ce que nous faisons, à quoi cela ressemble et combien cela coûte.</p>
     <div class="meta">
       <div><b>1, avenue Charles Floquet</b>Paris, 7e arrondissement</div>
-      <div><b>4 réseaux et Google</b>avec maquettes et tarifs</div>
+      <div><b>3 projets</b>un tarif pour chacun</div>
       <div><b>Maxlessi</b>marketing, Paris</div>
     </div>
   </div>
 </header>
 <div class="orn"></div>
 
-<section class="dark" id="today">
+<section class="dark" id="heard">
   <div class="wrap">
-    <div class="rv">
-      <span class="tag">Point de départ</span>
-      <h2>Aujourd'hui : 160 abonnés sur quatre réseaux, et pas de fiche Google</h2>
-      <p class="lead">Les nouvelles pages du Centre sont apparues à l'automne 2026. Chiffres au 18 novembre 2026.</p>
+    <div class="rv"><span class="tag">Ce que nous avons entendu</span><h2>Trois attentes du Centre et notre réponse à chacune</h2></div>
+    <div class="steps rv" style="margin-top:44px">
+      <div class="st"><div class="n">01</div><h3>La culture visible sur Google</h3><p>Quand un Français cherche le Centre ou l’Azerbaïdjan, il doit trouver vos pages et vos photographies.</p></div>
+      <div class="st"><div class="n">02</div><h3>L’exposition reste pour toujours</h3><p>Les tableaux ne doivent pas être oubliés le lendemain du vernissage. Il leur faut une adresse en ligne.</p></div>
+      <div class="st"><div class="n">03</div><h3>Une large audience sur les réseaux</h3><p>Des vidéos qui intéressent le public français et la première place parmi les centres culturels d’Azerbaïdjan.</p></div>
     </div>
-    <div class="today rv" style="margin-top:44px">
+    <p class="cap rv" style="margin-top:64px">Notre façon de travailler, dans le respect de vos règles</p>
+    <div class="obs rv" style="grid-template-columns:repeat(4,1fr);margin-top:0">
+      <div><b>Sans mots de passe</b>Nous passons par les rôles Google et Meta. Vous accordez l’accès et le retirez en un clic.</div>
+      <div><b>Tout est au nom du Centre</b>Domaine, hébergement, compte publicitaire et fiche Google appartiennent au Centre.</div>
+      <div><b>Pas d’annonces publiques</b>Les événements du Centre sont montrés uniquement après, en reportage. Les invitations restent les vôtres.</div>
+      <div><b>Uniquement la culture</b>Aucune politique. Vous validez chaque contenu avant publication.</div>
+    </div>
+    <p class="cap rv" style="margin-top:64px">Point de départ : les réseaux du Centre au 18 novembre 2026</p>
+    <div class="today rv">
       <div class="stat"><b>124</b><span>abonnés sur Instagram</span></div>
       <div class="stat"><b>27</b><span>sur Facebook</span></div>
       <div class="stat"><b>4</b><span>sur LinkedIn</span></div>
       <div class="stat"><b>5</b><span>sur X</span></div>
       <div class="stat hl"><b>4 166</b><span>vues pour la meilleure vidéo</span></div>
     </div>
-    <div class="obs rv">
-      <div><b>La vidéo fonctionne déjà</b>Les vidéos font bien plus de vues qu'il n'y a d'abonnés. Ce succès peut être amplifié.</div>
-      <div><b>Le Centre est difficile à trouver</b>Le Centre n'a pas de fiche Google Maps : la recherche n'affiche que l'Ambassade.</div>
-      <div><b>Pas d'invitation à venir</b>Les dernières publications n'annoncent pas d'événements à venir. Le français arrive en second.</div>
-    </div>
   </div>
 </section>
 
-<!-- 01 -->
-<section class="light" id="s1">
+<section class="light" id="p1">
   <div class="wrap">
     <div class="head rv">
       <div class="num">01</div>
-      <div><span class="tag">Fondations</span><h2>Une identité unique, des profils soignés et une fiche Google</h2></div>
+      <div><span class="tag">Google</span><h2>La fiche du Centre et la première page de Google</h2></div>
     </div>
+
     <div class="points rv">
-      <div class="pt"><span class="k">1</span><b>Nous créons la fiche Google</b><p>Le Centre apparaît sur la carte avec photos, horaires, avis et bouton d'itinéraire.</p></div>
-      <div class="pt"><span class="k">2</span><b>Une identité unique</b><p>Un même style pour tous les réseaux et les affiches. On reconnaît le Centre au premier regard.</p></div>
-      <div class="pt"><span class="k">3</span><b>Nous habillons les quatre réseaux</b><p>Avatars, couvertures, descriptions et publications épinglées dans un même style sur tous les réseaux.</p></div>
-      <div class="pt"><span class="k">4</span><b>Modèles de publications</b><p>Des maquettes prêtes pour les affiches, les anecdotes, les portraits et les objets du musée. Le fil gagne en cohérence.</p></div>
+      <div class="pt"><span class="k">1</span><b>Fiche Google Maps</b><p>Le Centre apparaît sur la carte de Paris avec photos, description et liens vers les réseaux. Aujourd’hui, la recherche n’affiche que l’Ambassade.</p></div>
+      <div class="pt"><span class="k">2</span><b>Revue de l’espace médiatique français</b><p>Un rapport : quels médias et quels auteurs écrivent sur l’Azerbaïdjan, sur quels sujets, et ce que montrent la première page et les images de Google.</p></div>
+      <div class="pt"><span class="k">3</span><b>Vos pages en première page</b><p>Sur les recherches liées au Centre et à la culture, vos pages arrivent en tête : fiche, site vitrine, réseaux, publications sur les expositions.</p></div>
+      <div class="pt"><span class="k">4</span><b>Des photographies dans la recherche</b><p>Nous ajoutons à la fiche, au site et aux réseaux des photos légendées de culture et de nature, pour que Google les affiche sur les recherches liées au Centre.</p></div>
     </div>
 
-    <p class="cap rv">Deux directions de style au choix : couverture de profil et publications</p>
-    <div class="duo rv">
-      <div>
-        <div class="vlabel"><b>Option « Nuit »</b><div class="sw"><i style="background:#0d1218"></i><i style="background:#c9a567"></i><i style="background:#8d2b37"></i><i style="background:#f6f1e7"></i></div></div>
-        <div class="browser">
-          <div class="site nuit">
-            <div class="lbl">Couverture de profil Facebook, LinkedIn et X</div>
-            <div class="sh" style="background-image:url(../img/carpets.jpg)">
-              <div class="snav"><b>Centre culturel d'Azerbaïdjan</b></div>
-              <div class="stxt"><small>Paris 7e, au pied de la tour Eiffel</small><h4>L'Azerbaïdjan<br>au cœur de Paris</h4></div>
-            </div>
-            <div class="lbl">Publications dans le fil</div>
-            <div class="agenda">
-              <div class="ev"><div class="ph" style="background-image:url(../img/kamancha.jpg);background-position:center 15%"></div><small>Concert</small><b>Soirée Mugham</b></div>
-              <div class="ev"><div class="ph" style="background-image:url(../img/carpet.jpg)"></div><small>Exposition</small><b>Tapis du Karabakh</b></div>
-              <div class="ev"><div class="ph" style="background-image:url(../img/silk.jpg)"></div><small>Atelier</small><b>La soie kelaghayi</b></div>
-            </div>
-          </div>
-        </div>
-        <p class="sample">Sombre, nocturne, or et grenat. Met en valeur le musée et les concerts.</p>
-      </div>
-      <div>
-        <div class="vlabel"><b>Option « Ivoire »</b><div class="sw"><i style="background:#f6f1e7"></i><i style="background:#8d2b37"></i><i style="background:#1a1f27"></i><i style="background:#1e5c55"></i></div></div>
-        <div class="browser">
-          <div class="site ivoire">
-            <div class="lbl">Couverture de profil Facebook, LinkedIn et X</div>
-            <div class="sh">
-              <div class="left">
-                <div class="snav"><b>Centre culturel d'Azerbaïdjan</b></div>
-                <div class="stxt"><small>Musée, concerts, rencontres</small><h4>L'âme de l'Azerbaïdjan,<br>à Paris</h4></div>
-              </div>
-              <div class="pic" style="background-image:url(../img/shebeke.jpg)"></div>
-            </div>
-            <div class="lbl">Publications dans le fil</div>
-            <div class="agenda">
-              <div class="ev"><div class="ph" style="background-image:url(../img/lahic.jpg)"></div><small>Exposition</small><b>Cuivres de Lahij</b></div>
-              <div class="ev"><div class="ph" style="background-image:url(../img/miniature.jpg);background-position:center 20%"></div><small>Conférence</small><b>La miniature</b></div>
-              <div class="ev"><div class="ph" style="background-image:url(../img/maiden.jpg)"></div><small>Projection</small><b>Bakou ancienne</b></div>
-            </div>
-          </div>
-        </div>
-        <p class="sample">Clair, muséal, ivoire et grenat. Plus proche du style des galeries parisiennes.</p>
-      </div>
-    </div>
-
-    <div class="trio rv" style="grid-template-columns:1fr 1fr;gap:60px">
+    <div class="trio t2 rv" style="gap:48px;margin-top:0;align-items:start">
       <div>
         <p class="cap">Fiche Google Maps</p>
         <div class="gcard">
           <div class="gp"><div style="background-image:url(../img/building.jpg)"></div><div style="background-image:url(../img/carpets.jpg)"></div></div>
           <div class="gb">
             <h5>Centre culturel d'Azerbaïdjan</h5>
-            <div><span class="stars">★★★★★</span> Centre culturel et musée</div>
+            <div><span class="stars">★★★★★</span> Centre culturel</div>
             <div class="row"><span>Itinéraire</span><span>Enregistrer</span><span>Partager</span><span>Appeler</span></div>
             <p>1 Av. Charles Floquet, 75007 Paris</p>
-            <p><b>Ouvert</b> | Ferme à 18:00</p>
             <p>Musée, expositions, concerts.</p>
           </div>
         </div>
       </div>
       <div>
-        <h3>Le Centre apparaît sur la carte de Paris</h3>
-        <p class="lead" style="font-size:17px">On cherche sur Google « que voir près de la tour Eiffel » et l'on trouve la fiche du Centre avec photos, horaires et liens vers les réseaux. Aujourd'hui, la recherche n'affiche que l'Ambassade.</p>
-        <p class="lead" style="font-size:17px">La fiche est animée chaque mois : nouvelles photos, actualités des événements, réponses aux avis.</p>
-        <p class="sample">Tous les écrans présentés ici sont des exemples de design. Les noms d'événements sont fictifs.</p>
+        <p class="cap">La première page sur une recherche du Centre</p>
+        <div class="serp">
+          <div class="q">centre culturel d'azerbaïdjan paris</div>
+          <div class="imgs"><i style="background-image:url(../img/carpet.jpg)"></i><i style="background-image:url(../img/shebeke.jpg)"></i><i style="background-image:url(../img/silk.jpg)"></i><i style="background-image:url(../img/maiden.jpg)"></i></div>
+          <div class="res"><small>azculture.fr</small><b>Centre culturel d'Azerbaïdjan à Paris</b><span>Galerie virtuelle, musique, histoire du Centre.</span></div>
+          <div class="res"><small>instagram.com › azculture_paris</small><b>Centre culturel d'Azerbaïdjan (@azculture_paris)</b><span>Vidéos, objets du musée, expositions.</span></div>
+          <div class="res"><small>facebook.com › azcultureparis</small><b>Centre culturel d'Azerbaïdjan | Paris</b><span>Reportages et vidéos du Centre.</span></div>
+          <div class="res"><small>linkedin.com › company › azcultureparis</small><b>Centre culturel d'Azerbaïdjan | LinkedIn</b><span>Actualités culturelles et coopérations.</span></div>
+        </div>
       </div>
     </div>
+    <div class="honest rv">
+      <div class="yes"><b>Ce qui est possible</b><ul>
+        <li>Occuper la première page avec vos pages sur les recherches du Centre</li>
+        <li>Faire remonter les pages du Centre sur les recherches culturelles : tapis, mugham, expositions à Paris</li>
+        <li>Savoir qui écrit et quoi : une synthèse chaque mois</li>
+      </ul></div>
+      <div class="no"><b>Ce que nous ne promettons pas</b><ul>
+        <li>Supprimer ou faire descendre des articles de grands médias : personne n’a ce pouvoir sur Google</li>
+        <li>Modifier les images de la recherche générale « Azerbaïdjan » : c’est l’algorithme qui les choisit</li>
+      </ul></div>
+    </div>
+    <p class="pricetag rv"><b>dès 400 €</b>La fiche peut être créée tout de suite, sans attendre le reste.</p>
   </div>
 </section>
 
-<!-- 02 -->
-<section class="dark2" id="s2">
+<section class="ivory" id="p2">
   <div class="wrap">
     <div class="head rv">
       <div class="num">02</div>
-      <div><span class="tag">Contenus</span><h2>Publications, nouveaux abonnés et animation de la communauté sur tous les réseaux du Centre</h2></div>
+      <div><span class="tag">Site vitrine et galerie</span><h2>Un site vitrine avec une galerie virtuelle des expositions</h2></div>
     </div>
+
     <div class="points rv">
-      <div class="pt"><span class="k">1</span><b>Les quatre réseaux</b><p>Instagram, Facebook, LinkedIn et X. Chaque publication paraît partout, au format de chaque réseau.</p></div>
-      <div class="pt"><span class="k">2</span><b>De 3 à 6 publications par semaine</b><p>Et de 1 à 3 vidéos. Le volume dépend de la formule choisie, le planning du mois est validé à l'avance.</p></div>
-      <div class="pt"><span class="k">3</span><b>Le français en premier</b><p>D'abord le texte pour les Parisiens, puis l'azerbaïdjanais. Les dates officielles sont conservées.</p></div>
-      <div class="pt"><span class="k">4</span><b>Plus d'abonnés partout</b><p>Chaque réseau a son public et son objectif de croissance. Les chiffres figurent dans le rapport.</p></div>
+      <div class="pt"><span class="k">1</span><b>Le site vitrine du Centre</b><p>Quelques pages en français, azerbaïdjanais et anglais : le Centre, la galerie, la musique, les contacts et les réseaux.</p></div>
+      <div class="pt"><span class="k">2</span><b>Galerie virtuelle</b><p>Des salles à parcourir depuis un téléphone ou un ordinateur. Après le vernissage, les tableaux y restent, avec le nom de l’auteur et une description.</p></div>
+      <div class="pt"><span class="k">3</span><b>La musique d’Azerbaïdjan</b><p>Une page qui joue pendant que l’on travaille à son ordinateur. La musique et ses droits sont fournis par le Centre.</p></div>
+      <div class="pt"><span class="k">4</span><b>Le lien avec le site commun</b><p>Le site vit sur votre domaine. Quand le site commun des centres culturels sortira, sa rubrique « Galerie » mènera ici.</p></div>
+    </div>
+
+    <p class="cap rv">Deux directions de design au choix</p>
+    <div class="duo rv">
+      <div>
+        <div class="vlabel"><b>Option « Nuit »</b><div class="sw"><i style="background:#0d1218"></i><i style="background:#c9a567"></i><i style="background:#8d2b37"></i><i style="background:#f6f1e7"></i></div></div>
+        <div class="browser"><div class="chrome"><i></i><i></i><i></i><span>azculture.fr</span></div>
+          <div class="site nuit">
+            <div class="sh" style="background-image:url(../img/carpets.jpg)">
+              <div class="snav"><b>Centre culturel d'Azerbaïdjan</b><span><em>Le Centre</em><em>Galerie</em><em>Musique</em><em>Contact</em></span></div>
+              <div class="stxt"><small>Paris 7e, au pied de la tour Eiffel</small><h4>L'Azerbaïdjan<br>au cœur de Paris</h4><div class="btns"><span>Entrer dans la galerie</span><span>Écouter</span></div></div>
+            </div>
+            <div class="agenda"><div class="ev"><div class="ph" style="background-image:url(../img/carpet.jpg)"></div><small>Salle 1</small><b>Tapis du Karabakh</b></div><div class="ev"><div class="ph" style="background-image:url(../img/silk.jpg)"></div><small>Salle 2</small><b>Soie et costumes</b></div><div class="ev"><div class="ph" style="background-image:url(../img/miniature.jpg)"></div><small>Salle 3</small><b>Miniatures</b></div></div>
+          </div>
+        </div>
+        <p class="sample">Sombre, nocturne, or et grenat. Sur fond sombre, les tableaux se regardent comme au musée.</p>
+      </div>
+      <div>
+        <div class="vlabel"><b>Option « Ivoire »</b><div class="sw"><i style="background:#f6f1e7"></i><i style="background:#8d2b37"></i><i style="background:#1a1f27"></i><i style="background:#1e5c55"></i></div></div>
+        <div class="browser"><div class="chrome"><i></i><i></i><i></i><span>azculture.fr</span></div>
+          <div class="site ivoire">
+            <div class="sh">
+              <div class="left">
+                <div class="snav"><b>Centre culturel d'Azerbaïdjan</b></div>
+                <div class="stxt"><small>Galerie, musique, histoire</small><h4>L'âme de l'Azerbaïdjan,<br>à Paris</h4><div class="btns"><span>Entrer dans la galerie</span><span>Écouter</span></div></div>
+              </div>
+              <div class="pic" style="background-image:url(../img/shebeke.jpg)"></div>
+            </div>
+            <div class="agenda"><div class="ev"><div class="ph" style="background-image:url(../img/lahic.jpg)"></div><small>Salle 4</small><b>Cuivres de Lahij</b></div><div class="ev"><div class="ph" style="background-image:url(../img/jewel.jpg)"></div><small>Salle 5</small><b>Bijoux anciens</b></div><div class="ev"><div class="ph" style="background-image:url(../img/maiden.jpg)"></div><small>Salle 6</small><b>Bakou ancienne</b></div></div>
+          </div>
+        </div>
+        <p class="sample">Clair, ivoire et grenat. Plus proche du style des galeries parisiennes.</p>
+      </div>
+    </div>
+    <div class="trio t32 rv" style="gap:48px">
+      <div>
+        <p class="cap">Une salle de la galerie virtuelle</p>
+        <div class="browser"><div class="chrome"><i></i><i></i><i></i><span>azculture.fr/galerie</span></div>
+          <div class="room">
+            <div class="rt">Salle 1<b>Tapis et textiles</b></div>
+            <figure style="left:27%"><i style="background-image:url(../img/carpet.jpg)"></i><figcaption>Tapis du Karabakh<br><em>XIXe siècle</em></figcaption></figure>
+            <figure style="left:49%"><i style="background-image:url(../img/silk.jpg)"></i><figcaption>Soie kelaghayi<br><em>Sheki</em></figcaption></figure>
+            <figure style="left:71%"><i style="background-image:url(../img/miniature.jpg)"></i><figcaption>Miniature<br><em>Art du livre</em></figcaption></figure>
+            <div class="arr l">‹</div><div class="arr r">›</div>
+            <div class="rooms"><span class="on">Salle 1</span><span>Salle 2</span><span>Salle 3</span><span>Salle 4</span><span>Salle 5</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3>L’exposition dure une soirée, la galerie demeure</h3>
+        <p class="lead" style="font-size:17px">Nous photographions les salles du Centre et les œuvres, puis montons une galerie légère et rapide, sans 3D lourde. Chaque nouvelle exposition s’ajoute comme une nouvelle salle.</p>
+        <div class="player"><i></i><div style="flex:1"><b>Mugham, tar et kamancha</b><span>Radio du Centre culturel d'Azerbaïdjan</span><div class="bar2"></div></div><em></em></div>
+        <p class="sample">Tous les écrans sont des exemples de design. L’adresse azculture.fr est indicative, les noms des salles aussi.</p>
+      </div>
+    </div>
+    <p class="pricetag rv"><b>3 700 € l’ensemble</b>Site vitrine, galerie avec une première exposition et page musicale. Chaque partie peut être commandée seule.</p>
+  </div>
+</section>
+
+<section class="dark2" id="p3">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="num">03</div>
+      <div><span class="tag">Réseaux sociaux</span><h2>Vidéos, publicité et régularité : cap sur 10 000 abonnés</h2></div>
+    </div>
+
+    <div class="points rv">
+      <div class="pt"><span class="k">1</span><b>Des vidéos courtes</b><p>Des vidéos de 30 à 40 secondes sur le musée, la musique, la nature et les artisans. Montées à partir des images du Centre, avec une musique autorisée pour les comptes d’organisations.</p></div>
+      <div class="pt"><span class="k">2</span><b>De la publicité sur les meilleures vidéos</b><p>Nous montrons les vidéos les plus intéressantes au public français et faisons grandir les abonnés. Les événements du Centre ne sont pas promus.</p></div>
+      <div class="pt"><span class="k">3</span><b>Le rythme et l’heure des publications</b><p>Un planning mensuel : quoi, où et à quelle heure. Le premier mois, nous testons les formats et gardons ce qui fonctionne.</p></div>
+      <div class="pt"><span class="k">4</span><b>Quatre réseaux</b><p>Instagram, Facebook, LinkedIn et X. Un même sujet paraît partout, au format de chaque réseau.</p></div>
     </div>
 
     <div class="split rv">
@@ -601,262 +703,245 @@ footer a{color:#9aa2ad}
         <p class="cap" style="text-align:center">Voici à quoi ressemblera le profil</p>
         <div class="phone"><div class="pscreen"><div class="ig">
           <div class="top">azculture_paris</div>
-          <div class="prof"><div class="ava"></div><div class="nums"><div><b>148</b>posts</div><div><b>5 400</b>followers</div><div><b>210</b>following</div></div></div>
-          <div class="bio"><b>Centre culturel d'Azerbaïdjan</b><br>Musée, concerts, expositions<br>1, avenue Charles Floquet, Paris 7e</div>
-          <div class="hl"><span><i style="background-image:url(../img/carpets.jpg)"></i>Musée</span><span><i style="background-image:url(../img/kamancha.jpg)"></i>Agenda</span><span><i style="background-image:url(../img/building.jpg)"></i>Visiter</span><span><i style="background-image:url(../img/tea.jpg)"></i>Saveurs</span></div>
-          <div class="grid9">
-            <div class="t ph" style="background-image:url(../img/carpet.jpg)"><small>Objet du mois</small><b>Tapis du Karabakh</b></div>
-            <div class="t txt g"><small>Agenda</small><b>Soirée Mugham</b></div>
-            <div class="t ph" style="background-image:url(../img/kamancha.jpg);background-position:center 15%"><small>Portrait</small><b>Le kamancha</b></div>
-            <div class="t txt i"><small>Le saviez-vous ?</small><b>UNESCO 2010</b></div>
-            <div class="t ph" style="background-image:url(../img/shebeke.jpg)"><small>Savoir-faire</small><b>Le shebeke</b></div>
-            <div class="t ph" style="background-image:url(../img/silk.jpg)"><small>Atelier</small><b>La soie</b></div>
-            <div class="t ph" style="background-image:url(../img/maiden.jpg)"><small>Voyage</small><b>Bakou</b></div>
-            <div class="t txt"><small>Exposition</small><b>Cuivres de Lahij</b></div>
-            <div class="t ph" style="background-image:url(../img/jewel.jpg)"><small>Collection</small><b>Bijoux anciens</b></div>
-          </div>
+          <div class="prof"><div class="ava"></div><div class="nums"><div><b>148</b>posts</div><div><b>10 k</b>followers</div><div><b>210</b>following</div></div></div>
+          <div class="bio"><b>Centre culturel d'Azerbaïdjan</b><br>Musée, musique, expositions<br>Paris 7e</div>
+          <div class="hl"><span><i style="background-image:url(../img/carpets.jpg)"></i>Musée</span><span><i style="background-image:url(../img/tar.jpg)"></i>Musique</span><span><i style="background-image:url(../img/building.jpg)"></i>Le Centre</span><span><i style="background-image:url(../img/tea.jpg)"></i>Saveurs</span></div>
+          <div class="grid9"><div class="t ph" style="background-image:url(../img/carpet.jpg);"><small>Objet du mois</small><b>Tapis du Karabakh</b></div><div class="t txt g"><small>Retour en images</small><b>Soirée Mugham</b></div><div class="t ph" style="background-image:url(../img/kamancha.jpg);background-position:center 15%"><small>Portrait</small><b>Le kamancha</b></div><div class="t txt i"><small>Le saviez-vous ?</small><b>UNESCO 2010</b></div><div class="t ph" style="background-image:url(../img/shebeke.jpg);"><small>Savoir-faire</small><b>Le shebeke</b></div><div class="t ph" style="background-image:url(../img/silk.jpg);"><small>Vidéo</small><b>La soie</b></div><div class="t ph" style="background-image:url(../img/maiden.jpg);"><small>Voyage</small><b>Bakou</b></div><div class="t txt"><small>Musique</small><b>Le mugham</b></div><div class="t ph" style="background-image:url(../img/jewel.jpg);"><small>Collection</small><b>Bijoux anciens</b></div></div>
         </div></div></div>
-        <p class="sample" style="text-align:center">Maquette. Les chiffres du profil indiquent l'objectif, pas la situation actuelle.</p>
+        <p class="sample" style="text-align:center">Maquette. Les 10 000 abonnés sont l’objectif, pas le chiffre actuel.</p>
       </div>
       <div>
         <p class="cap">Modèles de publications</p>
         <div class="posts">
           <div><div class="post" style="background-image:url(../img/carpet.jpg)"><div class="pl"><span>Objet du mois</span><span>01</span></div><div><h6>Tapis du Karabakh</h6><p>XIXe siècle, laine nouée à la main</p></div></div><div class="pname"><b>Objet du musée</b>chaque semaine</div></div>
-          <div><div class="post poster"><div class="frame"></div><div class="pl"><span>Agenda</span><span>Concert</span></div><div><div class="big">11</div><h6>Soirée Mugham</h6><p>Décembre, 19h30</p></div></div><div class="pname"><b>Affiche</b>pour chaque événement</div></div>
+          <div><div class="post poster"><div class="frame"></div><div class="pl"><span>Retour en images</span><span>02</span></div><div><h6>Soirée Mugham</h6><p>Les plus beaux moments</p></div></div><div class="pname"><b>Reportage</b>après chaque événement</div></div>
           <div><div class="post" style="background-image:url(../img/kamancha.jpg);background-position:center top"><div class="pl"><span>Portrait</span><span>03</span></div><div><h6>La voix du mugham</h6><p>Maître du kamancha</p></div></div><div class="pname"><b>Portrait</b>artistes et artisans</div></div>
           <div><div class="post fact"><div class="pl"><span>Le saviez-vous</span><span>04</span></div><div class="round"></div><div><h6>Le tapis d'Azerbaïdjan, inscrit à l'UNESCO en 2010</h6></div></div><div class="pname"><b>Le saviez-vous</b>court et visuel</div></div>
         </div>
-        <p class="cap" style="margin-top:44px">Exemple de semaine</p>
-        <div class="cal">
-          <div><b>Lun</b><span class="chip p">Objet du musée</span></div>
-          <div><b>Mar</b><span class="chip v">Vidéo dans les salles</span></div>
-          <div><b>Mer</b><span class="chip">Affiche de l'événement</span></div>
-          <div><b>Jeu</b><span class="chip s">Stories : préparatifs</span></div>
-          <div><b>Ven</b><span class="chip v">Vidéo de la soirée</span><span class="chip s">Stories en direct</span></div>
-          <div><b>Sam</b><span class="chip p">Portrait d'artiste</span></div>
-          <div><b>Dim</b><span class="chip">Anecdote ou histoire</span></div>
-        </div>
+        <p class="cap" style="margin-top:44px">Exemple de semaine : un événement pour six publications culturelles</p>
+        <div class="cal"><div><b>Lun</b><span class="chip v">Vidéo : le musée</span></div><div><b>Mar</b><span class="chip p">Objet du musée</span></div><div><b>Mer</b><span class="chip v">Vidéo : la musique</span></div><div><b>Jeu</b><span class="chip ">Anecdote ou histoire</span></div><div><b>Ven</b><span class="chip p">Portrait d’artisan</span></div><div><b>Sam</b><span class="chip v">Vidéo : la nature</span></div><div><b>Dim</b><span class="chip s">Reportage d’événement</span></div></div>
       </div>
     </div>
 
     <div class="rv" style="margin-top:90px">
-      <p class="cap">Une publication, quatre réseaux</p>
-      <h3 style="font-size:clamp(28px,3vw,44px);max-width:900px">Nous animons tous les réseaux du Centre et y développons l'audience</h3>
+      <p class="cap">Un sujet, quatre réseaux</p>
+      <h3 style="font-size:clamp(28px,3vw,44px);max-width:900px">À chaque réseau son public et sa manière</h3>
     </div>
     <div class="nets rv">
       <div class="net">
-        <div class="nh"><i style="background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7)"></i><div><b>Instagram</b><span>124 abonnés aujourd'hui</span></div></div>
-        <p class="role">Le public parisien. Vidéos, objets du musée, affiches.</p>
-        <div class="mk ig2">
-          <div class="mh"><em></em><b>azculture_paris</b></div>
+        <div class="nh"><i style="background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7)"></i><div><b>Instagram</b><span>124 abonnés aujourd’hui</span></div></div>
+        <p class="role">Le public parisien. Vidéos, objets du musée, reportages.</p>
+        <div class="mk ig2"><div class="mh"><em></em><b>azculture_paris</b></div>
           <div class="mi" style="background-image:url(../img/carpet.jpg)"><div><small>Objet du mois</small><strong>Tapis du Karabakh</strong></div></div>
-          <div class="mt"><b>azculture_paris</b> Un tapis du Karabakh du XIXe siècle, à voir au musée du Centre.</div>
-        </div>
+          <div class="mt"><b>azculture_paris</b> Un tapis du Karabakh du XIXe siècle, conservé au musée du Centre.</div></div>
       </div>
       <div class="net">
-        <div class="nh"><i style="background:#1877f2"></i><div><b>Facebook</b><span>27 abonnés aujourd'hui</span></div></div>
-        <p class="role">Événements et diaspora. Pages d'événements, invitations.</p>
-        <div class="mk fb">
-          <div class="mi" style="background-image:url(../img/kamancha.jpg);background-position:center 20%"></div>
-          <div class="mt"><small>VEN. 11 DÉC. À 19:30</small><strong>Soirée Mugham</strong><span>Centre culturel d'Azerbaïdjan, Paris</span><div class="bt"><u>Ça m'intéresse</u><u>J'y vais</u></div></div>
-        </div>
+        <div class="nh"><i style="background:#1877f2"></i><div><b>Facebook</b><span>27 abonnés aujourd’hui</span></div></div>
+        <p class="role">La diaspora et les amis du Centre. Vidéos et reportages.</p>
+        <div class="mk li"><div class="mh"><em></em><div><b>Centre culturel d'Azerbaïdjan</b><span>Vidéo, 35 s</span></div></div>
+          <div class="mt">Bakou, la vieille ville à la tombée de la nuit.</div>
+          <div class="mi play" style="background-image:url(../img/maiden.jpg)"></div></div>
       </div>
       <div class="net">
-        <div class="nh"><i style="background:#0a66c2"></i><div><b>LinkedIn</b><span>4 abonnés aujourd'hui</span></div></div>
-        <p class="role">Partenaires, presse, institutions. Actualités du Centre et coopérations.</p>
-        <div class="mk li">
-          <div class="mh"><em></em><div><b>Centre culturel d'Azerbaïdjan</b><span>2 300 abonnés</span></div></div>
-          <div class="mt">Le Centre accueille les étudiants de l'INALCO pour une visite du musée et une conférence sur l'art du tapis.</div>
-          <div class="mi" style="background-image:url(../img/carpets.jpg)"></div>
-        </div>
+        <div class="nh"><i style="background:#0a66c2"></i><div><b>LinkedIn</b><span>4 abonnés aujourd’hui</span></div></div>
+        <p class="role">Institutions, presse, organisations culturelles.</p>
+        <div class="mk li"><div class="mh"><em></em><div><b>Centre culturel d'Azerbaïdjan</b><span>2 300 abonnés</span></div></div>
+          <div class="mt">L'art du tapis azerbaïdjanais, inscrit au patrimoine immatériel de l'UNESCO : une tradition à découvrir en vidéo.</div>
+          <div class="mi" style="background-image:url(../img/carpets.jpg)"></div></div>
       </div>
       <div class="net">
-        <div class="nh"><i style="background:#000;border:1px solid #555"></i><div><b>X</b><span>5 abonnés aujourd'hui</span></div></div>
+        <div class="nh"><i style="background:#000;border:1px solid #555"></i><div><b>X</b><span>5 abonnés aujourd’hui</span></div></div>
         <p class="role">Actualités officielles. Journalistes, diplomates, instituts culturels.</p>
-        <div class="mk xx">
-          <div class="mh"><em></em><div><b>Azculture Paris</b><span>@azcultureparis</span></div></div>
-          <div class="mt">Ce vendredi à 19h30, soirée Mugham au Centre culturel d'Azerbaïdjan, avenue Charles Floquet.</div>
-          <div class="mi" style="background-image:url(../img/shebeke.jpg)"></div>
-        </div>
+        <div class="mk xx"><div class="mh"><em></em><div><b>Azculture Paris</b><span>@azcultureparis</span></div></div>
+          <div class="mt">Le mugham, musique savante d'Azerbaïdjan, en 40 secondes.</div>
+          <div class="mi" style="background-image:url(../img/tar.jpg)"></div></div>
       </div>
     </div>
-    <div class="calm rv"><b>Uniquement la culture.</b> <span>Aucun sujet politique dans les publications. Les commentaires sont modérés, les provocations masquées.</span></div>
-    <p class="sample rv">Maquettes. Le nombre d'abonnés de la maquette LinkedIn indique l'objectif. Les vidéos courtes sont aussi publiées sur TikTok et YouTube Shorts.</p>
+    <div class="calm rv"><b>La règle du fil.</b> <span>Pour une publication sur un événement, trois ou quatre vidéos sur la culture. Les événements du Centre sont montrés uniquement après, en reportage.</span></div>
+    <p class="sample rv">Maquettes. Le nombre d’abonnés de la maquette LinkedIn indique l’objectif.</p>
   </div>
 </section>
 
-<!-- 03 -->
-<section class="ivory" id="s3">
+<section class="light" id="p3b">
   <div class="wrap">
-    <div class="head rv">
-      <div class="num">03</div>
-      <div><span class="tag">Événements</span><h2>Chaque événement du Centre sur les réseaux : annonce, stories, reportage</h2></div>
-    </div>
-    <div class="points rv">
-      <div class="pt"><span class="k">1</span><b>Annonce deux semaines avant</b><p>Une affiche dans le style du Centre et une courte vidéo sur les quatre réseaux.</p></div>
-      <div class="pt"><span class="k">2</span><b>Page d'événement Facebook</b><p>Date, adresse et description. Les invités indiquent leur venue et reçoivent un rappel du réseau lui-même.</p></div>
-      <div class="pt"><span class="k">3</span><b>Stories le jour même</b><p>Préparatifs, premiers invités, extraits. Des directs lors des grandes soirées.</p></div>
-      <div class="pt"><span class="k">4</span><b>Reportage ensuite</b><p>Photos et vidéo dès le lendemain, avec mention des artistes et des invités.</p></div>
-    </div>
-
-    <div class="ads rv">
+    <div class="rv"><span class="tag">Publicité et rapport</span><h2>Chaque campagne publicitaire arrive avec sa justification</h2><p class="lead">Un budget publicitaire doit être justifié. Pour chaque campagne, nous préparons une page : quelle vidéo, pour qui, combien et quel résultat attendu.</p></div>
+    <div class="ads rv" style="margin-top:48px">
       <div>
-        <p class="cap" style="text-align:center">Annonce en stories</p>
-        <div class="phone"><div class="pscreen"><div class="story">
-          <div class="who"><i></i><div>azculture_paris<em>il y a 2 h</em></div></div>
-          <div><small>Vendredi 11 décembre, 19h30</small><h6>Soirée Mugham au pied de la tour Eiffel</h6><p>Entrée libre.</p><div class="cta">En savoir plus</div></div>
+        <p class="cap" style="text-align:center">La publicité : une vidéo sur la culture</p>
+        <div class="phone"><div class="pscreen"><div class="story" style="background-image:url(../img/shebeke.jpg)">
+          <div class="who"><i></i><div>azculture_paris<em>Sponsorisé</em></div></div>
+          <div><small>Azerbaïdjan</small><h6>Sheki, le palais aux mille vitraux</h6><p>30 secondes de voyage.</p><div class="cta">Suivre @azculture_paris</div></div>
         </div></div></div>
       </div>
       <div>
-        <p class="cap">Annonce dans le fil</p>
-        <div class="feed">
-          <div class="fh"><i></i><div><b>azculture_paris</b><span>Paris</span></div></div>
-          <div class="fi"><div><small>Concert, 11 décembre</small><h6>Le mugham, patrimoine vivant</h6></div></div>
-          <div class="fc">Vendredi 11 décembre, 19h30</div>
-          <div class="ft"><b>azculture_paris</b> Une soirée rare à Paris : les maîtres du mugham jouent dans les salons du Centre culturel d'Azerbaïdjan.</div>
+        <p class="cap">La justification, sur une page</p>
+        <div class="docm">
+          <small>Campagne n° 3</small>
+          <h6>Sheki, le palais aux mille vitraux</h6>
+          <dl>
+            <dt>Objectif</dt><dd>Nouveaux abonnés en France</dd>
+            <dt>Public</dt><dd>Paris et Île-de-France : musées, voyages, arts décoratifs</dd>
+            <dt>Durée</dt><dd>14 jours</dd>
+            <dt>Budget</dt><dd>180 €</dd>
+            <dt>Résultat attendu</dt><dd>25 000 personnes touchées</dd>
+          </dl>
+          <div class="ok"><span>Validation du Centre</span><b>Approuvé</b></div>
         </div>
+        <p class="sample">Exemple de document. Chiffres fictifs.</p>
       </div>
       <div>
-        <p class="cap">Le déroulé, jour après jour</p>
+        <p class="cap">Le circuit de validation</p>
         <div class="aud">
-          <div><b>Deux semaines avant</b><p>Affiche et vidéo d'annonce, page d'événement Facebook.</p></div>
-          <div><b>Trois jours avant</b><p>Rappel dans le fil et en stories, présentation de l'artiste.</p></div>
-          <div><b>Le jour même</b><p>Stories depuis les salons et direct.</p></div>
-          <div><b>Le lendemain</b><p>Photos et vidéo de la soirée, remerciements aux invités.</p></div>
+          <div><b>1. Nous choisissons la vidéo</b><p>Uniquement une vidéo forte sur la culture, la nature ou le musée. Pas un événement.</p></div>
+          <div><b>2. Nous préparons la justification</b><p>Une page : objectif, public, durée, budget, résultat attendu.</p></div>
+          <div><b>3. Vous validez</b><p>Aucune campagne ne démarre sans votre accord.</p></div>
+          <div><b>4. Nous lançons et rendons compte</b><p>Après la campagne : combien de personnes l’ont vue et combien se sont abonnées.</p></div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- 05 -->
-<section class="light" id="s5">
-  <div class="wrap">
-    <div class="head rv">
-      <div class="num">04</div>
-      <div><span class="tag">Rapports</span><h2>Un rapport par mois : abonnés, audience, meilleures publications</h2></div>
-    </div>
-    <div class="points rv">
-      <div class="pt"><span class="k">1</span><b>Un rapport sur une page</b><p>Abonnés, audience et vues des vidéos pour chaque réseau. Sans jargon.</p></div>
-      <div class="pt"><span class="k">2</span><b>Les meilleures publications</b><p>Ce qui a plu au public et pourquoi. Cela oriente les sujets du mois suivant.</p></div>
-      <div class="pt"><span class="k">3</span><b>Prêt pour Bakou</b><p>Un format facile à transmettre à l'Ambassade et au Ministère.</p></div>
-      <div class="pt"><span class="k">4</span><b>Le plan du mois suivant</b><p>Planning éditorial, rubriques et événements à couvrir.</p></div>
-    </div>
-
+    <p class="cap rv" style="margin-top:72px">Un rapport chaque mois</p>
     <div class="dash rv">
-      <div class="dh"><b>Centre culturel d'Azerbaïdjan, rapport mensuel</b><span>Données d'exemple à titre d'illustration</span></div>
+      <div class="dh"><b>Centre culturel d’Azerbaïdjan, rapport mensuel</b><span>Données d’exemple à titre d’illustration</span></div>
       <div class="dk">
         <div><b>+1 240</b><span>nouveaux abonnés</span><br><em>+31%</em></div>
         <div><b>185 k</b><span>audience du mois</span><br><em>+70%</em></div>
         <div><b>62 k</b><span>vues des vidéos</span><br><em>+45%</em></div>
-        <div><b>4,8%</b><span>engagement</span><br><em>+0,9</em></div>
-        <div><b>16 + 8</b><span>publications et vidéos</span><br><em>conforme au plan</em></div>
+        <div><b>0,38 €</b><span>coût par abonné</span><br><em>en baisse de 12 %</em></div>
+        <div><b>8 + 8</b><span>vidéos et publications</span><br><em>conforme au plan</em></div>
       </div>
       <div class="dg">
         <div class="chart"><div class="ct">Nouveaux abonnés par semaine</div><div class="bars" style="margin-bottom:22px"><i style="height:38%"><span>1</span></i><i style="height:52%"><span>2</span></i><i style="height:47%"><span>3</span></i><i style="height:74%"><span>4</span></i><i style="height:66%"><span>5</span></i><i style="height:100%"><span>6</span></i></div></div>
         <div class="chart"><div class="ct">Meilleures publications du mois</div>
           <table class="tbl"><tr><th>Publication</th><th>Réseau</th><th>Audience</th></tr>
-          <tr><td>Soirée Mugham, vidéo</td><td>Instagram</td><td>41 200</td></tr>
+          <tr><td>Sheki, le palais aux vitraux</td><td>Instagram</td><td>41 200</td></tr>
           <tr><td>Tapis du Karabakh</td><td>Facebook</td><td>18 600</td></tr>
           <tr><td>Portrait, kamancha</td><td>Instagram</td><td>15 300</td></tr>
-          <tr><td>Visite de l'INALCO</td><td>LinkedIn</td><td>6 900</td></tr></table>
+          <tr><td>L'art du tapis, UNESCO</td><td>LinkedIn</td><td>6 900</td></tr></table>
         </div>
       </div>
     </div>
+    <p class="pricetag rv"><b>dès 600 € par mois</b>Trois formules : publicité seule, contenus et publicité, gestion complète.</p>
   </div>
 </section>
 
-<!-- start -->
-<section class="dark2" id="start">
+<section class="dark" id="ideas">
   <div class="wrap">
-    <div class="rv"><span class="tag">Déroulement</span><h2>D'abord le style et la fiche, puis le planning du mois, puis l'animation</h2></div>
-    <div class="steps rv" style="margin-top:48px">
-      <div class="st"><div class="n">1</div><h3>Fondations</h3><p>Identité visuelle, habillage des quatre réseaux, fiche Google et tournage de lancement. Une mission ponctuelle.</p></div>
-      <div class="st"><div class="n">2</div><h3>Le planning du mois</h3><p>Nous validons ensemble les rubriques, les sujets et le calendrier du premier mois.</p></div>
-      <div class="st"><div class="n">3</div><h3>Animation mensuelle</h3><p>Publications, vidéos, stories, animation de la communauté et rapport. Trois formules au choix, tarifs ci-dessous.</p></div>
+    <div class="rv"><span class="tag">Idées pour la suite</span><h2>Ce que l’on peut faire ensuite</h2><p class="lead">À discuter séparément, une fois l’essentiel lancé.</p></div>
+    <div class="partners rv" style="margin-top:48px">
+      <div class="pc" style="background-image:url(../img/tar.jpg)"><small>Série musicale</small><h3>Caspian à Paris</h3><p>Un musicien interprète une mélodie azerbaïdjanaise devant un monument parisien. De courts teasers pour les réseaux, la version complète sur le site.</p></div>
+      <div class="pc" style="background-image:url(../img/carpets.jpg)"><small>Dans les salons du Centre</small><h3>Des vidéos pour les écrans</h3><p>Une boucle vidéo pour les écrans des salons : collection, histoire, artisans. Les invités la découvrent pendant les réceptions.</p></div>
+      <div class="pc" style="background-image:url(../img/miniature.jpg);background-position:center 20%"><small>Musique</small><h3>Une musique sans restrictions</h3><p>Une sélection de musique azerbaïdjanaise aux droits clarifiés, utilisable dans les publications des organisations.</p></div>
     </div>
   </div>
 </section>
 
 <section class="ivory" id="price">
   <div class="wrap">
-    <div class="rv"><span class="tag">Tarifs</span><h2>Fondations : 2 500 € une fois. Animation : dès 1 900 € par mois</h2><p class="lead">Prix nets, TVA non applicable, art. 293 B du CGI.</p></div>
+    <div class="rv"><span class="tag">Tarifs</span><h2>Un tarif distinct pour chaque projet</h2><p class="lead">Prix nets, TVA non applicable, art. 293 B du CGI.</p></div>
 
-    <div class="once rv">
+    <div class="pgrid rv">
       <div>
-        <p class="cap">Une fois : les fondations</p>
+        <h3>01 Google</h3>
         <table class="ptab">
-          <tr><td><b>Une identité unique</b><span>Couleurs, typographies, modèles de publications, d'affiches et de stories</span></td><td>1 600 €</td></tr>
-          <tr><td><b>Habillage des réseaux et fiche Google</b><span>Avatars, couvertures, descriptions, stories à la une sur les quatre réseaux, fiche Google Maps</span></td><td>600 €</td></tr>
-          <tr><td><b>Tournage de lancement</b><span>Photos et vidéos du bâtiment et du musée pour les premières publications</span></td><td>700 €</td></tr>
-          <tr class="sum"><td>Séparément</td><td>2 900 €</td></tr>
+          <tr><td><b>Fiche du Centre sur Google Maps</b><span>Création, validation, photos, description en français et en anglais</span></td><td>400 €</td></tr>
+
+          <tr><td><b>Revue de l’espace médiatique français</b><span>Rapport sur les médias, les auteurs et les sujets, la première page et les images de Google, plan de présence positive</span></td><td>900 €</td></tr>
+
+          <tr><td><b>Synthèse des mentions</b><span>Ce qui est paru et ce qui a changé en première page</span></td><td>200 €<small>par mois</small></td></tr>
+
         </table>
       </div>
-      <div class="total">
-        <small>L'ensemble</small>
-        <b>2 500 €</b>
-        <p>Un seul paiement pour toutes les fondations. L'identité, les modèles et les images tournées restent la propriété du Centre.</p>
+      <div>
+        <h3>02 Site et galerie</h3>
+        <table class="ptab">
+          <tr><td><b>Site vitrine</b><span>Design, quatre pages, trois langues</span></td><td>1 800 €</td></tr>
+
+          <tr><td><b>Galerie virtuelle</b><span>Les salles du Centre et une première exposition jusqu’à 20 œuvres</span></td><td>1 900 €</td></tr>
+
+          <tr><td><b>Page musicale</b><span>Lecteur et sélection, musique fournie par le Centre</span></td><td>400 €</td></tr>
+
+          <tr class="sum"><td>Séparément</td><td>4 100 €</td></tr>
+          <tr class="all"><td>L’ensemble</td><td>3 700 €</td></tr>
+          <tr><td><b>Exposition suivante dans la galerie</b><span>Nouvelle salle : prise de vue des œuvres, légendes, mise en ligne</span></td><td>250 €</td></tr>
+
+          <tr><td><b>Maintenance et mises à jour</b><span>Corrections, nouveaux textes, assistance technique</span></td><td>100 €<small>par mois</small></td></tr>
+
+        </table>
       </div>
     </div>
 
-    <p class="cap rv" style="margin-top:64px">Chaque mois : l'accompagnement</p>
+    <h3 class="rv" style="margin-top:64px">03 Réseaux sociaux</h3>
+    <table class="ptab rv" style="margin-top:14px">
+      <tr><td><b>Lancement</b><span>Stratégie, rubriques, modèles de couvertures et de sous-titres, compte publicitaire via les rôles, sans mots de passe</span></td><td>900 €</td></tr>
+
+    </table>
+    <p class="cap rv" style="margin-top:36px">Chaque mois : trois formules au choix</p>
     <div class="plans rv">
       <div class="plan">
-        <h3>Essentiel</h3><p class="for">Des publications régulières sur tous les réseaux</p>
-        <div class="pr">1 900 €<span>par mois</span></div>
-        <div class="cnt">14 prestations</div>
-        <h4>Réseaux sociaux</h4>
-        <ul><li>12 publications par mois</li><li>Instagram, Facebook, LinkedIn et X : les quatre réseaux</li><li>Textes en français et en azerbaïdjanais</li><li>Design de chaque publication dans le style du Centre</li><li>Planning mensuel soumis à validation</li><li>8 stories par mois</li></ul>
-        <h4>Vidéo et photo</h4>
-        <ul><li>4 vidéos courtes par mois</li><li>Montage, sous-titres, musique</li></ul>
-        <h4>Animation de la communauté</h4>
-        <ul><li>Réponses aux commentaires et aux messages</li><li>Modération des commentaires, provocations masquées</li></ul>
-        <h4>Fiche Google</h4>
-        <ul><li>Animation de la fiche : photos, horaires, actualités</li><li>Réponses aux avis</li></ul>
+        <h3>Publicité</h3><p class="for">Le Centre publie lui-même, nous gérons la publicité et la croissance</p>
+        <div class="pr">600 €<span>par mois</span></div>
+        <div class="cnt">8 prestations</div>
+        <h4>Publicité</h4>
+        <ul><li>Jusqu’à 4 campagnes par mois sur les meilleures vidéos</li><li>Audiences en France : culture, musées, voyages, musique</li><li>Une justification pour chaque campagne, à valider</li><li>Optimisation hebdomadaire selon les résultats</li></ul>
+        <h4>Conseil</h4>
+        <ul><li>Recommandations sur l’heure et la fréquence des publications</li><li>Analyse : quelles vidéos méritent d’être promues</li></ul>
         <h4>Rapports et suivi</h4>
-        <ul><li>Rapport mensuel sur une page</li><li>Un point par mois</li></ul>
+        <ul><li>Rapport mensuel : abonnés, audience, coût par abonné</li><li>Un point par mois</li></ul>
       </div>
       <div class="plan best">
-        <h3>Présence</h3><p class="for">Plus de vidéos et chaque événement du Centre sur les réseaux</p>
-        <div class="pr">2 800 €<span>par mois</span></div>
-        <div class="cnt">25 prestations</div>
-        <h4>Réseaux sociaux</h4>
-        <ul><li>16 publications par mois</li><li>Instagram, Facebook, LinkedIn et X : les quatre réseaux</li><li>Textes en français et en azerbaïdjanais</li><li>Design de chaque publication dans le style du Centre</li><li>Planning mensuel soumis à validation</li><li>16 stories par mois</li><li>Stories à la une et publications épinglées tenues à jour</li></ul>
-        <h4>Vidéo et photo</h4>
-        <ul><li>8 vidéos courtes par mois</li><li>2 tournages sur place par mois</li><li>Montage, sous-titres, musique</li><li>Retouche des photos du Centre</li><li>Vidéos également sur TikTok et YouTube Shorts</li></ul>
-        <h4>Les événements du Centre sur les réseaux</h4>
-        <ul><li>Annonce de chaque événement : affiche et vidéo</li><li>Page d'événement Facebook</li><li>Stories et directs pendant les événements</li><li>Reportage photo et vidéo dès le lendemain</li></ul>
-        <h4>Animation de la communauté</h4>
-        <ul><li>Réponses aux commentaires et messages dans la journée</li><li>Modération des commentaires, provocations masquées</li><li>Publications communes avec les artistes et les invités du Centre</li></ul>
-        <h4>Fiche Google</h4>
-        <ul><li>Animation de la fiche : photos, horaires, actualités</li><li>Réponses aux avis</li><li>Publications sur les événements directement dans la fiche</li></ul>
+        <h3>Contenus et publicité</h3><p class="for">Nous préparons tout, le Centre publie lui-même</p>
+        <div class="pr">1 900 €<span>par mois</span></div>
+        <div class="cnt">18 prestations</div>
+        <h4>Contenus</h4>
+        <ul><li>Planning mensuel soumis à validation</li><li>8 vidéos de 30 à 40 secondes à partir des images du Centre</li><li>Montage, sous-titres en français, musique</li><li>8 publications mises en page : objets du musée, anecdotes, portraits</li><li>Textes en français pour chaque publication</li><li>Le texte azerbaïdjanais est relu par le Centre</li><li>Reportage après chaque événement : photos et vidéo</li><li>Calendrier : le jour et l’heure de chaque publication</li><li>Un lot hebdomadaire prêt à publier pour les quatre réseaux</li></ul>
+        <h4>Publicité</h4>
+        <ul><li>Jusqu’à 4 campagnes par mois sur les meilleures vidéos</li><li>Audiences en France : culture, musées, voyages, musique</li><li>Une justification pour chaque campagne, à valider</li><li>Optimisation hebdomadaire selon les résultats</li></ul>
+        <h4>Google</h4>
+        <ul><li>Animation de la fiche Google : nouvelles photos et publications</li><li>Réponses aux avis</li></ul>
         <h4>Rapports et suivi</h4>
         <ul><li>Rapport mensuel et plan du mois suivant</li><li>Analyse des meilleures publications</li><li>Deux points par mois</li></ul>
       </div>
       <div class="plan top">
-        <h3>Rayonnement</h3><p class="for">Une présence quotidienne et des récits vidéo sur le Centre</p>
-        <div class="pr">3 900 €<span>par mois</span></div>
-        <div class="cnt">34 prestations</div>
-        <h4>Réseaux sociaux</h4>
-        <ul><li>24 publications par mois</li><li>Instagram, Facebook, LinkedIn et X : les quatre réseaux</li><li>Textes en français et en azerbaïdjanais</li><li>Design de chaque publication dans le style du Centre</li><li>Planning mensuel soumis à validation</li><li>Stories chaque jour d'ouverture du Centre</li><li>Stories à la une et publications épinglées tenues à jour</li><li>Séries thématiques : musée, artisans, cuisine</li><li>Animation de la page LinkedIn de la direction du Centre</li></ul>
-        <h4>Vidéo et photo</h4>
-        <ul><li>12 vidéos courtes par mois</li><li>4 tournages sur place par mois</li><li>Montage, sous-titres, musique</li><li>Interviews vidéo d'artistes et d'artisans</li><li>Séance photo des salons et de la collection chaque trimestre</li><li>Vidéos également sur TikTok et YouTube Shorts</li></ul>
-        <h4>Les événements du Centre sur les réseaux</h4>
-        <ul><li>Annonce de chaque événement : affiche et vidéo</li><li>Page d'événement Facebook</li><li>Stories et directs pendant les événements</li><li>Reportage photo et vidéo dès le lendemain</li><li>Diffusion en direct des grands événements</li></ul>
-        <h4>Animation de la communauté</h4>
-        <ul><li>Réponses aux commentaires et messages dans la journée</li><li>Modération des commentaires, provocations masquées</li><li>Publications communes avec les artistes et les invités du Centre</li><li>Mentions croisées avec les musées et centres culturels de Paris</li></ul>
-        <h4>Fiche Google</h4>
-        <ul><li>Animation de la fiche : photos, horaires, actualités</li><li>Réponses aux avis</li><li>Publications sur les événements directement dans la fiche</li><li>De nouvelles photos sur la fiche chaque mois</li></ul>
+        <h3>Gestion complète</h3><p class="for">Nous publions nous-mêmes avec un rôle d’éditeur, sans mots de passe</p>
+        <div class="pr">2 900 €<span>par mois</span></div>
+        <div class="cnt">28 prestations</div>
+        <h4>Contenus</h4>
+        <ul><li>Planning mensuel soumis à validation</li><li>12 vidéos de 30 à 40 secondes</li><li>Montage, sous-titres en français, musique</li><li>12 publications mises en page</li><li>Textes en français pour chaque publication</li><li>Le texte azerbaïdjanais est relu par le Centre</li><li>Reportage après chaque événement : photos et vidéo</li><li>Interviews vidéo d’artistes et d’artisans</li><li>2 tournages au Centre par mois</li><li>Séance photo des salons et de la collection chaque trimestre</li></ul>
+        <h4>Publication et communauté</h4>
+        <ul><li>Publication sur les quatre réseaux aux meilleures heures</li><li>Stories les jours d’événement, après validation</li><li>Stories à la une et publications épinglées tenues à jour</li><li>Réponses aux commentaires et messages dans la journée</li><li>Modération des commentaires, provocations masquées</li></ul>
+        <h4>Publicité</h4>
+        <ul><li>Jusqu’à 4 campagnes par mois sur les meilleures vidéos</li><li>Audiences en France : culture, musées, voyages, musique</li><li>Une justification pour chaque campagne, à valider</li><li>Optimisation hebdomadaire selon les résultats</li><li>Une campagne permanente pour gagner des abonnés</li></ul>
+        <h4>Google</h4>
+        <ul><li>Animation de la fiche Google : nouvelles photos et publications</li><li>Réponses aux avis</li></ul>
         <h4>Stratégie</h4>
-        <ul><li>Plan éditorial trimestriel</li><li>Calendrier des rubriques et des événements sur 3 mois</li></ul>
+        <ul><li>Plan éditorial trimestriel</li><li>Calendrier des rubriques sur 3 mois</li></ul>
         <h4>Rapports et suivi</h4>
-        <ul><li>Rapport mensuel et plan du mois suivant</li><li>Analyse des meilleures publications</li><li>Rapport trimestriel pour l'Ambassade et le Ministère</li><li>Un point chaque semaine, réponse dans la journée</li></ul>
+        <ul><li>Rapport mensuel et plan du mois suivant</li><li>Analyse des meilleures publications</li><li>Rapport trimestriel pour le Ministère</li><li>Un point chaque semaine, réponse dans la journée</li></ul>
       </div>
     </div>
     <div class="notes rv">
+      <div><b>Budget publicitaire en sus</b>Jusqu’à 500 € par mois. Le Centre le règle directement à Meta.</div>
       <div><b>Engagement de 3 mois</b>Ensuite reconduction au mois, la formule peut évoluer.</div>
-      <div><b>Uniquement la culture</b>Aucun sujet politique, aucune publicité payante, les commentaires provocateurs sont masqués.</div>
-      <div><b>Ce dont nous avons besoin</b>Les accès aux réseaux et l'agenda des événements avant le début de chaque mois.</div>
+      <div><b>Images et vidéos</b>Les photos et vidéos sont fournies par le Centre. Les tournages complémentaires sont inclus dans la gestion complète.</div>
+    </div>
+
+    <div class="once rv" style="margin-top:72px">
+      <div>
+        <p class="cap">Par où nous proposons de commencer</p>
+        <table class="ptab">
+          <tr><td><b>Fiche du Centre sur Google Maps</b><span>Dès notre accord</span></td><td>400 €</td></tr>
+
+          <tr><td><b>Revue de l’espace médiatique français</b><span>La base de toutes les décisions suivantes</span></td><td>900 €</td></tr>
+
+          <tr><td><b>Lancement des réseaux</b><span>Stratégie, modèles, compte publicitaire</span></td><td>900 €</td></tr>
+
+        </table>
+      </div>
+      <div class="total">
+        <small>Première étape</small>
+        <b>2 200 €</b>
+        <p>Une seule fois. Ensuite, les réseaux dès 600 € par mois. Le site avec la galerie peut démarrer à tout moment.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -864,7 +949,7 @@ footer a{color:#9aa2ad}
 <section class="dark2">
   <div class="wrap">
     <div class="about rv" style="margin-top:0;padding-top:0;border-top:0">
-      <p><b style="color:#fff">Maxlessi</b> c'est le marketing piloté par Maxime, expert basé à Paris. Stratégie, design, contenus et mesure réunis. Nous travaillons en français, en anglais et en russe.</p>
+      <p><b style="color:#fff">Maxlessi</b> c’est le marketing piloté par Maxime, expert basé à Paris. Stratégie, sites, contenus, publicité et mesure réunis. Nous travaillons en français, en anglais et en russe.</p>
       <div class="facts">
         <div><b>65k€+</b><span>de budgets publicitaires</span></div>
         <div><b>50+</b><span>pays en campagne</span></div>
@@ -877,12 +962,12 @@ footer a{color:#9aa2ad}
 <section class="final">
   <div class="wrap">
     <div class="eyebrow" style="margin-bottom:18px">Prochaine étape</div>
-    <h2>Choisir le style et la formule</h2>
+    <h2>Commencer par la fiche Google et la revue médiatique</h2>
     <p>Maxlessi, Paris | <a href="https://maxlessi.com">maxlessi.com</a></p>
   </div>
 </section>
 
-<footer><div class="wrap">Les maquettes et les noms d'événements de cette page sont des exemples de design. Photographies : Wikimedia Commons, auteurs Celette, Lowendal, Interfase, Bernard Gagnon, Azerifactory, AlixSaz, Shahriyar Musayev, Urek Meniashvili, Dario Tortora, Urmen19, Sedef94, Nick Taylor, Valentina Dyptan, licences CC BY et CC BY-SA.</div></footer>
+<footer><div class="wrap">Les maquettes, adresses et noms de cette page sont des exemples de design. Photographies : Wikimedia Commons, auteurs Celette, Interfase, Azerifactory, Shahriyar Musayev, Urek Meniashvili, Dario Tortora, Urmen19, Nick Taylor, licences CC BY et CC BY-SA.</div></footer>
 
 <script>
 (function(){
@@ -894,7 +979,7 @@ footer a{color:#9aa2ad}
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.08});
   document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
   var links=[].slice.call(document.querySelectorAll('.bar nav a'));
-  var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+  var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id.replace('p3b','p3'))})}})},{rootMargin:'-45% 0px -50% 0px'});
   document.querySelectorAll('section[id]').forEach(function(s){io2.observe(s)});
   var secs=[].slice.call(document.querySelectorAll('header,section'));
   addEventListener('keydown',function(e){
