@@ -991,3 +991,83 @@ h2.mx.smh{margin:64px 0 0;font-size:clamp(28px,3.2vw,44px)}
 .stp-lpph figcaption b{font-weight:800}
 .stp-lpp{margin-top:26px}
 @media(max-width:620px){.stp-lpph{display:none}}
+
+/* ===== connect wall: Claude and ChatGPT in the middle, every tool around ===== */
+.cw{list-style:none;margin:36px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cw-hub{grid-column:2/4;grid-row:2/4;background:var(--ink);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;padding:30px;position:relative;overflow:hidden;min-width:0}
+.cw-hub::before,.cw-hub::after{content:"";position:absolute;left:50%;top:50%;width:300px;height:300px;margin:-150px 0 0 -150px;border-radius:50%;border:1px solid rgba(255,255,255,.14);pointer-events:none}
+.cw-hub::after{width:480px;height:480px;margin:-240px 0 0 -240px;border-color:rgba(255,255,255,.08)}
+.anim .cw-hub::before{animation:cwPulse 3.2s ease-in-out infinite}
+@keyframes cwPulse{0%,100%{transform:scale(.92);opacity:.6}50%{transform:scale(1.06);opacity:1}}
+.cw-ai{display:flex;gap:8px;margin:0;position:relative}
+.cw-ai span{background:#fff;color:var(--ink);font:800 15px var(--f);padding:8px 14px;border-radius:999px}
+.cw-plus{font-style:normal;font:200 34px/1 var(--f);color:var(--acc);position:relative}
+.cw-hub b{font:900 clamp(28px,3.2vw,44px)/1 var(--f);letter-spacing:-.04em;position:relative}
+.cw-hub small{color:#C9CBD6;font-size:15px;max-width:32ch;position:relative}
+.cw-t{background:#fff;border:1.5px solid var(--line);padding:16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.cw-t .iic svg{width:24px;height:24px}
+.cw-t b{font:800 16px/1.2 var(--f);letter-spacing:-.01em}
+.cw-t small{font-size:13.5px;color:var(--soft);line-height:1.35}
+.cw-ok{font-style:normal;font:700 11px var(--f);letter-spacing:.06em;text-transform:uppercase;color:#137A3E;display:inline-flex;align-items:center;gap:6px;margin-top:auto;padding-top:6px}
+.cw-ok::before{content:"";width:8px;height:8px;border-radius:50%;background:#22A35A;box-shadow:0 0 0 3px rgba(34,163,90,.18)}
+.anim .cw .cw-t{opacity:0;transform:translateY(12px)}
+.anim .cw.in .cw-t{animation:stpIn .55s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--k) * .07s)}
+
+/* done for you */
+.dfy-t{font:800 clamp(22px,2.4vw,30px)/1.2 var(--f);letter-spacing:-.02em;margin:60px 0 18px}
+.dfy{display:grid;grid-template-columns:1fr 1.15fr;gap:28px;align-items:start}
+.dfy-c{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.dfy-c li{border-top:3px solid var(--acc);padding:14px 2px 4px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.dfy-c b{font:800 18px/1.2 var(--f);letter-spacing:-.01em}
+.dfy-c p{margin:0;color:var(--soft);font-size:15px}
+.dfy-p{background:var(--fog);padding:18px;min-width:0}
+.dfy-h{margin:0 0 12px;font:800 12px var(--f);letter-spacing:.12em;text-transform:uppercase;display:flex;gap:8px;align-items:center}
+.po-g{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.po{margin:0;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;min-width:0}
+.po img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%}
+.po figcaption{padding:8px 10px 10px;display:flex;flex-direction:column;gap:7px;font-size:12.5px;line-height:1.3;flex:1}
+.po em{font-style:normal;font:700 11px var(--f);align-self:flex-start;padding:3px 8px;border-radius:999px;background:var(--acc);color:#fff;margin-top:auto}
+.dfy-f{margin:10px 0 0;font-size:12.5px;color:var(--steel)}
+
+/* platform demo window */
+.app{margin-top:32px;background:#fff;border:1.5px solid var(--ink);border-radius:18px;overflow:hidden;box-shadow:0 50px 100px -50px rgba(10,11,16,.5),16px 16px 0 var(--acc)}
+.app-top{display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line);font-size:13px;flex-wrap:wrap}
+.app-top b{font:800 14px var(--f)}
+.app-top span:not(.as-dots){color:var(--soft)}
+.app-top em{margin-left:auto;font-style:normal;color:var(--steel);font-size:12px}
+.app-body{display:grid;grid-template-columns:220px 1fr}
+.app-nav{border-right:1px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:6px;background:#FAFAFC}
+.app-nav button{display:flex;align-items:center;gap:10px;border:0;background:transparent;font:600 14.5px var(--f);padding:11px 12px;border-radius:10px;cursor:pointer;text-align:left;color:var(--ink);position:relative;overflow:hidden}
+.app-nav button:hover{background:var(--fog)}
+.app-nav button.on{background:var(--ink);color:#fff}
+.app-nav button.on .iic svg{stroke:#fff}
+.app-nav .iic{display:inline-flex}.app-nav .iic svg{width:20px;height:20px}
+.app-nav button.on::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--acc)}
+.anim .app-nav button.on.run::after{animation:tabRun var(--dur,9s) linear forwards}
+@keyframes tabRun{to{width:100%}}
+.app-main{padding:24px;min-width:0;background:var(--fog);min-height:600px}
+.app-pane[hidden]{display:none}
+.app .dwrap{justify-content:center}
+.app .stp-week{box-shadow:none}
+.app-rep{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;justify-content:center}
+.app-kpi{display:grid;gap:14px;min-width:0}
+.app-kpi div{border-top:3px solid var(--ink);padding-top:10px}
+.app-kpi b{display:block;font:900 clamp(34px,4vw,54px)/1 var(--f);letter-spacing:-.045em;font-variant-numeric:tabular-nums}
+.app-kpi span{font-size:14px;color:var(--soft)}
+@media(max-width:860px){.app-rep{grid-template-columns:1fr}.app-kpi{grid-template-columns:repeat(3,1fr)}.app-kpi b{font-size:30px}.app-kpi span{font-size:12px}}
+.app-rep .stp-rep{position:relative;right:auto;bottom:auto;margin:0;width:min(440px,100%);font-size:14.5px}
+.anim .app-pane:not([hidden]){animation:stpIn .45s cubic-bezier(.2,.8,.2,1)}
+
+@media(max-width:860px){
+  .cw{grid-template-columns:1fr 1fr}
+  .cw-hub{grid-column:1/-1;grid-row:auto;padding:26px 18px}
+  .dfy{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .app-body{grid-template-columns:1fr}
+  .app-nav{flex-direction:row;overflow-x:auto;border-right:0;border-bottom:1px solid var(--line);padding:10px}
+  .app-nav button{white-space:nowrap;padding:9px 11px;font-size:13.5px;flex:0 0 auto}
+  .app-main{padding:12px;min-height:0}
+  .app-top em{display:none}
+}
+@media(max-width:620px){.dfy-c{grid-template-columns:1fr}.po-g{gap:6px}.po figcaption{font-size:11.5px;padding:6px}.cw{gap:8px}.cw-t{padding:12px}}
