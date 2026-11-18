@@ -121,6 +121,11 @@ h3{font-family:var(--serif);font-weight:600;font-size:30px;line-height:1.1}
 .site.ivoire .stxt h4{font-size:6cqw}
 .site.ivoire .btns span{border-color:var(--ink)}
 .site.ivoire .btns span:first-child{background:var(--garnet);border-color:var(--garnet);color:#fff}
+.site .lbl{font-size:1.35cqw;letter-spacing:.18em;text-transform:uppercase;padding:1.6cqw 4.5cqw;background:#ece8df;color:#6c7079}
+.site.nuit .lbl{background:#080b0f;color:#8f97a3}
+.site .sh{aspect-ratio:16/7.2!important}
+.site .ev .ph{aspect-ratio:1!important}
+.site .stxt h4{margin-bottom:0!important}
 /* mobile site mock */
 .site.m{height:100%;display:flex;flex-direction:column}
 .site.m .sh{aspect-ratio:auto;flex:1.55}
@@ -487,7 +492,7 @@ footer a{color:#9aa2ad}
     </div>
     <div class="obs rv">
       <div><b>Видео уже работает</b>Ролики собирают в разы больше просмотров, чем есть подписчиков. Это можно масштабировать.</div>
-      <div><b>Центр трудно найти</b>Карточки центра в Google Maps нет: поиск показывает только посольство. Новый сайт центра сейчас готовится в Азербайджане.</div>
+      <div><b>Центр трудно найти</b>Карточки центра в Google Maps нет: поиск показывает только посольство.</div>
       <div><b>Нет приглашения прийти</b>В последних публикациях нет анонсов будущих событий. Французский текст идёт вторым.</div>
     </div>
   </div>
@@ -507,16 +512,18 @@ footer a{color:#9aa2ad}
       <div class="pt"><span class="k">4</span><b>Шаблоны публикаций</b><p>Готовые макеты для афиш, фактов, портретов и предметов музея. Лента выглядит цельно.</p></div>
     </div>
 
-    <p class="cap rv">Два направления стиля на выбор: обложка, афиша, публикации</p>
+    <p class="cap rv">Два направления стиля на выбор: обложка профиля и публикации</p>
     <div class="duo rv">
       <div>
         <div class="vlabel"><b>Вариант «Nuit»</b><div class="sw"><i style="background:#0d1218"></i><i style="background:#c9a567"></i><i style="background:#8d2b37"></i><i style="background:#f6f1e7"></i></div></div>
         <div class="browser">
           <div class="site nuit">
+            <div class="lbl">Обложка профиля в Facebook, LinkedIn и X</div>
             <div class="sh" style="background-image:url(img/carpets.jpg)">
               <div class="snav"><b>Centre culturel d'Azerbaïdjan</b></div>
-              <div class="stxt"><small>Paris 7e, au pied de la tour Eiffel</small><h4>L'Azerbaïdjan<br>au cœur de Paris</h4><div class="btns"><span>Voir le programme</span></div></div>
+              <div class="stxt"><small>Paris 7e, au pied de la tour Eiffel</small><h4>L'Azerbaïdjan<br>au cœur de Paris</h4></div>
             </div>
+            <div class="lbl">Публикации в ленте</div>
             <div class="agenda">
               <div class="ev"><div class="ph" style="background-image:url(img/kamancha.jpg);background-position:center 15%"></div><small>Concert</small><b>Soirée Mugham</b></div>
               <div class="ev"><div class="ph" style="background-image:url(img/carpet.jpg)"></div><small>Exposition</small><b>Tapis du Karabakh</b></div>
@@ -530,13 +537,15 @@ footer a{color:#9aa2ad}
         <div class="vlabel"><b>Вариант «Ivoire»</b><div class="sw"><i style="background:#f6f1e7"></i><i style="background:#8d2b37"></i><i style="background:#1a1f27"></i><i style="background:#1e5c55"></i></div></div>
         <div class="browser">
           <div class="site ivoire">
+            <div class="lbl">Обложка профиля в Facebook, LinkedIn и X</div>
             <div class="sh">
               <div class="left">
                 <div class="snav"><b>Centre culturel d'Azerbaïdjan</b></div>
-                <div class="stxt"><small>Musée, concerts, rencontres</small><h4>L'âme de l'Azerbaïdjan,<br>à Paris</h4><div class="btns"><span>Voir le programme</span></div></div>
+                <div class="stxt"><small>Musée, concerts, rencontres</small><h4>L'âme de l'Azerbaïdjan,<br>à Paris</h4></div>
               </div>
               <div class="pic" style="background-image:url(img/shebeke.jpg)"></div>
             </div>
+            <div class="lbl">Публикации в ленте</div>
             <div class="agenda">
               <div class="ev"><div class="ph" style="background-image:url(img/lahic.jpg)"></div><small>Exposition</small><b>Cuivres de Lahij</b></div>
               <div class="ev"><div class="ph" style="background-image:url(img/miniature.jpg);background-position:center 20%"></div><small>Conférence</small><b>La miniature</b></div>
@@ -556,7 +565,7 @@ footer a{color:#9aa2ad}
           <div class="gb">
             <h5>Centre culturel d'Azerbaïdjan</h5>
             <div><span class="stars">★★★★★</span> Centre culturel et musée</div>
-            <div class="row"><span>Itinéraire</span><span>Site Web</span><span>Enregistrer</span><span>Appeler</span></div>
+            <div class="row"><span>Itinéraire</span><span>Enregistrer</span><span>Partager</span><span>Appeler</span></div>
             <p>1 Av. Charles Floquet, 75007 Paris</p>
             <p><b>Ouvert</b> | Ferme à 18:00</p>
             <p>Musée, expositions, concerts.</p>
