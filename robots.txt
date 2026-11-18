@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /lp/
+Disallow: /merci/
+Disallow: /en/thank-you/
+Sitemap: https://maxlessi.com/sitemap.xml
