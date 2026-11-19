@@ -41,13 +41,13 @@
   }else demos.forEach(runDemo);
   // reveal on scroll
   if(ANIM){
-    var sel='.mx,.eyebrow,.lead,.hpts,.scard,.fn,.st3,.plan,.offer,.rescard,.fdr figure,.faq,.pain,.agt,.case2,.svc,.cchips,.ctl>div,.cform,.cdir,.tbl,.dwrap,.stp-week,.stp-note,.stp-kpi>div,.stp-pain,.stp-step,.stp-fig,.stp-fig2,.stp-jf,.smc,.pb3 li,.cw,.app,.hm-stage,.hm-pc,.hm-xg,.hm-scd,.hm-rep,.hm-gs li,.hm-vid,.hm-rtx,.hm-sts li,.hm-fd,.hm-fin';
+    var sel='.mx,.eyebrow,.lead,.hpts,.scard,.fn,.st3,.plan,.offer,.rescard,.fdr figure,.faq,.pain,.agt,.case2,.svc,.cchips,.ctl>div,.cform,.cdir,.tbl,.dwrap,.stp-week,.stp-note,.stp-kpi>div,.stp-pain,.stp-step,.stp-fig,.stp-fig2,.stp-jf,.smc,.pb3 li,.cw,.app,.hm-stage,.hm-pc,.hm-xg,.hm-scd,.hm-rep,.hm-gs li,.hm-vid,.hm-rtx,.hm-sts li,.hm-fd,.hm-fin,.pbg';
     var els=[].slice.call(document.querySelectorAll(sel));
     els.forEach(function(e){
       if(!e.classList.contains('mx'))e.classList.add('rv');
       var p=e.parentNode,idx=[].indexOf.call(p.children,e);if(idx>0&&idx<8)e.style.setProperty('--rd',(idx*0.07)+'s');
     });
-    var rio=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){var e=en.target;e.classList.add('in');[].forEach.call(e.querySelectorAll('.pp b,.rescard b,.cnums b'),countUp);if(e.matches('.stp-kpi>div')){var kb=e.querySelector('b');if(kb)countUp(kb)}if(e.matches('.rescard')){var b=e.querySelector('b');if(b)setTimeout(function(){countUp(b)},200)}rio.unobserve(e)}})},{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+    var rio=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){var e=en.target;e.classList.add('in');[].forEach.call(e.querySelectorAll('.rescard b,.cnums b'),countUp);if(e.matches('.stp-kpi>div')){var kb=e.querySelector('b');if(kb)countUp(kb)}if(e.matches('.rescard')){var b=e.querySelector('b');if(b)setTimeout(function(){countUp(b)},200)}rio.unobserve(e)}})},{threshold:.15,rootMargin:'0px 0px -6% 0px'});
     els.forEach(function(e){rio.observe(e)});
   }
   // case videos: play in view, tap for sound
@@ -59,6 +59,12 @@
   vids.forEach(function(v){v.addEventListener('click',function(){v.muted=!v.muted;var p=v.play();if(p&&p.catch)p.catch(function(){})})});
   // mobile menu: close after a click
   [].forEach.call(document.querySelectorAll('.mpanel a,.nmp a'),function(a){a.addEventListener('click',function(){var d=a.closest('details');if(d)d.removeAttribute('open')})});
+  // mobile menu: close on a tap outside it or on Escape
+  var mn=document.querySelector('.nmn');
+  if(mn){
+    document.addEventListener('click',function(ev){if(mn.open&&!mn.contains(ev.target))mn.removeAttribute('open')});
+    document.addEventListener('keydown',function(ev){if(ev.key==='Escape'&&mn.open){mn.removeAttribute('open');var s=mn.querySelector('summary');if(s)s.focus()}});
+  }
   // header: solid background once the page scrolls
   var nh=document.querySelector('.nh:not(.lp)');
   if(nh){var hs=function(){nh.classList.toggle('sc',window.scrollY>8)};hs();window.addEventListener('scroll',hs,{passive:true})}
