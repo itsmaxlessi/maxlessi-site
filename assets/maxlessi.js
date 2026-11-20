@@ -41,7 +41,7 @@
   }else demos.forEach(runDemo);
   // reveal on scroll
   if(ANIM){
-    var sel='.mx,.eyebrow,.lead,.hpts,.scard,.fn,.st3,.plan,.offer,.rescard,.fdr figure,.faq,.pain,.agt,.case2,.svc,.cchips,.ctl>div,.cform,.cdir,.tbl,.dwrap,.stp-week,.stp-note,.stp-kpi>div,.stp-pain,.stp-step,.stp-fig,.stp-fig2,.stp-jf,.smc,.pb3 li,.cw,.app,.hm-stage,.hm-pc,.hm-xg,.hm-scd,.hm-rep,.hm-gs li,.hm-vid,.hm-rtx,.hm-sts li,.hm-fd,.hm-fin,.pbg';
+    var sel='.mx,.eyebrow,.lead,.hpts,.scard,.fn,.st3,.plan,.offer,.rescard,.fdr figure,.faq,.pain,.agt,.case2,.svc,.cchips,.ctl>div,.cform,.cdir,.tbl,.dwrap,.stp-week,.stp-note,.stp-kpi>div,.stp-pain,.stp-step,.stp-fig,.stp-fig2,.stp-jf,.smc,.pb3 li,.cw,.app,.hm-stage,.hm-pc,.hm-xg,.hm-scd,.hm-rep,.hm-gs li,.hm-vid,.hm-rtx,.hm-sts li,.hm-fd,.hm-fin,.pbg,.fcard,.md,.ftasks li,.fx-chat,.ftools li';
     var els=[].slice.call(document.querySelectorAll(sel));
     els.forEach(function(e){
       if(!e.classList.contains('mx'))e.classList.add('rv');
@@ -98,7 +98,7 @@
       }
       box.appendChild(d);return d;
     };
-    if(RM){data.forEach(msg)}
+    if(RM){data.slice(-3).forEach(msg)}
     else{
       var run=function(){
         box.innerHTML='';var last=null,i=0;
@@ -125,14 +125,18 @@
   if(xg){
     var tabs=$$('.hm-xt',xg),panes=$$('.hm-xpn',xg),cur=0,timer=null,DUR=6000,xvis=false,hover=false;
     xg.style.setProperty('--dur',DUR/1000+'s');
-    var plan=function(){clearTimeout(timer);if(RM||!xvis||hover){xg.classList.add('paused');return}xg.classList.remove('paused');timer=setTimeout(function(){show(cur+1)},DUR)};
+    var mq=window.matchMedia('(max-width:1020px)'),xps=$('.hm-xps',xg),xhome=xps.parentNode;
+    // phones and tablets: the content opens right under the tab you tapped, no automatic switching
+    var place=function(){if(mq.matches){xg.classList.add('mob');xps.classList.add('hm-inline');tabs[cur].insertAdjacentElement('afterend',xps)}else{xg.classList.remove('mob');xps.classList.remove('hm-inline');xhome.appendChild(xps)}};
+    var plan=function(){clearTimeout(timer);if(RM||mq.matches||!xvis||hover){xg.classList.add('paused');return}xg.classList.remove('paused');timer=setTimeout(function(){show(cur+1)},DUR)};
     var show=function(i){
       cur=(i+tabs.length)%tabs.length;
       tabs.forEach(function(t,j){t.classList.toggle('on',j===cur);t.setAttribute('aria-selected',j===cur?'true':'false')});
       panes.forEach(function(p,j){p.classList.toggle('on',j===cur)});
       var bar=$('.hm-xp',tabs[cur]);bar.style.animation='none';void bar.offsetWidth;bar.style.animation='';
-      plan();
+      place();plan();
     };
+    place();if(mq.addEventListener)mq.addEventListener('change',function(){place();plan()});
     tabs.forEach(function(t,j){t.addEventListener('click',function(){show(j)})});
     xg.addEventListener('mouseenter',function(){hover=true;plan()});
     xg.addEventListener('mouseleave',function(){hover=false;show(cur)});

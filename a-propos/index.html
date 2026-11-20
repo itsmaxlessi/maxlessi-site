@@ -547,6 +547,15 @@ button.btn{cursor:pointer;font-family:var(--f)}
 @media(max-width:760px){.nhin{height:66px}.nlogo{font-size:23px}}
 @media(max-width:560px){.nfg{grid-template-columns:1fr}}
 @media(max-width:1020px){.nh.lp .nr>.btn{display:inline-flex}}
+
+/* logo with its tagline */
+.nlogo{display:flex;align-items:baseline;gap:12px}
+.nlogo small{font:500 10.5px/1 var(--f);letter-spacing:.16em;text-transform:uppercase;color:var(--steel);white-space:nowrap}
+@media(max-width:1180px) and (min-width:1021px){.nlogo small{display:none}}
+@media(max-width:760px){.nlogo{flex-direction:column;align-items:flex-start;gap:4px}.nlogo small{font-size:11px;letter-spacing:.1em}}
+/* landing pages on phones: logo without tagline so the call-to-action button fits */
+@media(max-width:600px){.nh.lp .nlogo small{display:none}.nh.lp .nr .btn.sm{padding:0 16px}}
+@media(max-width:340px){.nlogo small{letter-spacing:.06em;font-size:10.5px}}
 /* ===== /a-propos/ (portfolio page from brand/site) in the calm premium style: inlined after theme_base.css ===== */
 .hph::before{display:none!important}
 .hph img,.hph video{border-radius:var(--r)}
@@ -585,15 +594,17 @@ button.btn{cursor:pointer;font-family:var(--f)}
 .contact .mx span{color:rgba(255,255,255,.5)}
 .mtrack span{color:#6F6B63}
 @media(max-width:760px){.cx>span,.cx>div>span{font-size:11.5px}.snd{padding:12px 12px 12px 26px}}
+.shot figcaption{background:transparent;border-radius:0;color:rgba(255,255,255,.6);padding:14px 0 0}
+@media(max-width:860px){.hph{max-width:none;margin:0 0 18px}}
 html[lang="en"] [data-chrome="fr"],html:not([lang="en"]) [data-chrome="en"]{display:none!important}</style><script>try{var q=new URLSearchParams(location.search).get('lang'),l=q||localStorage.getItem('mx-site-lang');if(l==='en')document.documentElement.lang='en'}catch(e){}addEventListener('DOMContentLoaded',function(){var hs=document.querySelectorAll('.nh');function f(){for(var i=0;i<hs.length;i++)hs[i].classList.toggle('sc',scrollY>8)}f();addEventListener('scroll',f,{passive:true});var ms=[].slice.call(document.querySelectorAll('.nmn'));function shut(){ms.forEach(function(m){m.removeAttribute('open')})}document.addEventListener('click',function(e){ms.forEach(function(m){if(m.open&&(!m.contains(e.target)||e.target.closest('.nmp a')))m.removeAttribute('open')})});document.addEventListener('keydown',function(e){if(e.key==='Escape')shut()})})</script>
 <script>try{if(window.matchMedia&&matchMedia('(prefers-reduced-motion: no-preference)').matches&&'IntersectionObserver' in window)document.documentElement.classList.add('anim')}catch(e){}</script>
 <header class="nh" data-chrome="fr"><div class="wrap nhin">
-  <a class="nlogo" href="../index.html" aria-label="Maxlessi"><span class="wm"><b>max</b><span>lessi</span></span></a>
+  <a class="nlogo" href="../index.html" aria-label="Maxlessi, Agentic Marketing Systems"><span class="wm"><b>max</b><span>lessi</span></span><small>Agentic Marketing Systems</small></a>
   <nav class="nnav"><a href="../systeme-ia/index.html">Système IA</a><a href="../secteurs/index.html">Secteurs</a><a href="../services/index.html">Services</a><a href="../tarifs/index.html">Tarifs</a><a href="../a-propos/index.html">À propos</a></nav>
   <div class="nr"><a class="lng" href="index.html?lang=en" hreflang="en" lang="en" title="English version">EN</a><a class="btn sm" href="../contact/index.html">Diagnostic gratuit</a>
   <details class="nmn"><summary aria-label="Menu"><i></i><i></i></summary><div class="nmp"><a href="../systeme-ia/index.html">Système IA</a><a href="../secteurs/index.html">Secteurs</a><a href="../services/index.html">Services</a><a href="../tarifs/index.html">Tarifs</a><a href="../a-propos/index.html">À propos</a><a class="lng" href="index.html?lang=en" hreflang="en" lang="en" title="English version">EN</a><a class="btn" href="../contact/index.html">Diagnostic gratuit</a></div></details></div>
 </div></header><header class="nh" data-chrome="en"><div class="wrap nhin">
-  <a class="nlogo" href="../en/index.html" aria-label="Maxlessi"><span class="wm"><b>max</b><span>lessi</span></span></a>
+  <a class="nlogo" href="../en/index.html" aria-label="Maxlessi, Agentic Marketing Systems"><span class="wm"><b>max</b><span>lessi</span></span><small>Agentic Marketing Systems</small></a>
   <nav class="nnav"><a href="../en/ai-system/index.html">AI system</a><a href="../en/sectors/index.html">Sectors</a><a href="../en/services/index.html">Services</a><a href="../en/pricing/index.html">Pricing</a><a href="index.html?lang=en">About</a></nav>
   <div class="nr"><a class="lng" href="index.html?lang=fr" hreflang="fr" lang="fr" title="Version française">FR</a><a class="btn sm" href="../en/contact/index.html">Free assessment</a>
   <details class="nmn"><summary aria-label="Menu"><i></i><i></i></summary><div class="nmp"><a href="../en/ai-system/index.html">AI system</a><a href="../en/sectors/index.html">Sectors</a><a href="../en/services/index.html">Services</a><a href="../en/pricing/index.html">Pricing</a><a href="index.html?lang=en">About</a><a class="lng" href="index.html?lang=fr" hreflang="fr" lang="fr" title="Version française">FR</a><a class="btn" href="../en/contact/index.html">Free assessment</a></div></details></div>
