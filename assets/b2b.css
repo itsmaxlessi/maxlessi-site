@@ -95,3 +95,12 @@
   .bx-find{grid-template-columns:1fr;gap:10px;padding:24px 22px}
   .bx-rep{padding:22px 20px 12px}
 }
+
+/* Danem Test case */
+.bx-case-h{display:flex;align-items:center;gap:18px;margin:0 0 18px}
+.bx-case-h img{height:26px;width:auto}
+.bx-case-h a{font-size:14px;color:var(--steel)}
+.bx-case .bx-stat b{font-size:clamp(34px,4vw,52px)}
+.sec:not(.fog).bx-case .bx-stat{background:var(--fog)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .bx-case-h img{filter:invert(1)}}
+:root[data-theme="dark"] .bx-case-h img{filter:invert(1)}
