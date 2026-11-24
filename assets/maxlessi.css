@@ -631,6 +631,7 @@ main{display:block}
 .prose h2{font:800 22px var(--f);margin:36px 0 10px}
 .prose p{color:var(--soft);line-height:1.6;margin:0}
 .prose mark{background:#FFE58A;padding:0 4px}
+.prose ul{color:var(--soft);line-height:1.6;margin:10px 0 0;padding-left:20px}.prose li{margin:0 0 8px}.prose li b{color:var(--ink);font-weight:500}
 /* footer */
 .ft{background:var(--fog);padding:56px 0 26px;border-top:1px solid var(--line)}
 .ftg{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:28px}
