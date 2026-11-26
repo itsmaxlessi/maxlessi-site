@@ -96,11 +96,40 @@
   .bx-rep{padding:22px 20px 12px}
 }
 
+/* Marketing teams landing (26.11): numbers wall, agents by role, connect wall */
+.k-b2b{--acc:var(--blue)}
+.bx-hero.teams h1.mx{font-size:clamp(38px,4.9vw,78px)}
+.bx-wall{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+.bx-wg{background:#fff;border-radius:var(--r2);padding:26px 24px 10px}
+.bx-wg>p{font:500 12px/1 var(--f);letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin:0 0 6px}
+.bx-wg div{padding:16px 0;border-top:1px solid var(--line)}
+.bx-wg div:first-of-type{border-top:0}
+.bx-wg b{display:block;font:300 clamp(34px,3.6vw,50px)/1 var(--f);letter-spacing:-.035em}
+.bx-wg span{display:block;margin-top:8px;color:var(--soft);font-size:15px;line-height:1.4}
+.bx-one{display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,3vw,40px);align-items:center;margin-top:16px;background:var(--dark);color:#fff;border-radius:var(--r2);padding:28px 30px}
+.bx-one b{font:300 clamp(48px,6vw,84px)/1 var(--f);letter-spacing:-.05em;color:var(--gold)}
+.bx-one p{margin:0;font-size:clamp(17px,1.6vw,21px);line-height:1.45;color:rgba(255,255,255,.82);max-width:62ch}
+.bx-speed{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.bx-speed li{background:#fff;border-radius:var(--r2);padding:22px 24px}
+.bx-speed b{display:block;font:400 22px/1.1 var(--f);letter-spacing:-.02em;margin-bottom:8px;color:var(--blue)}
+.bx-speed span{color:var(--soft);font-size:15px;line-height:1.45}
+.bx-roles{list-style:none;margin:44px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.bx-roles li{background:var(--fog);border-radius:var(--r2);padding:26px 26px 24px;display:flex;flex-direction:column}
+.bx-roles small{font:500 12px/1 var(--f);letter-spacing:.14em;text-transform:uppercase;color:var(--steel)}
+.bx-roles h3{font:400 22px/1.2 var(--f);letter-spacing:-.01em;margin:12px 0 10px}
+.bx-roles p{margin:0;color:var(--soft);font-size:15.5px;line-height:1.5}
+.bx-roles .bx-pr{margin-top:auto;padding-top:16px;color:var(--ink);font-size:14.5px;line-height:1.45}
+.bx-roles .bx-pr::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--blue);margin-right:8px;vertical-align:1px}
+.bx-con .cw-hub b{font-weight:300}
+.bx-con .cw-ok.k2{color:var(--steel)}
+.bx-con .cw-ok.k2::before{background:var(--blue);box-shadow:0 0 0 3px rgba(130,98,63,.18)}
+@media(max-width:1020px){.bx-wall{grid-template-columns:1fr 1fr}.bx-roles{grid-template-columns:1fr 1fr}}
+@media(max-width:1020px){.bx-speed{grid-template-columns:1fr}}
+@media(max-width:640px){.bx-wall,.bx-roles{grid-template-columns:1fr}.bx-one{grid-template-columns:1fr;gap:10px;padding:24px 22px}}
+
 /* Danem Test case */
 .bx-case-h{display:flex;align-items:center;gap:18px;margin:0 0 18px}
 .bx-case-h img{height:26px;width:auto}
 .bx-case-h a{font-size:14px;color:var(--steel)}
 .bx-case .bx-stat b{font-size:clamp(34px,4vw,52px)}
 .sec:not(.fog).bx-case .bx-stat{background:var(--fog)}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .bx-case-h img{filter:invert(1)}}
-:root[data-theme="dark"] .bx-case-h img{filter:invert(1)}
